@@ -52,15 +52,29 @@ export default async function BrandPage({
   // ✅ FIX: Use full backend URL for server-side fetch during build
   let products = [];
 try {
+  const url = `${BASE_URL}/api/products?brand=${brand}`
+  console.log('Brand page fetching from:', url)
+  
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
+  
   const response = await fetch(
-    `${BASE_URL}/api/products?brand=${brand}`,
-    { next: { revalidate: 60 } }
+    url,
+    { 
+      next: { revalidate: 60 },
+      signal: controller.signal 
+    }
   );
+  clearTimeout(timeoutId)
+  
   if (response.ok) {
     products = await response.json();
+    console.log(`Loaded ${Array.isArray(products) ? products.length : 0} products for ${brand}`)
+  } else {
+    console.error(`Brand page fetch failed: ${response.status} ${response.statusText}`)
   }
 } catch (err) {
-  console.error('Error fetching products:', err);
+  console.error('Error fetching products for brand page:', err instanceof Error ? err.message : err);
   products = [];
 }
   const lines: string[] = [];

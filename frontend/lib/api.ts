@@ -1,7 +1,7 @@
 // Centralized API utilities for production-safe fetching
-// Use relative paths for Next.js API routes (no localhost)
+// Use environment variable for backend URL, with correct production fallback
 
-export const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+export const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://skincare-website-production-be30.up.railway.app";
 
 export async function apiGet(endpoint: string, options?: RequestInit) {
   try {

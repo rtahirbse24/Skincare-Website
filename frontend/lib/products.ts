@@ -26,16 +26,30 @@ function getField(
 
 import { BASE_URL } from './api';
 
-// ✅ Fetch all products
+// ✅ Fetch all products with timeout
 export async function fetchProducts(brand?: string): Promise<Product[]> {
   try {
     const url = brand ? `${BASE_URL}/api/products?brand=${brand}` : `${BASE_URL}/api/products`
-    const res = await fetch(url, { next: { revalidate: 60 } })
-    if (!res.ok) return []
+    console.log('fetchProducts:', url)
+    
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
+    
+    const res = await fetch(url, { 
+      next: { revalidate: 60 },
+      signal: controller.signal 
+    })
+    clearTimeout(timeoutId)
+    
+    if (!res.ok) {
+      console.error('fetchProducts error:', res.status, res.statusText)
+      return []
+    }
     const data = await res.json()
+    console.log('fetchProducts success:', Array.isArray(data) ? data.length : 'not array')
     return Array.isArray(data) ? data : []
   } catch (e) {
-    console.error('fetchProducts error:', e)
+    console.error('fetchProducts error:', e instanceof Error ? e.message : e)
     return []
   }
 }

@@ -1,14 +1,21 @@
 import { NextResponse } from 'next/server'
+import { BASE_URL } from '@/lib/api'
 
-const BACKEND = process.env.NEXT_PUBLIC_API_URL || 'https://skincare-website-production-013a.up.railway.app'
+const BACKEND = BASE_URL
 
 export async function GET(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const { id } = await params
-    const res = await fetch(`${BACKEND}/api/products/${id}`)
+    console.log('Fetching product:', id, 'from:', `${BACKEND}/api/products/${id}`)
+    const res = await fetch(`${BACKEND}/api/products/${id}`, { cache: 'no-store' })
+    if (!res.ok) {
+      console.error('Product fetch error:', res.status)
+      return NextResponse.json({ error: 'Failed to fetch product' }, { status: res.status })
+    }
     const data = await res.json()
     return NextResponse.json(data)
   } catch (e) {
+    console.error('GET product error:', e)
     return NextResponse.json({ error: 'Failed to fetch product' }, { status: 500 })
   }
 }

@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server'
-
-const BACKEND = 'https://skincare-website-production-013a.up.railway.app'
+import { BASE_URL } from '@/lib/api'
 
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-    const res = await fetch(`${BACKEND}/api/auth/login`, {
+    console.log('API BASE URL:', BASE_URL)
+    const res = await fetch(`${BASE_URL}/api/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
