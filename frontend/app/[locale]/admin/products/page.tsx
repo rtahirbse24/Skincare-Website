@@ -169,7 +169,7 @@ export default function ProductsPage() {
                   </p>
                   <div className="flex gap-2">
                     <Link
-                      href={`/${locale}/product/${product.id}`}
+                      href={`/${locale}/product/${product._id || product.id}`}
                       className="flex-1 text-center text-xs py-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-all"
                     >
                       {t.viewDetails}

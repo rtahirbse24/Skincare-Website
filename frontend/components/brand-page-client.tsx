@@ -62,7 +62,7 @@ function DBProductCard({
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group h-full flex flex-col">
 
       {/* Image */}
-      <Link href={`/product/${id}`} className="block">
+      <Link href={`/en/product/${id}`} className="block">
         <div className="relative h-56 overflow-hidden bg-white">
           <img
             src={image}
@@ -108,7 +108,7 @@ function DBProductCard({
 
           {/* View Details button only */}
           <Link
-            href={`/product/${id}`}
+            href={`/en/product/${id}`}
             className="block w-full text-center text-sm font-semibold py-3 rounded-xl transition-all hover:opacity-90 text-white"
             style={{ background: '#ec4899' }}
           >

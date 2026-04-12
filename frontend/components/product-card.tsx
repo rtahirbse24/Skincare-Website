@@ -33,7 +33,7 @@ export function ProductCard({ product, hideCartButton }: ProductCardProps) {
     >
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group h-full flex flex-col">
 
-        <Link href={`/product/${product.id}`} className="block shrink-0">
+        <Link href={`/en/product/${product._id || product.id}`} className="block shrink-0">
           <div className="relative overflow-hidden bg-gray-50" style={{ height: '200px' }}>
             <Image
               src={image}
@@ -53,7 +53,7 @@ export function ProductCard({ product, hideCartButton }: ProductCardProps) {
           )}
 
           <h3 className="font-bold text-gray-900 text-base leading-snug mb-1 line-clamp-2">
-            <Link href={`/product/${product.id}`} className="hover:text-primary transition-colors">
+            <Link href={`/en/product/${product._id || product.id}`} className="hover:text-primary transition-colors">
               {name}
             </Link>
           </h3>
@@ -76,7 +76,7 @@ export function ProductCard({ product, hideCartButton }: ProductCardProps) {
 
             <div className="flex gap-2 mt-3">
               <Link
-                href={`/product/${product.id}`}
+                href={`/en/product/${product._id || product.id}`}
                 className="flex-1 text-center text-xs font-medium py-2.5 rounded-xl transition-all"
                 style={{ background: '#ec4899', color: '#fff' }}
               >

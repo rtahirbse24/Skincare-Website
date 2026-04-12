@@ -33,7 +33,7 @@ export function ProductCard({ product }: ProductCardProps) {
       <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
         <CardContent className="p-0">
           <div className="relative overflow-hidden">
-            <Link href={`/product/${product.id}`}>
+            <Link href={`/en/product/${product._id || product.id}`}>
               <Image
                 src={image}
                 alt={name}
@@ -52,7 +52,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <div className="p-6">
             <h3 className="font-semibold text-lg mb-2 line-clamp-2">
               <Link
-                href={`/product/${product.id}`}
+                href={`/en/product/${product._id || product.id}`}
                 className="hover:text-primary transition-colors"
               >
                 {name}
