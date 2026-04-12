@@ -98,27 +98,6 @@ export const createProduct = async (req: Request, res: Response): Promise<void> 
 
     console.log('🔥 createProduct API HIT - Product created:', product._id);
 
-    // ✅ ALSO SAVE TO store.json
-    const path = require('path');
-    const fs = require('fs');
-    const filePath = path.join(__dirname, '../../../frontend/data/store.json');
-
-    const raw = fs.readFileSync(filePath, 'utf-8');
-    const store = JSON.parse(raw);
-
-    if (!store.products) {
-      store.products = [];
-    }
-
-    store.products.push({
-      ...productData,
-      id: product._id.toString(),
-      createdAt: product.createdAt,
-      updatedAt: product.updatedAt
-    });
-
-    fs.writeFileSync(filePath, JSON.stringify(store, null, 2));
-
     res.status(201).json(product);
   } catch (error) {
     console.error('Create product error:', error);

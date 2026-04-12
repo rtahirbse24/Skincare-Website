@@ -1,10 +1,17 @@
 import { NextResponse } from 'next/server'
-import { readStore, writeStore } from '@/lib/store'
+import { BASE_URL } from '@/lib/api'
 
-export async function GET() {
+const BACKEND = BASE_URL
+
+export async function GET(req: Request) {
   try {
-    const store = readStore()
-    return NextResponse.json(store.orders)
+    const token = req.headers.get('Authorization') || ''
+    const res = await fetch(`${BACKEND}/api/orders`, {
+      headers: { 'Authorization': token },
+      cache: 'no-store',
+    })
+    if (!res.ok) return NextResponse.json([], { status: 200 })
+    return NextResponse.json(await res.json())
   } catch (e) {
     return NextResponse.json([], { status: 200 })
   }
@@ -13,27 +20,14 @@ export async function GET() {
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-    const store = readStore()
-    const order = { ...body, id: Date.now().toString(), status: 'pending', createdAt: new Date().toISOString() }
-    store.orders.push(order)
-    writeStore(store)
-    return NextResponse.json(order, { status: 201 })
+    const res = await fetch(`${BACKEND}/api/orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    })
+    const data = await res.json()
+    return NextResponse.json(data, { status: res.status })
   } catch (e) {
     return NextResponse.json({ error: 'Failed to save order' }, { status: 500 })
-  }
-}
-
-export async function DELETE(req: Request) {
-  try {
-    const url = new URL(req.url)
-    const id = url.pathname.split('/').pop()
-    const store = readStore()
-    const index = store.orders.findIndex(o => o.id === id)
-    if (index === -1) return NextResponse.json({ error: 'Not found' }, { status: 404 })
-    store.orders.splice(index, 1)
-    writeStore(store)
-    return NextResponse.json({ success: true })
-  } catch (e) {
-    return NextResponse.json({ error: 'Failed to delete order' }, { status: 500 })
   }
 }
