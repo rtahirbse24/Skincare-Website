@@ -1,0 +1,3118 @@
+{
+  "products": [
+    {
+      "name": {
+        "en": "Compensating Moisturizing Cream",
+        "ar": "كريم ترطيب معوض"
+      },
+      "brand": "Topicrem",
+      "category": "AC CONTROL",
+      "description": {
+        "en": "•Soothes\n•Restores skin comfort\n•Helps to reduce residual marks\n•Moisturizes",
+        "ar": "•يهدئ\n•يعيد راحة البشرة\n•يساعد على تقليل العلامات المتبقية\n•يرطب"
+      },
+      "howToUse": {
+        "en": "Morning and/or evening, apply to face and neck.",
+        "ar": "في الصباح و/أو المساء، ضعيه على الوجه والرقبة."
+      },
+      "benefits": {
+        "en": "Comfort restored after 3 days of use\n\nNon photosensitizing\n\nTo use in complement of isotretinoin treatments",
+        "ar": "استعادة الراحة بعد 3 أيام من الاستخدام\n\nغير محسس للضوء\n\nللاستخدام في مكمل علاجات الأيزوتريتينوين"
+      },
+      "ingredients": {
+        "en": "Restores skin comfort\n, soothes, \nmoisturizes\n\nKey Ingredients\n\nAllantoin\nLipidic Complex (omegas 3, 6 & 9)\nHyaluronic Acid (Medium Molecular Weight)\nVegetable Glycerin",
+        "ar": "يستعيد راحة البشرة\n، يهدئ، \nيرطب\n\nالمكونات الرئيسية\n\nألانتوين\nالمركب الدهني (أوميغا 3 و 6 و 9)\nحمض الهيالورونيك (متوسط الوزن الجزيئي)\nالجلسرين النباتي"
+      },
+      "price": 15.95,
+      "texture": "",
+      "skinType": "combination to oily sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998209/products/wejqzcmdexgj2lqcdhu0.png"
+      ],
+      "id": "1775338781169",
+      "createdAt": "2026-04-04T21:39:41.169Z",
+      "updatedAt": "2026-04-05T15:19:46.650Z"
+    },
+    {
+      "name": {
+        "en": "Balancing Anti-Blemish Care",
+        "ar": "موازنة الرعاية المضادة للعيوب"
+      },
+      "brand": "Topicrem",
+      "category": "AC CONTROL",
+      "description": {
+        "en": "•Rebalancing microbiome\n•Corrects excess of sebum\n•Moisturizes",
+        "ar": "•إعادة توازن الميكروبيوم\n•يصحح فائض الزهم\n•يرطب"
+      },
+      "howToUse": {
+        "en": "Apply in the morning and/or evening on the face and neck on clean and dry skin.",
+        "ar": "يوضع في الصباح و/أو المساء على الوجه والرقبة على بشرة نظيفة وجافة."
+      },
+      "benefits": {
+        "en": "Action on all types of lesions (retentional & inflammatory)\n\nNon photosensitizing",
+        "ar": "العمل على جميع أنواع الآفات (المحتجزات والالتهابات)\n\nغير محسس للضوء"
+      },
+      "ingredients": {
+        "en": "Rebalances,\n corrects, \nmattifies\n\nKey Ingredients\n\nRoucou Extract\nIngreedient rebalancing microbiome\nVegetable Glycerin",
+        "ar": "إعادة التوازن،\n يصحح، \nمطفأ اللمعة\n\nالمكونات الرئيسية\n\nخلاصة الروكو\nميكروبيوم إعادة التوازن الجشع\nالجلسرين النباتي"
+      },
+      "price": 16.75,
+      "texture": "",
+      "skinType": "sensitive Combination to oily skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998210/products/typzqr4rkm1n2awqxztc.png"
+      ],
+      "id": "1775338913146",
+      "createdAt": "2026-04-04T21:41:53.146Z",
+      "updatedAt": "2026-04-05T15:19:55.964Z"
+    },
+    {
+      "name": {
+        "en": "Intensive Serum",
+        "ar": "مصل مكثف"
+      },
+      "brand": "Topicrem",
+      "category": "AC CONTROL",
+      "description": {
+        "en": "•Corrects blemishes\n•Reduces excess of sebum\n•Reduces residual marks\n•Moisturizes",
+        "ar": "•يصحح العيوب\n•يقلل من فائض الزهم\n•يقلل من العلامات المتبقية\n•يرطب"
+      },
+      "howToUse": {
+        "en": "On clean, dry skin, apply the serum alone in the evening to the face, neck and, if necessary, to the décolleté.",
+        "ar": "على بشرة نظيفة وجافة، ضعي المصل وحده في المساء على الوجه والرقبة، وإذا لزم الأمر، على الصدر."
+      },
+      "benefits": {
+        "en": "Efficacient since 2 nights\n\n-28% of imperfections since 2 nights\n\nBetter tolerance than salicylic acid",
+        "ar": "فعال منذ ليلتين\n\n-28 ٪ من العيوب منذ ليلتين\n\nتحمل أفضل من حمض الساليسيليك"
+      },
+      "ingredients": {
+        "en": "Corrects,\n smoothes,\n purifies\n\nKey Ingredients\n\nSuccinic Acid\nRoucou Extract\nBisabolol\nNiacinamide",
+        "ar": "يصحح،\n ينعم،\n ينقي\n\nالمكونات الرئيسية\n\nحمض السكسينيك\nخلاصة الروكو\nبيسابولول\nنياسيناميد"
+      },
+      "price": 18.3,
+      "texture": "",
+      "skinType": "sensitive Combination to oily skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998211/products/vstecdxvgjoooae5vhjz.png"
+      ],
+      "id": "1775339017074",
+      "createdAt": "2026-04-04T21:43:37.074Z",
+      "updatedAt": "2026-04-05T15:20:03.826Z"
+    },
+    {
+      "name": {
+        "en": "Anti-Aging Global Serum",
+        "ar": "مصل عالمي مضاد للشيخوخة"
+      },
+      "brand": "Topicrem",
+      "category": "AH3 ANTI-AGING",
+      "description": {
+        "en": "•Corrects and smoothes wrinkles\n•Firms the skin up\n•Boosts radiance and evens complexion\n•24h hydration",
+        "ar": "•يصحح وينعم التجاعيد\n•يشد البشرة لأعلى\n•يعزز التألق ويوحد البشرة\n• ترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to the face, neck and décolleté. Then apply the cream or fluid morning and evening",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة والصدر. ثم ضعي الكريم أو السائل صباحًا ومساءً"
+      },
+      "benefits": {
+        "en": "4 in 1: wrinkles, slackening, radiance, dark spots\n\nResults in 28 days\n\n90% reduced wrinkles",
+        "ar": "4 في 1: التجاعيد، التراخي، التألق، البقع الداكنة\n\nالنتائج في 28 يومًا\n\nتقليل التجاعيد بنسبة 90%"
+      },
+      "ingredients": {
+        "en": "Concentrate of anti-aging active ingredients on wrinkles, \nfirmness,\n radiance\n\nKey Ingredients\n\nHyaluronic acid\nVitamin C\nVitamin E\nDipeptide",
+        "ar": "تركيز المكونات النشطة المضادة للشيخوخة على التجاعيد، \nالحزم،\n إشراقة\n\nالمكونات الرئيسية\n\nحمض الهيالورونيك\nفيتامين سي\nفيتامين هـ\nثنائي الببتيد"
+      },
+      "price": 44.95,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998212/products/owb3b2ukhliwx9fvvpdz.png"
+      ],
+      "id": "1775339137033",
+      "createdAt": "2026-04-04T21:45:37.033Z",
+      "updatedAt": "2026-04-05T15:20:15.107Z"
+    },
+    {
+      "name": {
+        "en": "Global Anti-Aging Fluid",
+        "ar": "السوائل العالمية المضادة للشيخوخة"
+      },
+      "brand": "Topicrem",
+      "category": "AH3 ANTI-AGING",
+      "description": {
+        "en": "•Corrects and smoothes wrinkles\n•Firms the skin up\n•Boosts radiance and evens complexion\n•Anti-pollution shield\n•Refines skin texture (Fluid)\n•24h hydration",
+        "ar": "•يصحح وينعم التجاعيد\n•يشد البشرة لأعلى\n•يعزز التألق ويوحد البشرة\n• درع مضاد للتلوث\n•ينقي نسيج الجلد (السائل)\n• ترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to the face, neck and décolleté. For increased effectiveness, first apply the anti-aging global serum.",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة والصدر. لزيادة الفعالية، ضع أولاً المصل العالمي المضاد للشيخوخة."
+      },
+      "benefits": {
+        "en": "4 in 1: wrinkles, slackening, radiance, dark spots\n\nNon comedogenic (Fluid)\n\nRefines skin texture and tightens the pores for combination skins",
+        "ar": "4 في 1: التجاعيد، التراخي، التألق، البقع الداكنة\n\nغير كوميدوجيني (سائل)\n\nينقي نسيج البشرة ويشد المسام للبشرة المختلطة"
+      },
+      "ingredients": {
+        "en": "anti-aging active ingredients on wrinkles, \nfirmness, \nradiance\n\nKey Ingredients\n\nHyaluronic acid\nVitamin C\nVitamin E\nDipeptide Polysaccharide matrix",
+        "ar": "المكونات النشطة المضادة للشيخوخة على التجاعيد، \nالحزم، \nإشراقة\n\nالمكونات الرئيسية\n\nحمض الهيالورونيك\nفيتامين سي\nفيتامين هـ\nمصفوفة عديد السكاريد ثنائي الببتيد"
+      },
+      "price": 33.95,
+      "texture": "",
+      "skinType": "normal to combination sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998213/products/oxh0etkv659ptrdjxasq.png"
+      ],
+      "id": "1775339233952",
+      "createdAt": "2026-04-04T21:47:13.952Z",
+      "updatedAt": "2026-04-05T15:20:23.529Z"
+    },
+    {
+      "name": {
+        "en": "Global Anti-Aging Cream",
+        "ar": "كريم عالمي مضاد للشيخوخة"
+      },
+      "brand": "Topicrem",
+      "category": "AH3 ANTI-AGING",
+      "description": {
+        "en": "•Corrects and smoothes wrinkles\n•Firms the skin up\n•Boosts radiance and evens complexion\n•Anti-pollution shield\n•Nourishes (Cream)\n•24h hydration",
+        "ar": "•يصحح وينعم التجاعيد\n•يشد البشرة لأعلى\n•يعزز التألق ويوحد البشرة\n• درع مضاد للتلوث\n•يغذي (كريم)\n• ترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to the face, neck and décolleté. For increased effectiveness, first apply the anti-aging global serum.",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة والصدر. لزيادة الفعالية، ضع أولاً المصل العالمي المضاد للشيخوخة."
+      },
+      "benefits": {
+        "en": "\n4 in 1: wrinkles, slackening, radiance, dark spots\n\nRefines skin texture and tightens the pores for combination skins",
+        "ar": "4 في 1: التجاعيد، التراخي، التألق، البقع الداكنة\n\nينقي نسيج البشرة ويشد المسام للبشرة المختلطة"
+      },
+      "ingredients": {
+        "en": "anti-aging active ingredients on wrinkles, \nfirmness, \nradiance\n\nKey Ingredients\n\nHyaluronic acid\nVitamin C\nVitamin E\nDipeptide Polysaccharide matrix",
+        "ar": "المكونات النشطة المضادة للشيخوخة على التجاعيد، \nالحزم، \nإشراقة\n\nالمكونات الرئيسية\n\nحمض الهيالورونيك\nفيتامين سي\nفيتامين هـ\nمصفوفة عديد السكاريد ثنائي الببتيد"
+      },
+      "price": 33.95,
+      "texture": "",
+      "skinType": "dry skin sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998214/products/ybfmxc8v90vkkggtdaw0.png"
+      ],
+      "id": "1775339332740",
+      "createdAt": "2026-04-04T21:48:52.740Z",
+      "updatedAt": "2026-04-05T15:20:31.403Z"
+    },
+    {
+      "name": {
+        "en": "Global Anti- Aging Eye Contour",
+        "ar": "محيط العين العالمي المضاد للشيخوخة"
+      },
+      "brand": "Topicrem",
+      "category": "AH3 ANTI-AGING",
+      "description": {
+        "en": "•Corrects and smoothes wrinkles\n•Firms the skin up\n•Boosts radiance and evens complexion\n•Anti-puffiness and dark circle\n•Anti-pollution shield\n•24h hydration",
+        "ar": "•يصحح وينعم التجاعيد\n•يشد البشرة لأعلى\n•يعزز التألق ويوحد البشرة\n•مضاد للانتفاخ ودائرة مظلمة\n• درع مضاد للتلوث\n• ترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Morning and/or evening, apply to the eye contour.",
+        "ar": "في الصباح و/أو المساء، ضعيه على محيط العين."
+      },
+      "benefits": {
+        "en": "Fragrance free\n\n4 in 1: wrinkles, slackening, radiance, dark spots\n\nAnti-dark circle and puffiness\n\nSuitable for sensitive eyes",
+        "ar": "خالٍ من العطور\n\n4 في 1: التجاعيد، التراخي، التألق، البقع الداكنة\n\nالدائرة المضادة للظلام والانتفاخ\n\nمناسب للعيون الحساسة"
+      },
+      "ingredients": {
+        "en": "Anti-puffiness, anti-dark circles,\n global action on wrinkles,\n firmness, \nradiance\n\nKey Ingredients\n\nHyaluronic acid\nGlucosyl Hesperidin\nCaffeine\nDipeptide",
+        "ar": "مضاد للانتفاخ، ودوائر مضادة للظلام،\n العمل العالمي على التجاعيد،\n الحزم، \nإشراقة\n\nالمكونات الرئيسية\n\nحمض الهيالورونيك\nجلوكوزيل هيسبيريدين\nالكافيين\nثنائي الببتيد"
+      },
+      "price": 29.95,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998215/products/axbucih1yvyf2favhosg.png"
+      ],
+      "id": "1775339430504",
+      "createdAt": "2026-04-04T21:50:30.504Z",
+      "updatedAt": "2026-04-05T15:20:39.359Z"
+    },
+    {
+      "name": {
+        "en": "AR Anti- Redness Daily Cream SPF50+",
+        "ar": "كريم يومي مضاد للاحمرار بعامل حماية من الشمس 50+"
+      },
+      "brand": "Topicrem",
+      "category": "CALM +",
+      "description": {
+        "en": "•Reduces and helps to prevent redness\n•Soothes\n•24h hydration\n•Very high sun protection SPF50+",
+        "ar": "•يقلل ويساعد على منع الاحمرار\n•يهدئ\n• ترطيب على مدار 24 ساعة\n• حماية عالية جدًا من الشمس بعامل حماية من الشمس 50+"
+      },
+      "howToUse": {
+        "en": "Apply 1 to 2 times a day to the face, neck and décolleté.",
+        "ar": "ضعيه مرة إلى مرتين في اليوم على الوجه والرقبة والصدر."
+      },
+      "benefits": {
+        "en": "Visibly reduces redness\n\n-30% redness in 28 days\n\nActs on inflammation and vascularisation\n\nNon comodegenic\n\nExcellente makeup base\n\nNo white marks",
+        "ar": "يقلل الاحمرار بشكل واضح\n\n-30 ٪ احمرار في 28 يومًا\n\nالأعمال المتعلقة بالالتهابات والأوعية الدموية\n\nغير مصاحبة\n\nقاعدة مكياج ممتازة\n\nلا توجد علامات بيضاء"
+      },
+      "ingredients": {
+        "en": "maximum hydration & sun protection, \nprevent redness,\n soothes\n\nKey Ingredients\n\nCentella Asiatica Extract\nAllantoin\nVegetable Glycerin\nSPF50+ Sun Filters",
+        "ar": "أقصى قدر من الترطيب والحماية من أشعة الشمس، \nيمنع الاحمرار،\n يهدئ\n\nالمكونات الرئيسية\n\nمستخلص سنتيلا أسياتيكا\nألانتوين\nالجلسرين النباتي\nعامل حماية من الشمسSPF50 + مرشحات الشمس"
+      },
+      "price": 19.9,
+      "texture": "",
+      "skinType": "All Skin Types , Hypersensitive Skin ( intolerant skin )",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998216/products/saxgxcpr1k5tul9s4wcz.png"
+      ],
+      "id": "1775339545741",
+      "createdAt": "2026-04-04T21:52:25.741Z",
+      "updatedAt": "2026-04-05T15:20:56.759Z"
+    },
+    {
+      "name": {
+        "en": "Soothing Fluid",
+        "ar": "سائل مهدئ"
+      },
+      "brand": "Topicrem",
+      "category": "CALM +",
+      "description": {
+        "en": "•Reduces reactivity of skin and reinforces skin barrier\n•Soothes\n•Softens\n•Mattifies (Fluid)",
+        "ar": "•يقلل من تفاعل البشرة ويعزز حاجز البشرة\n•يهدئ\n•يخفف\n•يطفئ (سائل)"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to face and neck.",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة."
+      },
+      "benefits": {
+        "en": "Reduces reactivity of skin and reinforces skin barrier\n\nSoothes\n\nSoftens\n\nMattifies (Fluid)",
+        "ar": "يقلل من تفاعل البشرة ويعزز حاجز البشرة\n\nالبلسم\n\nيخفف\n\nيطفئ (سائل)"
+      },
+      "ingredients": {
+        "en": "Calms, \nprotects, \nmoisturizes\n\nKey Ingredients\n\nAllantoin\nPlum Oil\nVegetable Glycerin\nSilica (Fluid)",
+        "ar": "يهدئ، \nيحمي، \nيرطب\n\nالمكونات الرئيسية\n\nألانتوين\nزيت البرقوق\nالجلسرين النباتي\nSilica (Fluid)"
+      },
+      "price": 16.95,
+      "texture": "",
+      "skinType": "oily very sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998217/products/kfzryp18azx4nmzt5rxj.png"
+      ],
+      "id": "1775339637727",
+      "createdAt": "2026-04-04T21:53:57.727Z",
+      "updatedAt": "2026-04-05T13:47:16.530Z"
+    },
+    {
+      "name": {
+        "en": "Soothing Cream",
+        "ar": "كريم مهدئ"
+      },
+      "brand": "Topicrem",
+      "category": "CALM +",
+      "description": {
+        "en": "•Reduces reactivity of skin and reinforces skin barrier\n•Soothes\n•Softens",
+        "ar": "•يقلل من تفاعل البشرة ويعزز حاجز البشرة\n•يهدئ\n•يخفف"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to face and neck.",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة."
+      },
+      "benefits": {
+        "en": "Reduces reactivity of skin and reinforces skin barrier\n\nSoothes\n\nSoftens",
+        "ar": "يقلل من تفاعل البشرة ويعزز حاجز البشرة\n\nالبلسم\n\nيخفف"
+      },
+      "ingredients": {
+        "en": "Calms, \nprotects, \nmoisturizes\n\nKey Ingredients\n\nAllantoin\nPlum Oil\nVegetable Glycerin",
+        "ar": "يهدئ، \nيحمي، \nيرطب\n\nالمكونات الرئيسية\n\nألانتوين\nزيت البرقوق\nالجلسرين النباتي"
+      },
+      "price": 16.95,
+      "texture": "",
+      "skinType": "dry very sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998217/products/w6kzyj19hwhuvyrzlf5s.png"
+      ],
+      "id": "1775339729759",
+      "createdAt": "2026-04-04T21:55:29.759Z",
+      "updatedAt": "2026-04-05T13:47:52.392Z"
+    },
+    {
+      "name": {
+        "en": "Soothing Cream",
+        "ar": "كريم مهدئ"
+      },
+      "brand": "Topicrem",
+      "category": "CICA",
+      "description": {
+        "en": "•\nPurifies and repairs\n•\nImmediately soothes\n•\nNourishes & protects\n•\n24h hydration",
+        "ar": "•\nالتنقية والإصلاح\n•\nيهدئ على الفور\n•\nيغذي ويحمي\n•\nترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Apply 1 to 2 times a day to cleansed skin.",
+        "ar": "ضعيه مرة إلى مرتين في اليوم على بشرة نظيفة."
+      },
+      "benefits": {
+        "en": "Repairs in 3 days\n\nFor the whole family\n\nFace, body, external intimate mucosa\n\nFragrance free",
+        "ar": "الإصلاحات في 3 أيام\n\nلجميع أفراد الأسرة\n\nالوجه والجسم والغشاء المخاطي الحميم الخارجي\n\nخالٍ من العطور"
+      },
+      "ingredients": {
+        "en": "Purifies\nrepairs\n\nKey Ingredients:\nZinc, Manganese and Copper Gluconates\nHyaluronic Acid (Medium Molecular Weight)\nBisabolol\nBeeswax\nVegetable Glycerin",
+        "ar": "ينقي\nالإصلاحات\n\nالمكونات الرئيسية:\nجلوكونات الزنك والمنغنيز والنحاس\nحمض الهيالورونيك (متوسط الوزن الجزيئي)\nبيسابولول\nشمع العسل\nالجلسرين النباتي"
+      },
+      "price": 11.95,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998218/products/cso1tie734rjfih3qprd.png"
+      ],
+      "id": "1775390032507",
+      "createdAt": "2026-04-05T11:53:52.507Z",
+      "updatedAt": "2026-04-05T15:21:20.209Z"
+    },
+    {
+      "name": {
+        "en": "Emollient Balm",
+        "ar": "بلسم مرطب"
+      },
+      "brand": "Topicrem",
+      "category": "DA",
+      "description": {
+        "en": "Replenishes, nourishes and protects\n•\nSoothes itching and irritations\n•\n24h hydration",
+        "ar": "يجدد ويغذي ويحمي\n•\nيهدئ الحكة والتهيج\n•\nترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "1 to 2 times a day on the face and body, apply with light massages.",
+        "ar": "1 إلى 2 مرات في اليوم على الوجه والجسم، يوضع مع التدليك الخفيف."
+      },
+      "benefits": {
+        "en": "For the whole family\n\nFace, body\n\n-90% of itching after 28 days of application",
+        "ar": "لجميع أفراد الأسرة\n\nالوجه والجسم\n\n-90 ٪ من الحكة بعد 28 يومًا من التطبيق"
+      },
+      "ingredients": {
+        "en": "Replenishing\nsoothes,\nanti-itching,\n anti-irritation\n\nKey Ingredients\n\nLinseed Oil\nShea Butter\nBeeswax\nAllantoin\nVegetable Glycerin",
+        "ar": "التجديد\nيهدئ،\nمضاد للحكة،\n مضاد للتهيج\n\nالمكونات الرئيسية\n\nزيت بذر الكتان\nزبدة الشيا\nشمع العسل\nألانتوين\nالجلسرين النباتي"
+      },
+      "price": 18.95,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998219/products/yrdpfxtn64weczltteyt.png"
+      ],
+      "id": "1775390287816",
+      "createdAt": "2026-04-05T11:58:07.816Z",
+      "updatedAt": "2026-04-05T15:21:37.380Z"
+    },
+    {
+      "name": {
+        "en": "Ultra- Rich Cleansing Gel",
+        "ar": "جل منظف فائق الثراء"
+      },
+      "brand": "Topicrem",
+      "category": "DA",
+      "description": {
+        "en": "Gently cleanses\n•\nProtects the skin barrier\n•\nSoothes itching and irritations\n•\nMoisturizes",
+        "ar": "ينظف بلطف\n•\nيحمي حاجز البشرة\n•\nيهدئ الحكة والتهيج\n•\nيرطب"
+      },
+      "howToUse": {
+        "en": "Morning and/or evening, apply to damp skin on the face and body, lather then rinse.",
+        "ar": "في الصباح و/أو المساء، ضعيه على الجلد الرطب على الوجه والجسم، ثم اشطفيه."
+      },
+      "benefits": {
+        "en": "For the whole family\n\nFace, body and babies’ scalp\n\n84% reduction of feeling of itching",
+        "ar": "لجميع أفراد الأسرة\n\nالوجه والجسم وفروة رأس الأطفال\n\n84 ٪ تقليل الشعور بالحكة"
+      },
+      "ingredients": {
+        "en": "Cleans\nsoothes, \nprotects\n\nKey Ingredients\n\nLinseed Oil\nSoft Cleansing Base\nBiolipide\nVegetable Glycerin",
+        "ar": "ينظف\nيهدئ، \nيحمي\n\nالمكونات الرئيسية\n\nزيت بذر الكتان\nقاعدة تنظيف ناعمة\nبيوليبيد\nالجلسرين النباتي"
+      },
+      "price": 18.95,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998220/products/gvdmlwxsrkp7q239uypp.png"
+      ],
+      "id": "1775390423185",
+      "createdAt": "2026-04-05T12:00:23.185Z",
+      "updatedAt": "2026-04-05T15:21:46.857Z"
+    },
+    {
+      "name": {
+        "en": "UR10 - Anti-calluses Foot Cream",
+        "ar": "UR10 - كريم القدم المضاد للالتهابات"
+      },
+      "brand": "Topicrem",
+      "category": "DERMO SPECIFIC",
+      "description": {
+        "en": "24h hydration\n•\nSmoothes the skin\n•\nNourishes\n•\nSmoothes",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nينعم البشرة\n•\nيغذي\n•\nينعم"
+      },
+      "howToUse": {
+        "en": "Apply twice a day, focusing on damaged areas.",
+        "ar": "يوضع مرتين في اليوم، مع التركيز على المناطق المتضررة."
+      },
+      "benefits": {
+        "en": "Non greasy and light texture\n\n100% nourished feet after 21 days of application",
+        "ar": "ملمس غير دهني وخفيف\n\nتغذية القدمين بنسبة 100 ٪ بعد 21 يومًا من الاستخدام"
+      },
+      "ingredients": {
+        "en": "Smoothes,\n nourishes,\n repairs\n\nKey Ingredients\n\nUrea\nAllantoin\nBeeswax\nVegetable Glycerin",
+        "ar": "ينعم،\n يغذي،\n الإصلاحات\n\nالمكونات الرئيسية\n\nاليوريا\nألانتوين\nشمع العسل\nالجلسرين النباتي"
+      },
+      "price": 9.95,
+      "texture": "",
+      "skinType": "damaged areas feet",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998220/products/bm2gqwzno7ak2jofbm7n.png"
+      ],
+      "id": "1775390564561",
+      "createdAt": "2026-04-05T12:02:44.561Z",
+      "updatedAt": "2026-04-05T15:22:03.985Z"
+    },
+    {
+      "name": {
+        "en": "UR10 Anti-Roughness Smoothing Cream",
+        "ar": "UR10 كريم تنعيم مضاد للقساوة"
+      },
+      "brand": "Topicrem",
+      "category": "DERMO SPECIFIC",
+      "description": {
+        "en": "\n24h hydration\n•\nSmoothes the skin\n•\nNourishes",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nينعم البشرة\n•\nيغذي"
+      },
+      "howToUse": {
+        "en": "Apply with emphasis on rough areas of the body (arms, elbows, legs, heels) with a tendency to keratosis",
+        "ar": "يوضع مع التركيز على المناطق الخشنة من الجسم (الذراعين والمرفقين والساقين والكعبين) مع الميل إلى التقرن"
+      },
+      "benefits": {
+        "en": "\nSmoothes,\n soothes, \nnourishes",
+        "ar": "ينعم،\n يهدئ، \nيغذي"
+      },
+      "ingredients": {
+        "en": "Purifies,\n repairs\n\nKey Ingredients\n\nUrea 10%\nBeeswax",
+        "ar": "ينقي،\n الإصلاحات\n\nالمكونات الرئيسية\n\nاليوريا 10 ٪\nشمع العسل"
+      },
+      "price": 19.9,
+      "texture": "",
+      "skinType": "all skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998221/products/sxlsrh23vr61e7vabfsv.png"
+      ],
+      "id": "1775390676742",
+      "createdAt": "2026-04-05T12:04:36.742Z",
+      "updatedAt": "2026-04-05T15:22:13.047Z"
+    },
+    {
+      "name": {
+        "en": "PV/DS Cleansing Gel",
+        "ar": "جل تنظيف PV/DS"
+      },
+      "brand": "Topicrem",
+      "category": "DERMO SPECIFIC",
+      "description": {
+        "en": "Purifies and helps the elimination of scales & dandruff\n•\nSoothes\n•\nPrevents dryness",
+        "ar": "ينقي ويساعد على القضاء على القشور والقشرة\n•\nالبلسم\n•\nيمنع الجفاف"
+      },
+      "howToUse": {
+        "en": "Apply once a day to damp skin and hair. Suitable for the external intimate area of ​​adults. Rinse thoroughly.",
+        "ar": "يوضع مرة واحدة في اليوم على البشرة والشعر الرطب. مناسب للمنطقة الحميمة الخارجية للبالغين. اشطفه جيدًا."
+      },
+      "benefits": {
+        "en": "Face, body, scalp, intimate external mucosa\n\nChildren and adults",
+        "ar": "الوجه والجسم وفروة الرأس والغشاء المخاطي الخارجي الحميم\n\nالأطفال والبالغون"
+      },
+      "ingredients": {
+        "en": "Cleans, \npurifies\n, soothes\n\nKey Ingredients\n\nPiroctone Olamine\nAllantoin\nBiolipide\nVegetable Glycerin",
+        "ar": "ينظف، \nينقي\n، يهدئ\n\nالمكونات الرئيسية\n\nبيروكتون أولامين\nألانتوين\nبيوليبيد\nالجلسرين النباتي"
+      },
+      "price": 13.95,
+      "texture": "",
+      "skinType": "Skin Type  all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998222/products/eptcjrklbghktgpkzhwb.png"
+      ],
+      "id": "1775390799948",
+      "createdAt": "2026-04-05T12:06:39.948Z",
+      "updatedAt": "2026-04-05T15:22:22.202Z"
+    },
+    {
+      "name": {
+        "en": "PH5 Gentle Shampoo",
+        "ar": "شامبو PH5 لطيف"
+      },
+      "brand": "Topicrem",
+      "category": "DERMO SPECIFIC",
+      "description": {
+        "en": "Gently cleanses\n•\nNourishes\n•\nLimits hair breakage\n•\nSoothes scalp\n",
+        "ar": "ينظف بلطف\n•\nيغذي\n•\nيحد من تقصف الشعر\n•\nيهدئ فروة الرأس"
+      },
+      "howToUse": {
+        "en": "Frequent use, apply to wet hair, massage then rinse. ",
+        "ar": "الاستخدام المتكرر، يوضع على الشعر المبلل، ثم يدلك ثم يشطف."
+      },
+      "benefits": {
+        "en": "Pleasant foam, easy to rinse\n\nDoes not sting the eyes\n\nFrequent use\n\nChildren and adults",
+        "ar": "رغوة لطيفة، سهلة الشطف\n\nلا يلسع العينين\n\nالاستخدام المتكرر\n\nالأطفال والبالغون"
+      },
+      "ingredients": {
+        "en": "Cleans\n, protects,\n strengthens\n\nKey Ingredients\n\nSoft surfactant\nDiglycerol\nVegetable Glycerin",
+        "ar": "ينظف\n، يحمي،\n يقوي\n\nالمكونات الرئيسية\n\nمادة خافضة للتوتر السطحي\nديغليسرول\nالجلسرين النباتي"
+      },
+      "price": 13.95,
+      "texture": "",
+      "skinType": "all sensitive scalp types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998223/products/vqcgb8bmhepzzrqrmyrg.png"
+      ],
+      "id": "1775390923182",
+      "createdAt": "2026-04-05T12:08:43.182Z",
+      "updatedAt": "2026-04-05T15:22:32.592Z"
+    },
+    {
+      "name": {
+        "en": "Protective Day Cream SPF50+ 40ml",
+        "ar": "كريم النهار الواقي بعامل حماية من الشمس 50+ 40 مل"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "24h hydration\n•\nAwakens radiance\n•\nHigh protection SPF50",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nيوقظ التألق\n•\nحماية عالية SPF50"
+      },
+      "howToUse": {
+        "en": "Apply 1 to 2 times a day to the face, neck and décolleté.",
+        "ar": "ضعيه مرة إلى مرتين في اليوم على الوجه والرقبة والصدر."
+      },
+      "benefits": {
+        "en": "Non comedogenic\n\nGood makeup base\n\nFragrance free\n\nNo white marks",
+        "ar": "غير كوميدوجيني\n\nقاعدة مكياج جيدة\n\nخالٍ من العطور\n\nلا توجد علامات بيضاء"
+      },
+      "ingredients": {
+        "en": "maximum hydration & sun protection\n\nKey Ingredients\n\nMoisturizing Postbiotic Complex\nBroadspectrum sun filters UVA/UVB SFP50 PA++++",
+        "ar": "أقصى قدر من الترطيب والحماية من أشعة الشمس\n\nالمكونات الرئيسية\n\nمركب بوستبيوتيك المرطب\nمرشحات الشمس ذات الطيف العريض UVA/UVB SFP50 PA++++"
+      },
+      "price": 19.9,
+      "texture": "",
+      "skinType": "All Skin Types , Sensitive Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998224/products/esznmz1kuoel8nytpced.png"
+      ],
+      "id": "1775391057217",
+      "createdAt": "2026-04-05T12:10:57.217Z",
+      "updatedAt": "2026-04-05T15:22:51.468Z"
+    },
+    {
+      "name": {
+        "en": "Lip Balm",
+        "ar": "مرطب شفاه"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "Nourishes\n•\nProtects",
+        "ar": "يغذي\n•\nيحمي"
+      },
+      "howToUse": {
+        "en": "Apply as often as necessary",
+        "ar": "أعد التطبيق كلما لزم الأمر. "
+      },
+      "benefits": {
+        "en": "Delicate vanilla flavor\n\n-87% pain or discomfort on the lips\n\nApply as often as necessary",
+        "ar": "نكهة الفانيليا الرقيقة\n\n-87 ٪ ألم أو عدم راحة في الشفتين\n\nضعيه كلما كان ذلك ضروريًا"
+      },
+      "ingredients": {
+        "en": "intensively repairs lips against dryness( wax mix)\n\nKey Ingredients\n\nBeeswax\nCarnauba wax\nCandellila wax\nShea Butter",
+        "ar": "يصلح الشفاه بشكل مكثف ضد الجفاف(مزيج الشمع)\n\nالمكونات الرئيسية\n\nشمع العسل\nشمع الكرنوبا\nشمع كاندليلا\nزبدة الشيا"
+      },
+      "price": 5.35,
+      "texture": "",
+      "skinType": "Sensitive lips",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998226/products/fsdfbdwctzvonklnzk6x.png"
+      ],
+      "id": "1775391240767",
+      "createdAt": "2026-04-05T12:14:00.767Z",
+      "updatedAt": "2026-04-05T15:23:01.918Z"
+    },
+    {
+      "name": {
+        "en": "Gentle Micellar Water",
+        "ar": "ماء ميسيلار لطيف"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "Cleanses and removes makeup efficiently\n•\nMoiturizes and prevents from dryness",
+        "ar": "ينظف ويزيل المكياج بكفاءة\n•\nيرطب ويمنع الجفاف"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening using a cotton pad. Without rinsing",
+        "ar": "ضعيه صباحًا و/أو مساءً باستخدام وسادة قطنية. دون شطف"
+      },
+      "benefits": {
+        "en": "Cleanses and removes makeup\n\nEfficient even on waterproof makeup\n\nFace and eyes",
+        "ar": "ينظف ويزيل المكياج\n\nفعال حتى على المكياج المقاوم للماء\n\nالوجه والعينين"
+      },
+      "ingredients": {
+        "en": "Removes make-up, cleanses, moisturizes\n\nKey Ingredients\n\nSoft Micelles\nBetain",
+        "ar": "يزيل المكياج وينظف ويرطب\n\nالمكونات الرئيسية\n\nميسيلات ناعمة\nبيتين"
+      },
+      "price": 9.95,
+      "texture": "",
+      "skinType": "Sensitive all Skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998226/products/ekts6ch02tw5wunijunz.png"
+      ],
+      "id": "1775391388006",
+      "createdAt": "2026-04-05T12:16:28.006Z",
+      "updatedAt": "2026-04-05T13:50:36.662Z"
+    },
+    {
+      "name": {
+        "en": "Gentle Cleansing Milk",
+        "ar": "حليب منظف لطيف"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "Cleanses and removes makeup efficiently\n•\nNourishes and protects\n•\nMoisturizes",
+        "ar": "ينظف ويزيل المكياج بكفاءة\n•\nيغذي ويحمي\n•\nيرطب"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening using a cotton pad. Without rinsing",
+        "ar": "ضعيه صباحًا و/أو مساءً باستخدام وسادة قطنية. دون شطف"
+      },
+      "benefits": {
+        "en": "Cleanses and removes makeup\n\nEfficient even on waterproof makeup\n\nPerfect for dry skins\n\nFace and eyes",
+        "ar": "ينظف ويزيل المكياج\n\nفعال حتى على المكياج المقاوم للماء\n\nمثالي للبشرة الجافة\n\nالوجه والعينين"
+      },
+      "ingredients": {
+        "en": "Removes make-up\n cleanses\nmoisturizes\n\nKey Ingredients\n\nFatty Cleansing Agents\nBeeswax",
+        "ar": "يزيل المكياج\n ينظف\nيرطب\n\nالمكونات الرئيسية\n\nمواد تنظيف دهنية\nشمع العسل"
+      },
+      "price": 12.55,
+      "texture": "",
+      "skinType": "Sensitive dry Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998227/products/iptbvokwfjtecnvwcazo.png"
+      ],
+      "id": "1775391501022",
+      "createdAt": "2026-04-05T12:18:21.022Z"
+    },
+    {
+      "name": {
+        "en": "Radiance Tinted Cream SPF50+ LIGHT",
+        "ar": "كريم راديانس ملون بعامل حماية من الشمس 50+ خفيف"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "Protection & Hydration\n•\nEvens & Brightens\n•\nHigh SPF Protection & Anti Pollution",
+        "ar": "الحماية والترطيب\n•\nإيفنز آند برايتنز\n•\nحماية عالية من عوامل الحماية من الشمس ومكافحة التلوث"
+      },
+      "howToUse": {
+        "en": "Apply in the morning on the face and neck & Decollete",
+        "ar": "يوضع في الصباح على الوجه والرقبة و Decollete"
+      },
+      "benefits": {
+        "en": "3 in 1 Action\n\nCoverage , Hydration\n\nEvens & Brightens\n\nHigh SPF Protection",
+        "ar": "إجراء 3 في 1\n\nالتغطية ، الترطيب\n\nإيفنز آند برايتنز\n\nحماية عالية من عامل حماية من الشمس"
+      },
+      "ingredients": {
+        "en": "Conceals Irregularities & Imperfections & Revives Radiance\n\nKey Ingredients\n\nGlycerin\nBioactive Water\nUVA / UVB Sun Filters\nMoringa Extract",
+        "ar": "يخفي المخالفات والعيوب وينعش التألق\n\nالمكونات الرئيسية\n\nالجلسرين\nالمياه النشطة بيولوجيًا\nمرشحات أشعة الشمس UVA / UVB\nمستخلص المورينجا"
+      },
+      "price": 20.95,
+      "texture": "",
+      "skinType": "Sensitive Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998228/products/cghqrfymknyg1gycxexq.png"
+      ],
+      "id": "1775391619133",
+      "createdAt": "2026-04-05T12:20:19.133Z"
+    },
+    {
+      "name": {
+        "en": "Radiance Tinted Cream SPF50+ MEDIUM",
+        "ar": "كريم راديانس ملون بعامل حماية من الشمس 50+ متوسط"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "Protection & Hydration\n•\nEvens & Brightens\n•\nHigh SPF Protection & Anti Pollution",
+        "ar": "الحماية والترطيب\n•\nإيفنز آند برايتنز\n•\nحماية عالية من عوامل الحماية من الشمس ومكافحة التلوث"
+      },
+      "howToUse": {
+        "en": "Apply in the morning on the face and neck & Decollete",
+        "ar": "يوضع في الصباح على الوجه والرقبة و Decollete"
+      },
+      "benefits": {
+        "en": "3 in 1 Action\n\nCoverage , Hydration\n\nEvens & Brightens\n\nHigh SPF Protection",
+        "ar": "إجراء 3 في 1\n\nالتغطية ، الترطيب\n\nإيفنز آند برايتنز\n\nحماية عالية من عامل حماية من الشمس"
+      },
+      "ingredients": {
+        "en": "Conceals Irregularities & Imperfections & Revives Radiance\n\nKey Ingredients\n\nGlycerin\nBioactive Water\nUVA / UVB Sun Filters\nMoringa Extract",
+        "ar": "يخفي المخالفات والعيوب وينعش التألق\n\nالمكونات الرئيسية\n\nالجلسرين\nالمياه النشطة بيولوجيًا\nمرشحات أشعة الشمس UVA / UVB\nمستخلص المورينجا"
+      },
+      "price": 20.95,
+      "texture": "",
+      "skinType": "Sensitive Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998230/products/ris3oaq38gu7cugpfbjv.png"
+      ],
+      "id": "1775391797143",
+      "createdAt": "2026-04-05T12:23:17.143Z",
+      "updatedAt": "2026-04-05T13:54:16.576Z"
+    },
+    {
+      "name": {
+        "en": "Gentle Cleansing Gel",
+        "ar": "جل منظف لطيف"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "Gently cleanses\n•\nPrevents from dryness",
+        "ar": "ينظف بلطف\n•\nيمنع من الجفاف"
+      },
+      "howToUse": {
+        "en": "Apply to damp face, lather then rinse",
+        "ar": "ضعيه على الوجه الرطب، ثم ارغيه ثم اشطفه"
+      },
+      "benefits": {
+        "en": "Face, body, hair\n\nSoap free, does not sting the eyes\n\nDelicate fragrance of Orange Blossom",
+        "ar": "الوجه والجسم والشعر\n\nخالية من الصابون، لا تلسع العينين\n\nعطر رقيق من زهر البرتقال"
+      },
+      "ingredients": {
+        "en": "Gently cleanses,\n removes makeup,\n moisturizes\n\nKey Ingredients\n\nSoft surfactant\nVegetable Glycerin",
+        "ar": "ينظف بلطف،\n يزيل المكياج،\n يرطب\n\nالمكونات الرئيسية\n\nمادة خافضة للتوتر السطحي\nالجلسرين النباتي"
+      },
+      "price": 10.5,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998231/products/u7mg4fveiwlqmrawedtc.png"
+      ],
+      "id": "1775392068884",
+      "createdAt": "2026-04-05T12:27:48.884Z"
+    },
+    {
+      "name": {
+        "en": "Radiance Eye Contour",
+        "ar": "محيط العين المضيء"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "24h nutrition\n•\nReduces puffiness, dark circles & dehydration fine lines\n•\nAnti-pollution shield",
+        "ar": "تغذية على مدار 24 ساعة\n•\nيقلل من الانتفاخ والهالات السوداء والخطوط الدقيقة للجفاف\n•\nدرع مضاد للتلوث"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to the entire eye contour",
+        "ar": "ضعيه صباحًا و/أو مساءً على محيط العين بالكامل"
+      },
+      "benefits": {
+        "en": "Suitable for sensitive eyes and contact lens wearers\n\nFragrance free\n\n95% reduces the appearance of puffiness",
+        "ar": "مناسبة للعيون الحساسة ومرتدي العدسات اللاصقة\n\nخالٍ من العطور\n\n95 ٪ يقلل من ظهور الانتفاخ"
+      },
+      "ingredients": {
+        "en": "Acts as an anti-puffiness,\n anti-dark circles\n\nKey Ingredients\n\nCaffeine\nGlucosyl Hesperidin\nHyaluronic Acid (High Molecular Weight)\nPolysaccharide Matrix",
+        "ar": "يعمل كمضاد للانتفاخ،\n الدوائر المضادة للظلام\n\nالمكونات الرئيسية\n\nالكافيين\nجلوكوزيل هيسبيريدين\nحمض الهيالورونيك (وزن جزيئي مرتفع)\nمصفوفة عديد السكاريد"
+      },
+      "price": 16.75,
+      "texture": "",
+      "skinType": "entire eye contour",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998232/products/d5b1x5lywxsgjqxasuyy.png"
+      ],
+      "id": "1775392174550",
+      "createdAt": "2026-04-05T12:29:34.551Z"
+    },
+    {
+      "name": {
+        "en": "Light Radiance Cream",
+        "ar": "كريم لايت راديانس"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "24h hydration\n•\nAwakes radiance\n•\nAnti-pollution shield\n",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nإشراقة اليقظة\n•\nدرع مضاد للتلوث"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to face and neck",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة"
+      },
+      "benefits": {
+        "en": "Triple action: hydration – radiance – anti-pollution",
+        "ar": "العمل الثلاثي: الترطيب – التألق – مكافحة التلوث"
+      },
+      "ingredients": {
+        "en": "Moisturizes,\n awakens radiance,\n anti-pollution\n\nKey Ingredients\n\nPolyglucoside Complex\nPolysaccharide Matrix",
+        "ar": "يرطب،\n يوقظ التألق،\n مكافحة التلوث\n\nالمكونات الرئيسية\n\nمركب بولي جلوكوزيد\nمصفوفة عديد السكاريد"
+      },
+      "price": 16.75,
+      "texture": "",
+      "skinType": "normal to combination sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998232/products/zroz2x90pof68eizwpmb.png"
+      ],
+      "id": "1775392274600",
+      "createdAt": "2026-04-05T12:31:14.600Z"
+    },
+    {
+      "name": {
+        "en": "Rich Radiance Cream",
+        "ar": "كريم ريتش راديانس"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "24h hydration\n•\nAwakes radiance\n•\nAnti-pollution shield\n•\nNourishes",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nإشراقة اليقظة\n•\nدرع مضاد للتلوث\n•\nيغذي"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to face and neck",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة"
+      },
+      "benefits": {
+        "en": "Triple action: hydration – radiance – anti-pollution",
+        "ar": "العمل الثلاثي: الترطيب – التألق – مكافحة التلوث"
+      },
+      "ingredients": {
+        "en": "Moisturizes\n, awakens radiance, \nanti-pollution\n\nKey Ingredients\n\nPolyglucoside Complex\nPolysaccharide Matrix\nShea Butter + Primrose Oil",
+        "ar": "يرطب\n، يوقظ التألق، \nمكافحة التلوث\n\nالمكونات الرئيسية\n\nمركب بولي جلوكوزيد\nمصفوفة عديد السكاريد\nزبدة الشيا + زيت زهرة الربيع"
+      },
+      "price": 16.75,
+      "texture": "",
+      "skinType": "dry sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998233/products/p92axntwwfouzhazmwmc.png"
+      ],
+      "id": "1775392377349",
+      "createdAt": "2026-04-05T12:32:57.349Z"
+    },
+    {
+      "name": {
+        "en": "Radiance Cream Gel",
+        "ar": "جل كريم راديانس"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "24h hydration\n•\nAwakes radiance\n•\nAnti-pollution shield\n•\nMattifies",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nإشراقة اليقظة\n•\nدرع مضاد للتلوث\n•\nغير لامع"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to face and neck",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة"
+      },
+      "benefits": {
+        "en": "Non comedogenic\n\nTriple action: hydration – radiance – anti-pollution",
+        "ar": "غير كوميدوجيني\n\nالعمل الثلاثي: الترطيب – التألق – مكافحة التلوث"
+      },
+      "ingredients": {
+        "en": "Moisturizes,\n awakens radiance,\n anti-pollution\n\nKey Ingredients\n\nPolyglucoside Complex\nPolysaccharide Matrix\nSilica\n",
+        "ar": "يرطب،\n يوقظ التألق،\n مكافحة التلوث\n\nالمكونات الرئيسية\n\nمركب بولي جلوكوزيد\nمصفوفة عديد السكاريد\nالسيليكا"
+      },
+      "price": 16.75,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998234/products/fjlikyckto93og9wpthc.png"
+      ],
+      "id": "1775392493403",
+      "createdAt": "2026-04-05T12:34:53.403Z"
+    },
+    {
+      "name": {
+        "en": "Moisturizing Radiance Serum",
+        "ar": "سيروم مرطب ومضيء"
+      },
+      "brand": "Topicrem",
+      "category": "HYDRA +",
+      "description": {
+        "en": "24h hydration\n•\nRevives radiance\n•\nAntioxidant action",
+        "ar": "ترطيب على مدار 24 ساعة\n•\nينعش التألق\n•\nعمل مضاد للأكسدة"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening to face and neck",
+        "ar": "ضعيه صباحًا و/أو مساءً على الوجه والرقبة"
+      },
+      "benefits": {
+        "en": "Non comedogenic\n\n+115% hydration booster\n\nHydration coach for the skin",
+        "ar": "غير كوميدوجيني\n\n+115% معزز ترطيب\n\nمدرب ترطيب البشرة"
+      },
+      "ingredients": {
+        "en": "Moisturizes,\n awakens radiance,\n anti-pollution\n\nKey Ingredients\n\nPolyglucoside Complex\nSophora Japonica Extract",
+        "ar": "يرطب،\n يوقظ التألق،\n مكافحة التلوث\n\nالمكونات الرئيسية\n\nمركب بولي جلوكوزيد\nمستخلص الصفيراء جابونيكا"
+      },
+      "price": 19.95,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998235/products/lgb28pjhaskbxgmmjbg0.png"
+      ],
+      "id": "1775392596206",
+      "createdAt": "2026-04-05T12:36:36.206Z"
+    },
+    {
+      "name": {
+        "en": "Gentle Fortifying Shampoo",
+        "ar": "شامبو مقوي لطيف"
+      },
+      "brand": "Topicrem",
+      "category": "KARITE",
+      "description": {
+        "en": "Gently cleanses\n•\nprotects\n•\nstrengthen\n•\nSoothes scalp ( sensitive scalp )",
+        "ar": "ينظف بلطف\n•\nيحمي\n•\nتعزيز\n•\nيهدئ فروة الرأس (فروة الرأس الحساسة)"
+      },
+      "howToUse": {
+        "en": "Lather then rinse. Repeat the operation if necessary. Up to 3 times a week.",
+        "ar": "الرغوة ثم الشطف. كرر العملية إذا لزم الأمر. ما يصل إلى 3 مرات في الأسبوع."
+      },
+      "benefits": {
+        "en": "Does not weigh hair down\n\nChildren from 3 y.o., adults\n\nSulfate and silicone free\n\nDelicious and addictive fragrance",
+        "ar": "لا يثقل الشعر\n\nأطفال من عمر 3 سنوات، بالغون\n\nخالي من الكبريتات والسيليكون\n\nعطر لذيذ وإدماني"
+      },
+      "ingredients": {
+        "en": "Cleans\n, limits brokenness,\n soothes\n\nKey Ingredients\n\nShea Butter & Amla Extract\nPanthenol\nVegetable Glycerin",
+        "ar": "ينظف\n، يحد من الانكسار،\n يهدئ\n\nالمكونات الرئيسية\n\nزبدة الشيا ومستخلص الأملا\nبانثينول\nالجلسرين النباتي"
+      },
+      "price": 11.95,
+      "texture": "",
+      "skinType": "all sensitive scalp types, al hair types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998235/products/r1uyxb1rwdcdgn8kdobi.png"
+      ],
+      "id": "1775392714493",
+      "createdAt": "2026-04-05T12:38:34.493Z"
+    },
+    {
+      "name": {
+        "en": "Nourishing Fortifying Cream",
+        "ar": "كريم تقوية مغذي"
+      },
+      "brand": "Topicrem",
+      "category": "KARITE",
+      "description": {
+        "en": "Nourishes and protects\n•\n24h hydration",
+        "ar": "يغذي ويحمي\n•\nترطيب على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Apply to damp or dry hair. Without rinsing.",
+        "ar": "يوضع على الشعر الرطب أو الجاف. دون شطف."
+      },
+      "benefits": {
+        "en": "Children from 3 y.o., adults\n\n96% prettier hair curls\n\n100% perfectly nourished hair\n\nApplication on dry or wet hair",
+        "ar": "أطفال من عمر 3 سنوات، بالغون\n\nتجعيد الشعر أجمل بنسبة 96%\n\n100 ٪ شعر مغذى بشكل مثالي\n\nيوضع على الشعر الجاف أو الرطب"
+      },
+      "ingredients": {
+        "en": "Redefines curls,\n limits brokenness,\n protects\n\nKey Ingredients\n\nShea Butter & Amla Extract\nVegetable Glycerin",
+        "ar": "يعيد تعريف الضفائر،\n يحد من الانكسار،\n يحمي\n\nالمكونات الرئيسية\n\nزبدة الشيا ومستخلص الأملا\nالجلسرين النباتي"
+      },
+      "price": 15.7,
+      "texture": "",
+      "skinType": "all sensitive scalp types, al hair types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998236/products/of98yn15tuyjbgpf44uk.png"
+      ],
+      "id": "1775392815294",
+      "createdAt": "2026-04-05T12:40:15.294Z"
+    },
+    {
+      "name": {
+        "en": "Intense Fortifying Mask",
+        "ar": "قناع تحصين مكثف"
+      },
+      "brand": "Topicrem",
+      "category": "KARITE",
+      "description": {
+        "en": "Nourishes\n•\nLimits hair breakage\n•\nDefines hair curls",
+        "ar": "يغذي\n•\nيحد من تقصف الشعر\n•\nيحدد تجعيد الشعر"
+      },
+      "howToUse": {
+        "en": "Leave on for 10 to 15 minutes then rinse. 2 times per week",
+        "ar": "اتركيه لمدة 10 إلى 15 دقيقة ثم اشطفيه. مرتين في الأسبوع"
+      },
+      "benefits": {
+        "en": "100% hydration & nutrition bath\n\nChildren from 3 y.o., adults\n\n+111% resistance of hair\n\nDelicious and addictive fragrance",
+        "ar": "100 ٪ حمام ترطيب وتغذية\n\nأطفال من عمر 3 سنوات، بالغون\n\n+111% مقاومة للشعر\n\nعطر لذيذ وإدماني"
+      },
+      "ingredients": {
+        "en": "Nourishes\n limits breakage\n redefines curls\n\nKey Ingredients\n\nShea Butter & Amla Extract\nPanthenol\nVegetable Glycerin",
+        "ar": "يغذي\n يحد من الكسر\n يعيد تعريف الضفائر\n\nالمكونات الرئيسية\n\nزبدة الشيا ومستخلص الأملا\nبانثينول\nالجلسرين النباتي"
+      },
+      "price": 16.75,
+      "texture": "",
+      "skinType": "all sensitive scalp types, al hair types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998237/products/lol8qlgcajc1stjzshaw.png"
+      ],
+      "id": "1775392919658",
+      "createdAt": "2026-04-05T12:41:59.658Z"
+    },
+    {
+      "name": {
+        "en": "Intensive Radiance Serum",
+        "ar": "مصل الإشعاع المكثف"
+      },
+      "brand": "Topicrem",
+      "category": "MELA (Anti Dark Spot)",
+      "description": {
+        "en": "Corrects, prevents and regulates production of melanin\n•\nMoisturizes",
+        "ar": "يصحح ويمنع وينظم إنتاج الميلانين\n•\nيرطب"
+      },
+      "howToUse": {
+        "en": "Apply morning and/or evening",
+        "ar": "يطبق في الصباح والمساء"
+      },
+      "benefits": {
+        "en": "360° anti-dark spot action\n\nEfficacy even on installed dark spots and melasma\n\nNon photosensitizing\n\nOK eye contour\n\nVisible results in 7 days on dark spots\n\n98% corrects dark spots",
+        "ar": "إجراء 360 درجة ضد البقعة المظلمة\n\nالفعالية حتى على البقع الداكنة والميلازما المثبتة\n\nغير محسس للضوء\n\nمحيط العينين جيد\n\nنتائج مرئية في 7 أيام على البقع الداكنة\n\n98 ٪ يصحح البقع الداكنة"
+      },
+      "ingredients": {
+        "en": "Intensely corrects\n unifies ( concentrated)\n\nKey Ingredients\n\nPatented MELA complex [Niacinamide + Algae extract]\nSchisandre Berries (Extract from)\nGlycerin",
+        "ar": "يصحح بشكل مكثف\n توحد ( مركزة)\n\nالمكونات الرئيسية\n\nمركب ميلا الحاصل على براءة اختراع [نياسيناميد + مستخلص الطحالب]\nشيساندر بيري (مستخرج من)\nالجلسرين"
+      },
+      "price": 34.77,
+      "texture": "",
+      "skinType": "all sesitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998237/products/eic5f2rll7vs7ttqku4o.png"
+      ],
+      "id": "1775393073428",
+      "createdAt": "2026-04-05T12:44:33.428Z"
+    },
+    {
+      "name": {
+        "en": "Unifying Day Cream SPF 50+",
+        "ar": "كريم النهار الموحد بعامل حماية من الشمس 50+"
+      },
+      "brand": "Topicrem",
+      "category": "MELA (Anti Dark Spot)",
+      "description": {
+        "en": "Corrects, prevents and regulates production of melanin\n•\nMoisturizes",
+        "ar": "يصحح ويمنع وينظم إنتاج الميلانين\n•\nيرطب"
+      },
+      "howToUse": {
+        "en": "morning",
+        "ar": "الفترة الصباحية"
+      },
+      "benefits": {
+        "en": "Efficacy even on installed dark spots and melasma",
+        "ar": "الفعالية حتى على البقع الداكنة والميلازما المثبتة"
+      },
+      "ingredients": {
+        "en": "corrects\nunifies\n\nKey Ingredients\n\nPatented MELA complex [Niacinamide + Algae extract]\nSolar Filters\nDipeptide",
+        "ar": "يصحح\nيوحد\n\nالمكونات الرئيسية\n\nمركب ميلا الحاصل على براءة اختراع [نياسيناميد + مستخلص الطحالب]\nمرشحات الطاقة الشمسية\nثنائي الببتيد"
+      },
+      "price": 29.95,
+      "texture": "",
+      "skinType": "all sesitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998238/products/bjjmqpv4jezk7hxevugz.png"
+      ],
+      "id": "1775393183455",
+      "createdAt": "2026-04-05T12:46:23.455Z"
+    },
+    {
+      "name": {
+        "en": "Gentle Peeling Night Cream",
+        "ar": "كريم ليلي لطيف للتقشير"
+      },
+      "brand": "Topicrem",
+      "category": "MELA (Anti Dark Spot)",
+      "description": {
+        "en": "Corrects, prevents and regulates production of melanin\n•\nMoisturizes & sun protection",
+        "ar": "يصحح ويمنع وينظم إنتاج الميلانين\n•\nيرطب ويحمي من أشعة الشمس"
+      },
+      "howToUse": {
+        "en": "night",
+        "ar": "المنخفض"
+      },
+      "benefits": {
+        "en": "Efficacy even on installed dark spots and melasma",
+        "ar": "الفعالية حتى على البقع الداكنة والميلازما المثبتة"
+      },
+      "ingredients": {
+        "en": "corrects\n, unifies\n\nKey Ingredients\n\nPatented MELA complex [Niacinamide + Algae extract]\nGluconolactone\nKeratolytic Enzyme",
+        "ar": "يصحح\n، يوحد\n\nالمكونات الرئيسية\n\nمركب ميلا الحاصل على براءة اختراع [نياسيناميد + مستخلص الطحالب]\nجلوكونولاكتون\nإنزيم حال للقرنية"
+      },
+      "price": 29.95,
+      "texture": "",
+      "skinType": "all sesitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998239/products/rsmjbl2hprvipjmbkh86.png"
+      ],
+      "id": "1775393378098",
+      "createdAt": "2026-04-05T12:49:38.098Z"
+    },
+    {
+      "name": {
+        "en": "Unifying Exfoliating Bar",
+        "ar": "بار تقشير موحد"
+      },
+      "brand": "Topicrem",
+      "category": "MELA (Anti Dark Spot)",
+      "description": {
+        "en": "Cleanses\n•\nExfoliates\n•\nPrevents from dryness",
+        "ar": "التطهير\n•\nيقشر\n•\nيمنع من الجفاف"
+      },
+      "howToUse": {
+        "en": "1 to 2 times a week, apply to damp face using a gentle lather, then rinse thoroughly with clean water. Can be used directly on the skin.",
+        "ar": "من مرة إلى مرتين في الأسبوع، ضعيه على الوجه الرطب باستخدام رغوة لطيفة، ثم اشطفيه جيدًا بالماء النظيف. يمكن استخدامه مباشرة على الجلد."
+      },
+      "benefits": {
+        "en": "Complementary product, perfect to help reducing dark spots",
+        "ar": "منتج تكميلي، مثالي للمساعدة في تقليل البقع الداكنة"
+      },
+      "ingredients": {
+        "en": "corrects,\n unifies\n\nKey Ingredients\n\nOlive Oil and Coprah\nApricot Kernel Granules\nVegetable Glycerin",
+        "ar": "يصحح،\n يوحد\n\nالمكونات الرئيسية\n\nزيت الزيتون والكوبرا\nحبيبات نواة المشمش\nالجلسرين النباتي"
+      },
+      "price": 10.45,
+      "texture": "",
+      "skinType": "all sesitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998240/products/iwlxqkve9y0l2yh83lki.png"
+      ],
+      "id": "1775393501626",
+      "createdAt": "2026-04-05T12:51:41.626Z"
+    },
+    {
+      "name": {
+        "en": "Unifying Ultra-Moisturizing Milk SPF 15+",
+        "ar": "توحيد الحليب فائق الترطيب بعامل حماية من الشمس 15+"
+      },
+      "brand": "Topicrem",
+      "category": "MELA (Anti Dark Spot)",
+      "description": {
+        "en": "Evens, corrects and prevents appearance of dark spots\n•\nProtects\n•\nMoisturizes\n•\nSun protection",
+        "ar": "يسوي ويصحح ويمنع ظهور البقع الداكنة\n•\nيحمي\n•\nيرطب\n•\nالحماية من أشعة الشمس"
+      },
+      "howToUse": {
+        "en": "2 to 3 times a day on the body, apply with light massages.",
+        "ar": "2 إلى 3 مرات في اليوم على الجسم، يوضع مع التدليك الخفيف."
+      },
+      "benefits": {
+        "en": "N°1 of Depigmenting Body Milk\n\nCorrects, prevents & protects\n\nNo white marks",
+        "ar": "رقم1 من حليب الجسم المصطبغ\n\nيصحح ويمنع ويحمي\n\nلا توجد علامات بيضاء"
+      },
+      "ingredients": {
+        "en": "corrects,\n unifies\n\nKey Ingredients\n\nOctadecenedioic Acid\nAcetyl Glucosamine\nBeeswax\nVegetable Glycerin\nSolar Filters SPF15",
+        "ar": "يصحح،\n يوحد\n\nالمكونات الرئيسية\n\nحمض الأوكتاديسينديويك\nأسيتيل الجلوكوزامين\nشمع العسل\nالجلسرين النباتي\nمرشحات الطاقة الشمسية SPF15"
+      },
+      "price": 28.95,
+      "texture": "",
+      "skinType": "all sesitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998241/products/o8zjdko5fpdcx9msxlbl.png"
+      ],
+      "id": "1775393605889",
+      "createdAt": "2026-04-05T12:53:25.889Z"
+    },
+    {
+      "name": {
+        "en": "Moisturizing Sun Milk SPF50+",
+        "ar": "حليب شمس مرطب بعامل حماية من الشمس 50+"
+      },
+      "brand": "Topicrem",
+      "category": "SUN RANGE",
+      "description": {
+        "en": "Very High Protection\n•\nHydrates 24hr",
+        "ar": "حماية عالية جدًا\n•\nهيدرات على مدار 24 ساعة"
+      },
+      "howToUse": {
+        "en": "Apply generously to face and body before exposure. Renew frequently",
+        "ar": "ضعه بسخاء على الوجه والجسم قبل التعرض. جدد بشكل متكرر"
+      },
+      "benefits": {
+        "en": "Very high sun protection\n\nHydrates\n\nPowerfull Antioxidant\n\nDelicious and addictive fragrance",
+        "ar": "حماية عالية جدًا من أشعة الشمس\n\nهيدرات\n\nمضاد أكسدة قوي\n\nعطر لذيذ وإدماني"
+      },
+      "ingredients": {
+        "en": "very high sun protection\n hydrates \nantioxidant\n\nKey Ingredients\n\nEchinacea extract\nOrganic Sun Filters\nGlycerin",
+        "ar": "حماية عالية جدًا من أشعة الشمس\n هيدرات \nمضاد للأكسدة\n\nالمكونات الرئيسية\n\nخلاصة القنفذية\nمرشحات الشمس العضوية\nالجلسرين"
+      },
+      "price": 21.95,
+      "texture": "",
+      "skinType": "Sensitive Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998242/products/drz22wccngefflk2nu8a.png"
+      ],
+      "id": "1775393707446",
+      "createdAt": "2026-04-05T12:55:07.446Z"
+    },
+    {
+      "name": {
+        "en": "Ultra-Moisturizing 3-IN-1 Gentle Scrub",
+        "ar": "فرك لطيف 3 في 1 فائق الترطيب"
+      },
+      "brand": "Topicrem",
+      "category": "UM",
+      "description": {
+        "en": "Exfoliates, refines the skin texture\n•\nGently cleanses\n•\nPrevents from dryness",
+        "ar": "يقشر ويصقل ملمس البشرة\n•\nينظف بلطف\n•\nيمنع من الجفاف"
+      },
+      "howToUse": {
+        "en": "Apply 1 to 2 times a week to damp skin with a gentle massage on the face, a more vigorous one on the body, then rinse.",
+        "ar": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  16 HOURS 09 MINUTES 15 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE"
+      },
+      "benefits": {
+        "en": "Face , body & bikini\n\nCleanses and exfoliates\n\nNew skin effect",
+        "ar": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  16 HOURS 09 MINUTES 15 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE"
+      },
+      "ingredients": {
+        "en": "Exfoliates\nsmoothes, \ncleanses\n\nKey Ingredients\n\nJojoba and cellulose micro- grains (birch, oak, pine, spruce)\nSoft surfactant",
+        "ar": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  16 HOURS 09 MINUTES 15 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE"
+      },
+      "price": 17.95,
+      "texture": "",
+      "skinType": "face , body & bikini sensitive skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998243/products/ch4wyrfrxubpx3atn1gp.png"
+      ],
+      "id": "1775393824883",
+      "createdAt": "2026-04-05T12:57:04.883Z"
+    },
+    {
+      "name": {
+        "en": "Ultra-Moisturizing Hand Cream",
+        "ar": "كريم لليدين فائق الترطيب"
+      },
+      "brand": "Topicrem",
+      "category": "1",
+      "description": {
+        "en": "48h intense hydration\n•\nSoothes",
+        "ar": "ترطيب مكثف لمدة 48 ساعة\n•\nالبلسم"
+      },
+      "howToUse": {
+        "en": "Apply once a day",
+        "ar": "تنطبق مرة واحدة في اليوم"
+      },
+      "benefits": {
+        "en": "Very dry, damaged hands\n\nNon greasy, non sticky – quickly penetrates",
+        "ar": "أيدي جافة جدًا ومتضررة\n\nغير دهني وغير لزج – يتغلغل بسرعة"
+      },
+      "ingredients": {
+        "en": "Moisturizes, nourishes, protects\n\nKey Ingredients\n\nUrea\nAllantoin",
+        "ar": "يرطب ويغذي ويحمي\n\nالمكونات الرئيسية\n\nاليوريا\nألانتوين"
+      },
+      "price": 6.95,
+      "texture": "",
+      "skinType": "sensitive dry skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998244/products/wkx1aiweiow9nlr92phj.png"
+      ],
+      "id": "1775394010087",
+      "createdAt": "2026-04-05T13:00:10.087Z"
+    },
+    {
+      "name": {
+        "en": "HA Serum Booster 3.2%",
+        "ar": "HA مصل معزز 3.2%"
+      },
+      "brand": "Novexpert",
+      "category": "HYALURONIC ACID LINE",
+      "description": {
+        "en": "An exceptional concentration of HA (3.2% pure\n•\n4 sizes of AH for complementary actions within the skin.\n•\nA prebiotic of natural origin with the astonishing ability to stimulate your own synthesis of Hyaluronic Acid.\n•\nanti-aging care",
+        "ar": "تركيز استثنائي من HA (3.2% نقي\n•\n4 أحجام من AH لإجراءات تكميلية داخل الجلد.\n•\nالبريبيوتيك من أصل طبيعي مع قدرة مذهلة على تحفيز تخليق حمض الهيالورونيك الخاص بك.\n•\nرعاية مكافحة الشيخوخة"
+      },
+      "howToUse": {
+        "en": "Apply a few drops every day to the entire face and neck. The Booster Serum can be used alone or just before your usual cream. You don't need to wait between applying this serum and applying your makeup. • Indicative quantity of serum to apply: Combination skin: 1 to 2 drops. Normal skin: 2 to 3 drops. Dry skin: 3 drops and more.",
+        "ar": "ضعي بضع قطرات يومياً على كامل الوجه والرقبة. يمكن استخدام Booster Serum بمفرده أو قبل الكريم المعتاد مباشرة. لا داعي للانتظار بين وضع هذا المصل ووضع مكياجك. • الكمية الإرشادية من المصل المراد تطبيقها: البشرة المختلطة: 1 إلى 2 قطرة. البشرة العادية: 2 إلى 3 قطرات. الجلد الجاف: 3 قطرات فأكثر."
+      },
+      "benefits": {
+        "en": "The Booster Serum has established itself as one of the indisputable references in anti-aging care with Hyaluronic Acid.",
+        "ar": "لقد أثبت Booster Serum نفسه كواحد من المراجع التي لا جدال فيها في مجال مكافحة الشيخوخة باستخدام حمض الهيالورونيك."
+      },
+      "ingredients": {
+        "en": "hyaluronic acid is, rightly, an anti-aging star. Within the skin, this 100% natural active ingredient plays two main roles: 1/ MOISTURIZING: it prevents dehydration by forming a gel with water. 2/ ANTI-AGING: it ensures plump skin and stimulates collagen.\n\nKey Ingredients\n\nAloe Vera Gel\nSODIUM HYALURONATE\nGLYCERIN\nANHYDROXYLITOL",
+        "ar": "حمض الهيالورونيك هو بحق نجم مضاد للشيخوخة. داخل الجلد، يلعب هذا العنصر النشط الطبيعي 100% دورين رئيسيين: 1/ الترطيب: يمنع الجفاف عن طريق تكوين هلام مع الماء. 2/ مكافحة الشيخوخة: فهو يضمن بشرة ممتلئة ويحفز الكولاجين.\n\nالمكونات الرئيسية\n\nجل الصبار\nهيالورونات الصوديوم\nالجلسرين\nأنهيدروكسيليتول"
+      },
+      "price": 43.5,
+      "texture": "",
+      "skinType": "All Skin Types except Oily",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998244/products/z8nvitvaftteoickvddw.png"
+      ],
+      "id": "1775394398401",
+      "createdAt": "2026-04-05T13:06:38.401Z"
+    },
+    {
+      "name": {
+        "en": "LipUp",
+        "ar": "LipUp"
+      },
+      "brand": "Novexpert",
+      "category": "HYALURONIC ACID LINE",
+      "description": {
+        "en": "A volumizing, anti-wrinkle and nourishing treatment.",
+        "ar": "علاج مكثف ومضاد للتجاعيد ومغذي."
+      },
+      "howToUse": {
+        "en": "Apply to the lips. If you want to combine Lip'Up with your lipstick, 2 options are possible: 1/ MATTE effect: apply the Lip'Up, leave to act for 15 min then apply your lipstick. 2/ GLOSSY effect: Apply your lipstick followed immediately by Lip'Up.",
+        "ar": "تنطبق على الشفاه. إذا كنت ترغبين في دمج Lip'Up مع أحمر الشفاه، هناك خياران متاحان: 1/ تأثير غير لامع: ضعي Lip'Up، واتركيه لمدة 15 دقيقة ثم ضعي أحمر الشفاه. 2/ تأثير لامع: ضعي أحمر الشفاه ثم Lip'Up على الفور."
+      },
+      "benefits": {
+        "en": "3-in-1 AESTHETIC treatment: +10.6% volume*, a natural gloss effect* for 92% of women and a redefined lip contour* for 88% of them.\n\n2-in-1 COSMETIC treatment: smoothing treatment with -23.6% microgrooves* and 21.3% more even lip color*.\n\n2-in-1 DERMATOLOGICAL treatment: +38.2% intense nutrition* for guaranteed anti-chapping action and repaired lips* for 96% of users.",
+        "ar": "علاج جمالي 3 في 1: +10.6% حجم*، تأثير لمعان طبيعي* لـ 92% من النساء ومحيط شفاه مُعاد تحديده* لـ 88% منهن.\n\nمعالجة تجميلية 2 في 1: معالجة تنعيم مع -23.6% أخاديد دقيقة* و21.3% لون شفاه أكثر تجانسًا*.\n\nعلاج جلدي 2 في 1: +38.2% تغذية مكثفة* لضمان فعالية مضادة للتشققات وإصلاح الشفاه* لـ 96% من المستخدمين."
+      },
+      "ingredients": {
+        "en": "The performance of Lip'Up for volume gain is explained in particular by the use of a plant extract nicknamed in Brazil natural Viagra®!\n\nKey Ingredients\n\nALARIA ESCULENTA EXTRACT\nBISABOLOL\n(SHEA) BUTTER UNSAPONIFIABLES (Soothing Shea Butter)",
+        "ar": "يتم تفسير أداء Lip'Up لزيادة الحجم بشكل خاص من خلال استخدام مستخلص نباتي يُطلق عليه في البرازيل اسم Viagra® الطبيعي!\n\nالمكونات الرئيسية\n\nمستخلص ألاريا إسكولنتا\nبيسابولول\n(زبدة الشيا) غير القابلة للتحلل (زبدة الشيا المهدئة)"
+      },
+      "price": 16.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998245/products/cwsipzzsqwlnbgcylgpj.png"
+      ],
+      "id": "1775394572371",
+      "createdAt": "2026-04-05T13:09:32.371Z"
+    },
+    {
+      "name": {
+        "en": "Micellar Water With HA",
+        "ar": "ماء ميسيلار مع HA"
+      },
+      "brand": "Novexpert",
+      "category": "HYALURONIC ACID LINE",
+      "description": {
+        "en": "This micellar water alone combines the effectiveness of a cleanser and a leave-in make-up remover with the performance of a moisturizing and revitalizing treatment full of Hyaluronic Acid. A 4 in 1 treatment",
+        "ar": "يجمع ماء ميسيلار وحده بين فعالية المنظف ومزيل المكياج الذي يترك على البشرة مع أداء علاج مرطب ومنشط مليء بحمض الهيالورونيك. علاج 4 في 1"
+      },
+      "howToUse": {
+        "en": "our a few drops of Micellar Water with Hyaluronic Acid onto a cotton pad. Apply to the face from the inside out to remove makeup and cleanse.",
+        "ar": "ضعي بضع قطرات من ماء ميسيلار مع حمض الهيالورونيك على قطعة من القطن. ضعيه على الوجه من الداخل إلى الخارج لإزالة المكياج وتنظيفه."
+      },
+      "benefits": {
+        "en": "Daily care without wasting time:\n\n MAKEUP REMOVER &amp; CLEANSER*\n\n MOISTURIZING*\n\nPLUMPING*\n\nNo chemical ingredientes\n\nNo Preservatives",
+        "ar": "العناية اليومية دون إضاعة الوقت:\n\n مزيل ومنظف للمكياج*\n\n الترطيب*\n\nالامتلاء*\n\nلا المكونات الكيميائية\n\nلا مواد حافظة"
+      },
+      "ingredients": {
+        "en": "A formula full of hyaluronic acid for immediate hydration and a wrinkle-filling effect. Ultra soft, micellar water is also leave-in, to take care of the most sensitive skin.\n\nKey Ingredients\n\nSODIUM HYALURONATE\nLACTOBACILLUS FERMENT\nALOE BARBADENSIS LEAF JUICE + AQUA\nGLYCERIN",
+        "ar": "تركيبة مليئة بحمض الهيالورونيك لترطيب فوري وتأثير يملأ التجاعيد. كما يتم ترك ماء ميسيلار فائق النعومة للعناية بالبشرة الأكثر حساسية.\n\nالمكونات الرئيسية\n\nهيالورونات الصوديوم\nخميرة اللاكتوباسيلوس\nعصير أوراق الألوة باربادنسيس + أكوا\nالجلسرين"
+      },
+      "price": 14.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998246/products/sfwrvagoan58kwwt7rag.png"
+      ],
+      "id": "1775394684217",
+      "createdAt": "2026-04-05T13:11:24.217Z"
+    },
+    {
+      "name": {
+        "en": "Velvety Hydrobiotic Cream",
+        "ar": "كريم هيدروبيوتيك مخملي"
+      },
+      "brand": "Novexpert",
+      "category": "MAGNESIUM LINE",
+      "description": {
+        "en": "anti-stress\" formula. Hydro-Biotic Gentle Cream reduces the molecules that cause skin sensitivity by about 30%.\n•\nadds lasting radiance to the face",
+        "ar": "تركيبة مضادة للإجهاد. يعمل كريم Hydro-Biotic Gentle Cream على تقليل الجزيئات التي تسبب حساسية الجلد بنسبة 30% تقريبًا.\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient. Before applying makeup, leave to penetrate for 5 minutes.",
+        "ar": "ضعيه بلمسات صغيرة على الوجه بالكامل وقم بالتدليك باستخدام التدليك الدائري التصاعدي. كمية صغيرة من المنتج كافية. قبل وضع المكياج، اتركيه ليتغلغل لمدة 5 دقائق."
+      },
+      "benefits": {
+        "en": "Soothing Effect\n\nFor Irritated Skin & Genetic Dryness\n\nFor Atopic Skin",
+        "ar": "تأثير مهدئ\n\nللبشرة المتهيجة والجفاف الوراثي\n\nللبشرة الأتوبية"
+      },
+      "ingredients": {
+        "en": "Magnesium is recognized for its relaxing and anti-stress properties\n\nKey Ingredients\n\nMAGNESIUM PCA MAGNESIUM\nALPHA-GLUCAN OLIGOSACCHARIDE\nGLYCERIN\nLACTOBACILLUS FERMENT",
+        "ar": "يُعرف المغنيسيوم بخصائصه المريحة والمضادة للتوتر\n\nالمكونات الرئيسية\n\nالمغنيسيوم PCA المغنيسيوم\nألفا جلوكان أوليغوساكاريد\nالجلسرين\nخميرة اللاكتوباسيلوس"
+      },
+      "price": 17.95,
+      "texture": "",
+      "skinType": "Dry to very Dry Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998246/products/weazpsx2ehsrcmpocow5.png"
+      ],
+      "id": "1775394773118",
+      "createdAt": "2026-04-05T13:12:53.118Z"
+    },
+    {
+      "name": {
+        "en": "Magnesium Mist",
+        "ar": "ضباب المغنيسيوم"
+      },
+      "brand": "Novexpert",
+      "category": "MAGNESIUM LINE",
+      "description": {
+        "en": "The Magnesium Mist concentrates in its droplets the benefits of Magnesium salt from the Dead Sea. It combines a high concentration of natural magnesium and ultra-pure water. A soothing and protective spray for instant hydration",
+        "ar": "يركز رذاذ المغنيسيوم في قطراته فوائد ملح المغنيسيوم من البحر الميت. فهو يجمع بين التركيز العالي من المغنيسيوم الطبيعي والمياه فائقة النقاء. رذاذ مهدئ ووقائي لترطيب فوري"
+      },
+      "howToUse": {
+        "en": "Hold 30 cm from the face, close your eyes and spray 2 or 3 times to cover the entire face. Leave on for 15 seconds and dry. Also use after removing makeup, cleansing, before treatment or even after makeup in the morning or during the day.",
+        "ar": "ضعيه على بعد 30 سم من الوجه، وأغمضي عينيك ورشي 2 أو 3 مرات لتغطية الوجه بالكامل. يترك لمدة 15 ثانية ويجفف. استخدميه أيضًا بعد إزالة المكياج أو التنظيف أو قبل العلاج أو حتى بعد المكياج في الصباح أو أثناء النهار."
+      },
+      "benefits": {
+        "en": "4-IN-1 COSMETIC TREATMENT:\n\n Tonic (after cleansing)\n\n Makeup fixative\n\n Anti pollution*\n\nHydration booster*\n\n4-IN-1 DERMATOLOGICAL CARE:\n\n In case of redness\n\n In case of discomfort",
+        "ar": "علاج تجميلي 4 في 1:\n\n منشط (بعد التطهير)\n\n مثبت للمكياج\n\n مكافحة التلوث*\n\nمعزز الترطيب*\n\nرعاية جلدية 4 في 1:\n\n في حالة الاحمرار\n\n في حالة عدم الراحة"
+      },
+      "ingredients": {
+        "en": "The performance of the Magnesium Mist offers hydration increased by 71%*, oxidation reduced by 40%* and inflammation immediately reduced by 27%*. This mist is a real 360° SOS treatment for sensitive skin.\n\nKey Ingredients\n\nMARIS SAL (SEA SALT)\nultra-pure water",
+        "ar": "يوفر أداء رذاذ المغنيسيوم زيادة في الترطيب بنسبة 71%*، وتقليل الأكسدة بنسبة 40%* وتقليل الالتهاب على الفور بنسبة 27%*. هذا الرذاذ هو علاج حقيقي 360 درجة SOS للبشرة الحساسة.\n\nالمكونات الرئيسية\n\nماريس سال (ملح البحر)\nمياه فائقة النقاء"
+      },
+      "price": 7.5,
+      "texture": "",
+      "skinType": "All Sensitive Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998247/products/xsiln95jfrpm9klwnggq.png"
+      ],
+      "id": "1775394893687",
+      "createdAt": "2026-04-05T13:14:53.687Z"
+    },
+    {
+      "name": {
+        "en": "Milky Cleanser Hydro-Biotic",
+        "ar": "منظف ​​حليبي هيدروبيوتيك"
+      },
+      "brand": "Novexpert",
+      "category": "MAGNESIUM LINE",
+      "description": {
+        "en": "A cleanser with a velvety, milky texture. A real treatment that preserves your good bacteria. Containing Omegas, Magnesium, Pre and Post-biotics, its softness and soothing power are ideal for sensitive skin\n•\nadds lasting radiance to the face",
+        "ar": "منظف ​​ذو ملمس مخملي حليبي. علاج حقيقي يحافظ على البكتيريا الجيدة لديك. يحتوي على أوميغا والمغنيسيوم وما قبل وما بعد الحيوية، كما أن نعومته وقوته المهدئة مثالية للبشرة الحساسة.\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "JAPANESE METHOD: Apply with fingertips, massage and rinse with lukewarm or cold water. EUROPEAN METHOD: Apply using a cotton pad or, more environmentally friendly, a reusable wipe and remove everything with the cotton pad or wipe. Then spray the Magnesium Mist.",
+        "ar": "الطريقة اليابانية: ضعيه بأطراف الأصابع، ثم دلكي واشطفيه بالماء الفاتر أو البارد. الطريقة الأوروبية: ضعيه باستخدام وسادة قطنية، أو منديل قابل لإعادة الاستخدام، أكثر صداقة للبيئة، وأزيلي كل شيء باستخدام الوسادة القطنية أو المسح. ثم رش رذاذ المغنيسيوم."
+      },
+      "benefits": {
+        "en": "NOURISH\n\nPROTECT\n\nSOOTH",
+        "ar": "يغذي\n\nحماية\n\nهادئ"
+      },
+      "ingredients": {
+        "en": "omega 6 &amp; 9 to nourish the epidermis. prebiotics &amp; postbiotics to protect the flora. magnesium to soothe skin nerves and reduce the symptoms of sensitive skin\n\nKey Ingredients\n\nALPHA-GLUCAN OLIGOSACCHARIDE\nLACTOBACILLUS FERMENT\nMAGNESIUM PCA MAGNESIUM\nTOCOPHEROL",
+        "ar": "أوميغا 6 و 9 لتغذية البشرة. البريبايوتكس والبوستبيوتيك لحماية النباتات. المغنيسيوم لتهدئة أعصاب الجلد وتقليل أعراض البشرة الحساسة\n\nالمكونات الرئيسية\n\nألفا جلوكان أوليغوساكاريد\nخميرة اللاكتوباسيلوس\nالمغنيسيوم PCA المغنيسيوم\nتوكوفيرول"
+      },
+      "price": 17.95,
+      "texture": "",
+      "skinType": "All Sensitive Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998248/products/gc6wl7toaecm8dl8w2mo.png"
+      ],
+      "id": "1775394998784",
+      "createdAt": "2026-04-05T13:16:38.785Z"
+    },
+    {
+      "name": {
+        "en": "Expert Anti Aging Cream",
+        "ar": "كريم الخبراء لمكافحة الشيخوخة"
+      },
+      "brand": "Novexpert",
+      "category": "PRO-COLLAGEN LINE",
+      "description": {
+        "en": "slows down skin aging thanks to an exclusive patented active ingredient, Novaxilyne, which activates the youth gene. This epigenetic feat helps reduce the depth of wrinkles by up to 37%* in a few weeks",
+        "ar": "يبطئ شيخوخة الجلد بفضل العنصر النشط الحصري الحاصل على براءة اختراع، نوفاكسلين، الذي ينشط جين الشباب. يساعد هذا العمل اللاجيني على تقليل عمق التجاعيد بنسبة تصل إلى 37%* في أسابيع قليلة"
+      },
+      "howToUse": {
+        "en": "Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient.",
+        "ar": "ضعيه بلمسات صغيرة على الوجه بالكامل وقم بالتدليك باستخدام التدليك الدائري التصاعدي. كمية صغيرة من المنتج كافية."
+      },
+      "benefits": {
+        "en": "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger",
+        "ar": "مضاد قوي للشيخوخة بفضل العنصر النشط الحاصل على براءة اختراع: نوفاكسلين الذي يزيد بنسبة 20%* من إنتاج السرتوينز، الملقب بـ \"بروتينات الشباب\". تصبح خلايا الجلد أصغر بـ 11 عامًا"
+      },
+      "ingredients": {
+        "en": "n this formula 3 types of collagen (III, IV &amp; VII) are stimulated thanks to a brown algae extract\n\nKey Ingredients\n\nAloevera Gel\nADENOSINE\nNovaxyline\nALARIA ESCULENTA EXTRACT",
+        "ar": "في هذه التركيبة، يتم تحفيز 3 أنواع من الكولاجين (III، IV، VII) بفضل مستخلص الطحالب البنية\n\nالمكونات الرئيسية\n\nجل الالوفيرا\nالأدينوزين\nنوفاكسلين\nمستخلص ألاريا إسكولنتا"
+      },
+      "price": 32.95,
+      "texture": "",
+      "skinType": "Dry Skin skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998249/products/mqs8edsblkkifz0m155y.png"
+      ],
+      "id": "1775395213467",
+      "createdAt": "2026-04-05T13:20:13.467Z"
+    },
+    {
+      "name": {
+        "en": "Expert Anti Aging Fluid",
+        "ar": "سائل خبير لمكافحة الشيخوخة"
+      },
+      "brand": "Novexpert",
+      "category": "PRO-COLLAGEN LINE",
+      "description": {
+        "en": "slows down skin aging thanks to an exclusive patented active ingredient, Novaxilyne, which activates the youth gene. This epigenetic feat helps reduce the depth of wrinkles by up to 37%* in a few weeks\n",
+        "ar": "يبطئ شيخوخة الجلد بفضل العنصر النشط الحصري الحاصل على براءة اختراع، نوفاكسلين، الذي ينشط جين الشباب. يساعد هذا العمل اللاجيني على تقليل عمق التجاعيد بنسبة تصل إلى 37%* في أسابيع قليلة"
+      },
+      "howToUse": {
+        "en": "Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient.",
+        "ar": "ضعيه بلمسات صغيرة على الوجه بالكامل وقم بالتدليك باستخدام التدليك الدائري التصاعدي. كمية صغيرة من المنتج كافية."
+      },
+      "benefits": {
+        "en": "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger",
+        "ar": "مضاد قوي للشيخوخة بفضل العنصر النشط الحاصل على براءة اختراع: نوفاكسلين الذي يزيد بنسبة 20%* من إنتاج السرتوينز، الملقب بـ \"بروتينات الشباب\". تصبح خلايا الجلد أصغر بـ 11 عامًا"
+      },
+      "ingredients": {
+        "en": " In this formula 3 types of collagen (III, IV &amp; VII) are stimulated thanks to a brown algae extract\n\nKey Ingredients\n\nAloevera Gel\nADENOSINE\nNovaxyline\nALARIA ESCULENTA EXTRACT",
+        "ar": "في هذه التركيبة، يتم تحفيز 3 أنواع من الكولاجين (الثالث والرابع والسابع) بفضل مستخلص الطحالب البنية\n\nالمكونات الرئيسية\n\nجل الالوفيرا\nالأدينوزين\nنوفاكسلين\nمستخلص ألاريا إسكولنتا"
+      },
+      "price": 32.95,
+      "texture": "",
+      "skinType": "Normal to combination Skin",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998250/products/snoeillbvyg5q18kjfip.png"
+      ],
+      "id": "1775395332998",
+      "createdAt": "2026-04-05T13:22:12.998Z"
+    },
+    {
+      "name": {
+        "en": "Expert Antiaging Eye Contour",
+        "ar": "خبير في مكافحة الشيخوخة حول محيط العين"
+      },
+      "brand": "Novexpert",
+      "category": "PRO-COLLAGEN LINE",
+      "description": {
+        "en": "A 3-in-1 eye contour: anti-wrinkle, anti-puffiness & anti-dark circles,",
+        "ar": "محيط العين 3 في 1: مضاد للتجاعيد والانتفاخات والهالات السوداء."
+      },
+      "howToUse": {
+        "en": "After cleansing and before using a serum or cream, apply Expert Anti-Aging Eye Contour to the lower eyelid, starting from the inner corner of the eye towards the end of the wrinkles on the paw. goose. A small amount of product is sufficient.",
+        "ar": "بعد التنظيف وقبل استخدام السيروم أو الكريم، ضعي Expert Anti-Aging Eye Contour على الجفن السفلي، بدءًا من الزاوية الداخلية للعين وحتى نهاية التجاعيد على الكف. أوزة. كمية صغيرة من المنتج كافية."
+      },
+      "benefits": {
+        "en": "ANTI-WRINKLES: up to 50% fewer wrinkles around the eye in 21 days*\n\nANTI-DARK CIRCLES &amp; ANTI-POCKETS: 95% of users find their dark circles less visible and their bags reduced in 21 days",
+        "ar": "مضاد للتجاعيد: تجاعيد أقل بنسبة تصل إلى 50% حول العين خلال 21 يومًا*\n\nمكافحة الهالات السوداء والجيوب: 95% من المستخدمين يجدون أن الهالات السوداء أقل وضوحًا وأن حقائبهم انخفضت خلال 21 يومًا"
+      },
+      "ingredients": {
+        "en": "ANTI-AGING active ingredients such as Novaxyline, a patented active ingredient acting on youth proteins, hyaluronic acid or even an anti-aging amino acid. -wrinkles. Alongside them, TENSIFYING active ingredients acting on BLOOD CIRCULATION to limit dark circles and puffiness: algae extracts, coffee extracts, ferments, etc.\n\nKey Ingredients\n\nALARIA ESCULENTA EXTRACT\nAloe Vera Gel\nADENOSINE",
+        "ar": "مكونات نشطة مضادة للشيخوخة مثل نوفاكسلين، وهو مكون نشط حاصل على براءة اختراع يعمل على بروتينات الشباب، وحمض الهيالورونيك أو حتى حمض أميني مضاد للشيخوخة. -التجاعيد. إلى جانبها، تعمل المكونات النشطة المكثفة على الدورة الدموية للحد من الهالات السوداء والانتفاخ: مستخلصات الطحالب، ومستخلصات القهوة، والخميرة، وما إلى ذلك.\n\nالمكونات الرئيسية\n\nمستخلص ألاريا إسكولنتا\nجل الصبار\nالأدينوزين"
+      },
+      "price": 32.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998250/products/df1rtcmbitw7nfo9ty1o.png"
+      ],
+      "id": "1775395423790",
+      "createdAt": "2026-04-05T13:23:43.790Z"
+    },
+    {
+      "name": {
+        "en": "The Caramel Cream light -N 1",
+        "ar": "كريم كراميل لايت - ن 1"
+      },
+      "brand": "Novexpert",
+      "category": "PRO-MELANIN LINE",
+      "description": {
+        "en": "A hybrid formula with a delicious fragrance that inaugurates a new generation of cosmetics. In terms of makeup, healthy glow and flawless complexion. On the skincare side, a concentrate of anti-aging active ingredients for visibly smoothed skin. A single product, a single gesture, for a double “make-up-care” effect\n•\nadds lasting radiance to the face",
+        "ar": "تركيبة هجينة ذات عطر لذيذ تفتتح جيلاً جديداً من مستحضرات التجميل. من حيث المكياج والتوهج الصحي والبشرة الخالية من العيوب. من ناحية العناية بالبشرة، يوجد تركيز من المكونات النشطة المضادة للشيخوخة للحصول على بشرة ناعمة بشكل واضح. منتج واحد، لفتة واحدة، لتأثير مضاعف \"للعناية بالمكياج\".\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "Apply in small touches in the morning to the entire face, starting from the midline and moving up towards the temples. Smooth the forehead, from the frown line outwards.",
+        "ar": "ضعيه بلمسات صغيرة في الصباح على كامل الوجه، بدءاً من خط الوسط ووصولاً إلى الصدغين. قم بتنعيم الجبين، من خط العبوس إلى الخارج."
+      },
+      "benefits": {
+        "en": "IMMEDIATE “GOOD GLOW” EFFECT\n\nLASTING TANNED COMPLEXION\n\nMOISTURIZING ANTI-AGING EFFEC",
+        "ar": "تأثير \"توهج جيد\" فوري\n\nبشرة مدبوغة تدوم طويلاً\n\nتأثير مرطب مضاد للشيخوخة"
+      },
+      "ingredients": {
+        "en": " At Novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\n\nKey Ingredients\n\nANHYDROXYLITOL\nBIOSACCHARIDE GUM-1 & 2\nCAMELLIA SINENSIS LEAF EXTRACT\nCOFFEA ARABICA (COFFEE) SEED EXTRACT",
+        "ar": "في Novexpert، للاستفادة من فوائد الميلانين، دون المبالغة في ذلك، قمنا بتطوير علاج هجين بين المكياج والكريم من أجل الاستمتاع ببشرة مسمرة وسمرة طويلة الأمد بفضل منتج طبيعي 100٪. أصل طبيعي.\n\nالمكونات الرئيسية\n\nأنهيدروكسيليتول\nالسكاريد الحيوي صمغ-1 و2\nمستخلص أوراق الكاميليا سينينسيس\nمستخلص بذور القهوة العربية (القهوة)."
+      },
+      "price": 21.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998251/products/c90fsnqgojwekglnqsjs.png"
+      ],
+      "id": "1775395516987",
+      "createdAt": "2026-04-05T13:25:16.987Z"
+    },
+    {
+      "name": {
+        "en": "The Caramel Cream medium -N 2",
+        "ar": "كريم كراميل وسط -ن2"
+      },
+      "brand": "Novexpert",
+      "category": "PRO-MELANIN LINE",
+      "description": {
+        "en": "A hybrid formula with a delicious fragrance that inaugurates a new generation of cosmetics. In terms of makeup, healthy glow and flawless complexion. On the skincare side, a concentrate of anti-aging active ingredients for visibly smoothed skin. A single product, a single gesture, for a double “make-up-care” effect\n•\nadds lasting radiance to the face",
+        "ar": "تركيبة هجينة ذات عطر لذيذ تفتتح جيلاً جديداً من مستحضرات التجميل. من حيث المكياج والتوهج الصحي والبشرة الخالية من العيوب. من ناحية العناية بالبشرة، يوجد تركيز من المكونات النشطة المضادة للشيخوخة للحصول على بشرة ناعمة بشكل واضح. منتج واحد، لفتة واحدة، لتأثير مضاعف \"للعناية بالمكياج\".\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "Apply in small touches in the morning to the entire face, starting from the midline and moving up towards the temples. Smooth the forehead, from the frown line outwards.",
+        "ar": "ضعيه بلمسات صغيرة في الصباح على كامل الوجه، بدءاً من خط الوسط ووصولاً إلى الصدغين. قم بتنعيم الجبين، من خط العبوس إلى الخارج."
+      },
+      "benefits": {
+        "en": "IMMEDIATE “GOOD GLOW” EFFECT\n\nLASTING TANNED COMPLEXION\n\nMOISTURIZING ANTI-AGING EFFEC",
+        "ar": "تأثير \"توهج جيد\" فوري\n\nبشرة مدبوغة تدوم طويلاً\n\nتأثير مرطب مضاد للشيخوخة"
+      },
+      "ingredients": {
+        "en": "At Novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\n\nKey Ingredients\n\nANHYDROXYLITOL\nBIOSACCHARIDE GUM-1 & 2\nCAMELLIA SINENSIS LEAF EXTRACT\nCOFFEA ARABICA (COFFEE) SEED EXTRACT",
+        "ar": "في Novexpert، للاستفادة من فوائد الميلانين، دون المبالغة في ذلك، قمنا بتطوير علاج هجين بين المكياج والكريم من أجل الاستمتاع ببشرة مسمرة وسمرة طويلة الأمد بفضل منتج طبيعي 100٪. أصل طبيعي.\n\nالمكونات الرئيسية\n\nأنهيدروكسيليتول\nالسكاريد الحيوي صمغ-1 و2\nمستخلص أوراق الكاميليا سينينسيس\nمستخلص بذور القهوة العربية (القهوة)."
+      },
+      "price": 21.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998251/products/hjaio0rvfgcr9wd4kmlz.png"
+      ],
+      "id": "1775395599879",
+      "createdAt": "2026-04-05T13:26:39.879Z"
+    },
+    {
+      "name": {
+        "en": "Purifying Gel",
+        "ar": "جل تنقية"
+      },
+      "brand": "Novexpert",
+      "category": "TRIO-ZINC LINE",
+      "description": {
+        "en": "This 2-in-1 treatment incorporates anti-imperfection innovations and active ingredients to fight against the first signs of aging. A true pillar of the Trio-Zinc range, it can be used daily to achieve clear, mattified skin.\n•\nNORMAL TO OILY SKIN, WITH OR WITHOUT IMPERFECTIONS.",
+        "ar": "يتضمن هذا العلاج 2 في 1 ابتكارات مضادة للعيوب ومكونات نشطة لمحاربة العلامات الأولى للشيخوخة. إنه أحد الركائز الحقيقية لمجموعة Trio-Zinc، ويمكن استخدامه يوميًا للحصول على بشرة صافية وغير لامعة.\n•\nالبشرة العادية إلى الدهنية، مع أو بدون عيوب."
+      },
+      "howToUse": {
+        "en": " Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient. Before applying makeup, leave to penetrate for 5 minutes",
+        "ar": "ضعيه بلمسات صغيرة على الوجه بالكامل وقم بالتدليك باستخدام التدليك الدائري التصاعدي. كمية صغيرة من المنتج كافية. قبل وضع المكياج، اتركيه ليتغلغل لمدة 5 دقائق"
+      },
+      "benefits": {
+        "en": "Anti-imperfection action\n\nAnti-aging action",
+        "ar": "عمل مضاد للنقص\n\nعمل مكافحة الشيخوخة"
+      },
+      "ingredients": {
+        "en": "Thanks to the three forms of Zinc integrated into this treatment, the activity of a pro-acne factor (released in the event of a too sugary diet in particular) is radically reduced, offering you the chance to find clear skin, • Three actions to act at the origin of imperfections: reduction of sebum production*, soothing effect* and inhibition of the bacteria responsible for spots*.\n\nKey Ingredients\n\nBAKUCHIOL\nZINC GLUCONATE\nZINC LACTATE\nZINC PCA",
+        "ar": "بفضل الأشكال الثلاثة من الزنك المدمجة في هذا العلاج، يتم تقليل نشاط العامل المؤيد لحب الشباب (الذي يتم إطلاقه في حالة اتباع نظام غذائي غني بالسكر على وجه الخصوص) بشكل جذري، مما يتيح لك الفرصة للعثور على بشرة صافية، • ثلاثة إجراءات للعمل على أصل العيوب: تقليل إنتاج الزهم*، تأثير مهدئ* وتثبيط البكتيريا المسؤولة عن البقع*.\n\nالمكونات الرئيسية\n\nباكوتشيول\nجلوكونات الزنك\nلاكتات الزنك\nالزنك PCA"
+      },
+      "price": 17.95,
+      "texture": "",
+      "skinType": "NORMAL TO OILY SKIN",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998252/products/qfu4luqohwlyewyb5zdk.png"
+      ],
+      "id": "1775395691754",
+      "createdAt": "2026-04-05T13:28:11.754Z"
+    },
+    {
+      "name": {
+        "en": "Express Blemish Care",
+        "ar": "العناية السريعة بالعيوب"
+      },
+      "brand": "Novexpert",
+      "category": "TRIO-ZINC LINE",
+      "description": {
+        "en": "A localized treatment, effective from the first sensations of pain or redness. With its precise packaging, it allows clear and rapid resorption of blackheads. Discreet, practical and effective, it acts as much on the color of the pimple as on its relief for rapid and clear absorption\n•\nadds lasting radiance to the face",
+        "ar": "علاج موضعي، فعال منذ أول إحساس بالألم أو الاحمرار. بفضل عبوته الدقيقة، فإنه يسمح بامتصاص الرؤوس السوداء بشكل واضح وسريع. خفي وعملي وفعال، فهو يعمل على لون البثرة بقدر ما يعمل على تخفيفها من أجل امتصاص سريع وواضح.\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "FOR PREVENTION: at the first sensation of pain or the beginning of redness (prior to a pimple). FIXED: if the button is already visible. Stop Bouton Express is always applied to bare skin. Leave at least 10 minutes before applying your cream or makeup.",
+        "ar": "للوقاية: عند أول إحساس بالألم أو بداية الاحمرار (قبل ظهور البثرة). تم الإصلاح: إذا كان الزر مرئيًا بالفعل. يتم تطبيق Stop Bouton Express دائمًا على البشرة العارية. اتركيه لمدة 10 دقائق على الأقل قبل وضع الكريم أو المكياج."
+      },
+      "benefits": {
+        "en": "PREVENTION of inflammation\n\nCORRECTION of pimples\n\nAnti hyperpigmented scars",
+        "ar": "الوقاية من الالتهاب\n\nتصحيح البثور\n\nمكافحة الندبات المفرطة التصبغ"
+      },
+      "ingredients": {
+        "en": "Zinc is the essential trace element for all oily skin with or without imperfections: ANTI-BACTERIAL: it helps eliminate the bacteria causing pimples, C.acnes. ANTI-INFLAMMATORY: it reduces the severity of imperfections. ANTIOXIDANT: it protects sebum lipids from oxidation, a factor that aggravates imperfections.\n\nKey Ingredients\n\nALCOHOL\nGLUCONOLACTONE\nLACTIC ACID\n3 types of zinc pca ,gluconate ,lactate",
+        "ar": "الزنك هو العنصر الأساسي لجميع أنواع البشرة الدهنية مع أو بدون عيوب: مضاد للبكتيريا: يساعد في القضاء على البكتيريا المسببة للبثور وحب الشباب. مضاد للالتهابات: فهو يقلل من شدة العيوب. مضاد للأكسدة: يحمي الدهون الدهنية من الأكسدة، وهو عامل يؤدي إلى تفاقم العيوب.\n\nالمكونات الرئيسية\n\nالكحول\nالجلوكونولاكتون\nحمض اللبنيك\n3 أنواع من الزنك PCA، الجلوكونات، اللاكتات"
+      },
+      "price": 10.95,
+      "texture": "",
+      "skinType": "NORMAL TO OILY SKIN",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998253/products/btxnqzctbo5ralgtf310.png"
+      ],
+      "id": "1775395787014",
+      "createdAt": "2026-04-05T13:29:47.014Z"
+    },
+    {
+      "name": {
+        "en": "Clear Skin Foaming Gel",
+        "ar": "جل رغوي شفاف للبشرة"
+      },
+      "brand": "Novexpert",
+      "category": "TRIO-ZINC LINE",
+      "description": {
+        "en": "This anti-blemish cleanser differs radically in its composition, notably thanks to its ultra-gentle foaming agent which purifies without stripping and cleanses without drying\n•\nadds lasting radiance to the face",
+        "ar": "يختلف هذا المنظف المضاد للعيوب بشكل جذري في تركيبته، لا سيما بفضل عامل الرغوة اللطيف للغاية الذي ينقي دون تقشير وينظف دون جفاف.\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "Apply to damp face, massage and rinse",
+        "ar": "تنطبق على الوجه الرطب، والتدليك والشطف"
+      },
+      "benefits": {
+        "en": "AN ANTI-POLLUTION CLEANER\n\nA 3-IN-1 ANTI-IMPERFECTION TREATMENT\n\nPurifying action.\n\nMattifying action\n\nAnti-blemish action",
+        "ar": "منظف مضاد للتلوث\n\nعلاج 3 في 1 مضاد للعيوب\n\nعمل تنقية.\n\nعمل مطفأ اللمعة\n\nعمل مضاد للعيب"
+      },
+      "ingredients": {
+        "en": "Clinically proven effectiveness while excluding the aggressive and controversial ingredients found in the majority of anti-acne cleansers: 0% alcohol, 0% SLS/SLES and 0% glycolic acid/salicylic acid!\n\nKey Ingredients\n\nCOCO-GLUCOSIDE CLEANING AGENT\nCOPPER PCA\nOLEANOLIC ACID\n3 types of zinc pca ,gluconate ,lactate",
+        "ar": "فعالية مثبتة سريريًا مع استبعاد المكونات العدوانية والمثيرة للجدل الموجودة في غالبية المنظفات المضادة لحب الشباب: 0% كحول، 0% SLS/SLES و0% حمض الجليكوليك/حمض الساليسيليك!\n\nالمكونات الرئيسية\n\nعامل تنظيف كوكو جلوكوزيد\nالنحاس PCA\nحمض الأوليانوليك\n3 أنواع من الزنك PCA، الجلوكونات، اللاكتات"
+      },
+      "price": 15.95,
+      "texture": "",
+      "skinType": "NORMAL TO OILY SKIN",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998254/products/ko0u5jrctpfrqqeyepvx.png"
+      ],
+      "id": "1775395884253",
+      "createdAt": "2026-04-05T13:31:24.253Z"
+    },
+    {
+      "name": {
+        "en": "Vitamin C Serum 25%",
+        "ar": "سيروم فيتامين سي 25%"
+      },
+      "brand": "Novexpert",
+      "category": "VITAMIN C LINE",
+      "description": {
+        "en": "\nA powerfull Antioxidant\n•\nSmoothes the skin\n•\nImmediate Radiance complexion 25%",
+        "ar": "مضاد قوي للأكسدة\n•\nينعم البشرة\n•\nإشراقة فورية للبشرة 25%"
+      },
+      "howToUse": {
+        "en": "Take one or two dabs then distribute the Vitamin C Booster over the entire face and targeted areas (pigment spots and wrinkles).",
+        "ar": "خذ جرعة أو اثنتين ثم قم بتوزيع معزز فيتامين C على كامل الوجه والمناطق المستهدفة (البقع الصبغية والتجاعيد)."
+      },
+      "benefits": {
+        "en": "Radiant Complexion\n\nAnti-Ageing\n\nA powerful Antioxidant",
+        "ar": "بشرة مشعة\n\nمكافحة الشيخوخة\n\nمضاد قوي للأكسدة"
+      },
+      "ingredients": {
+        "en": " ULTRA-HIGH CONCENTRATION: 25% of a stabilised vitamin C complex • Certified non-photoallergenic, non-phototoxic and non-photosensitising • Can be used for Sensitive Skin\n\nKey Ingredients\n\nAscorbyl Methylsilanol Pectinate\n3-O- Ethyl Ascorbic Acid",
+        "ar": "تركيز عالي للغاية: 25% من مركب فيتامين C المستقر • معتمد بأنه غير مسبب للحساسية الضوئية وغير سام للضوء وغير مسبب للحساسية الضوئية • يمكن استخدامه للبشرة الحساسة\n\nالمكونات الرئيسية\n\nأسكوربيل ميثيل سيلانول بكتينات\n3-O- حمض إيثيل الأسكوربيك"
+      },
+      "price": 43.5,
+      "texture": "",
+      "skinType": "all sensitive skin types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998255/products/kiugz7szgbenzsiu3nde.png"
+      ],
+      "id": "1775395982674",
+      "createdAt": "2026-04-05T13:33:02.674Z"
+    },
+    {
+      "name": {
+        "en": "The Peeling Night Cream",
+        "ar": "كريم التقشير الليلي"
+      },
+      "brand": "Novexpert",
+      "category": "VITAMIN C LINE",
+      "description": {
+        "en": "A vitamin C-based cream\n•\ngentle exfoliating active ingredient\n•\nanti-aging molecules\n•\nradiant complexion upon waking up",
+        "ar": "A vitamin C-based cream\n•\ngentle exfoliating active ingredient\n•\nanti-aging molecules\n•\nradiant complexion upon waking up"
+      },
+      "howToUse": {
+        "en": "Apply to the face, avoiding the eye area, lips and sides of the nose.",
+        "ar": "Apply to the face, avoiding the eye area, lips and sides of the nose."
+      },
+      "benefits": {
+        "en": "Radiant Complexion\n\nAnti-Ageing\n\nsmoothed skin relief",
+        "ar": "Radiant Complexion\n\nAnti-Ageing\n\nsmoothed skin relief"
+      },
+      "ingredients": {
+        "en": "A “NEW SKIN” effect thanks to a trio of gentle peeling active ingredients: gluconolactone, lactic acid and a complex of lactic acid and arginine. These active ingredients are released throughout the night for continued action\n\nKey Ingredients\n\nAloe Vera Gel\nASCORBYL GLUCOSIDE\nCARICA PAPAYA (PAPAYA) FRUIT EXTRACT\nGLUCONOLACTONE",
+        "ar": "A “NEW SKIN” effect thanks to a trio of gentle peeling active ingredients: gluconolactone, lactic acid and a complex of lactic acid and arginine. These active ingredients are released throughout the night for continued action\n\nKey Ingredients\n\nAloe Vera Gel\nASCORBYL GLUCOSIDE\nCARICA PAPAYA (PAPAYA) FRUIT EXTRACT\nGLUCONOLACTONE"
+      },
+      "price": 31.95,
+      "texture": "",
+      "skinType": "NORMAL TO OILY SKIN.",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998255/products/lwm6hherpbqiugkncphb.png"
+      ],
+      "id": "1775396071866",
+      "createdAt": "2026-04-05T13:34:31.867Z",
+      "updatedAt": "2026-04-10T06:34:06.683Z"
+    },
+    {
+      "name": {
+        "en": "Radiance Lifting Eye Contour",
+        "ar": "إشعاع رفع محيط العين"
+      },
+      "brand": "Novexpert",
+      "category": "VITAMIN C LINE",
+      "description": {
+        "en": "To instantly illuminate and lift your eye contour. A localized treatment that acts on the surface as well as in depth to smooth the lines",
+        "ar": "لإضاءة محيط عينك ورفعه على الفور. علاج موضعي يعمل على السطح وفي العمق لتنعيم الخطوط"
+      },
+      "howToUse": {
+        "en": "Gently apply a small amount of product to the lower eyelid, starting from the inner corner of the eye towards the end of the crow's feet wrinkles. Apply makeup immediately so as not to remove the tensor film.",
+        "ar": "ضعي كمية صغيرة من المنتج بلطف على الجفن السفلي، بدءًا من الزاوية الداخلية للعين وحتى نهاية تجاعيد قدم الغراب. ضعي المكياج على الفور حتى لا تزيلي الفيلم الموتر."
+      },
+      "benefits": {
+        "en": "INSTANT LIFTING action\n\nDEEP ANTI-AGING action\n\nRADIANCE OF THE EYES action",
+        "ar": "عملية رفع فورية\n\nعمل عميق مضاد للشيخوخة\n\nإشراقة العيون"
+      },
+      "ingredients": {
+        "en": "INSTANT LIFTING action: thanks to 5 ingredients with immediate effect including high molecular weight hyaluronic acid or baobab pulp • DEEP ANTI-AGING action: thanks to 5 anti-aging components including Novaxyline, • RADIANCE OF THE EYES action: thanks to the unique combination of hyaluronic acid, which fills skin microdepressions, and a vitamin C complex for a brighter look.\n\nKey Ingredients\n\nhigh molecular weight hyaluronic acid or baobab pulp\na vitamin C complex\nNovaxyline",
+        "ar": "تأثير رفع فوري: بفضل 5 مكونات ذات تأثير فوري بما في ذلك حمض الهيالورونيك ذو الوزن الجزيئي العالي أو لب الباوباب • تأثير عميق مضاد للشيخوخة: بفضل 5 مكونات مضادة للشيخوخة بما في ذلك نوفاكسلين، • تأثير إشراق العين: بفضل المزيج الفريد من حمض الهيالورونيك، الذي يملأ انخفاضات الجلد الدقيقة، ومركب فيتامين C للحصول على مظهر أكثر إشراقًا.\n\nالمكونات الرئيسية\n\nحمض الهيالورونيك عالي الوزن الجزيئي أو لب الباوباب\nمركب فيتامين سي\nنوفاكسلين"
+      },
+      "price": 32.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998256/products/x42kst4xfcmucmobjd3p.png"
+      ],
+      "id": "1775396166780",
+      "createdAt": "2026-04-05T13:36:06.781Z"
+    },
+    {
+      "name": {
+        "en": "Express Radiant Cleansing Foam",
+        "ar": "رغوة التنظيف المشعة السريعة"
+      },
+      "brand": "Novexpert",
+      "category": "VITAMIN C LINE",
+      "description": {
+        "en": "a single gesture is enough for three actions: cleansing, removing make-up and exfoliating. Daily care for a new skin effect and a brighter complexion.\n•\nadds lasting radiance to the face",
+        "ar": "حركة واحدة تكفي لثلاثة إجراءات: التنظيف، وإزالة المكياج، والتقشير. عناية يومية للحصول على تأثير جديد للبشرة وبشرة أكثر إشراقًا.\n•\nيضيف إشراقة دائمة للوجه"
+      },
+      "howToUse": {
+        "en": "Apply the Flash Radiance Cleansing Foam to a damp face, leave on for 20 seconds then massage for 10 seconds, rinse and dry.",
+        "ar": "ضعي رغوة التنظيف Flash Radiance على وجه رطب، واتركيه لمدة 20 ثانية ثم دلكي لمدة 10 ثوانٍ، ثم اشطفيه وجففيه."
+      },
+      "benefits": {
+        "en": "Clear, smooth skin in 20 seconds flat! And here’s how the Flash Radiance Cleansing Foam works",
+        "ar": "بشرة صافية وناعمة في 20 ثانية! وإليك كيفية عمل رغوة التنظيف Flash Radiance"
+      },
+      "ingredients": {
+        "en": "Peel off dead skin. ENZYMATIC PEEL: dissociate dead skin from its residual attachments with papaya enzymes. • Remove dead skin. ORGANIC PEEL: sweep away dead skin using exfoliating PHAs. • No Preservatives\n\nKey Ingredients\n\nAloevera Gel\nASCORBYL GLUCOSIDE\nCARICA PAPAYA (PAPAYA) FRUIT EXTRACT\nGLUCONOLACTONE",
+        "ar": "تقشر الجلد الميت. التقشير الأنزيمي: يفصل الجلد الميت عن ملحقاته المتبقية باستخدام إنزيمات البابايا. • إزالة الجلد الميت. التقشير العضوي: يزيل الجلد الميت باستخدام PHAs المقشرة. • لا يوجد مواد حافظة\n\nالمكونات الرئيسية\n\nجل الالوفيرا\nأسكوربيل جلوكوزيد\nمستخلص فاكهة البابايا (البابايا) من كاريكا\nالجلوكونولاكتون"
+      },
+      "price": 19.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998257/products/egksqlkesjzwymt4gzm7.png"
+      ],
+      "id": "1775396255664",
+      "createdAt": "2026-04-05T13:37:35.664Z"
+    },
+    {
+      "name": {
+        "en": "Expert Exfoliator",
+        "ar": "مقشر خبير"
+      },
+      "brand": "Novexpert",
+      "category": "VITAMIN C LINE",
+      "description": {
+        "en": "2-in-1 product that is both a peeling mask and a scrub that leaves your skin smooth and clear from the first application",
+        "ar": "2-in-1 product that is both a peeling mask and a scrub that leaves your skin smooth and clear from the first application"
+      },
+      "howToUse": {
+        "en": "STEP 1: apply the Exfoliant like a mask to the face, avoiding the eye and lip area. Leave on for 5 minutes.\n STEP 2: massage very gently with damp hands for 1 minute. Rinse with cold water and pat dry..",
+        "ar": "STEP 1: apply the Exfoliant like a mask to the face, avoiding the eye and lip area. Leave on for 5 minutes.\n STEP 2: massage very gently with damp hands for 1 minute. Rinse with cold water and pat dry.."
+      },
+      "benefits": {
+        "en": "A MASK for a radiant complexion: in just a few minutes, the Expert Exfoliant illuminates the complexion\n\nA SCRUB for smoothed skin: this time, it's mechanical peeling that comes into action",
+        "ar": "A MASK for a radiant complexion: in just a few minutes, the Expert Exfoliant illuminates the complexion\n\nA SCRUB for smoothed skin: this time, it's mechanical peeling that comes into action"
+      },
+      "ingredients": {
+        "en": "biological peeling provided by gluconolactone (PHA) combined with vitamin C. During this first stage, dead cells are separated from the epidermis. • exfoliating jojoba microspheres, polishing bamboo silica and exfoliating apricot kernel powder. Dead cells are then removed and the epidermis smoothed\n\nKey Ingredients\n\nAloevera Gel\nASCORBYL GLUCOSIDE\nCARICA PAPAYA (PAPAYA) FRUIT EXTRACT\nGLUCONOLACTONE",
+        "ar": "biological peeling provided by gluconolactone (PHA) combined with vitamin C. During this first stage, dead cells are separated from the epidermis. • exfoliating jojoba microspheres, polishing bamboo silica and exfoliating apricot kernel powder. Dead cells are then removed and the epidermis smoothed\n\nKey Ingredients\n\nAloevera Gel\nASCORBYL GLUCOSIDE\nCARICA PAPAYA (PAPAYA) FRUIT EXTRACT\nGLUCONOLACTONE"
+      },
+      "price": 19.95,
+      "texture": "",
+      "skinType": "All Skin Types",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775998257/products/gk3edkolcjni4kvd82k0.png"
+      ],
+      "id": "1775396352437",
+      "createdAt": "2026-04-05T13:39:12.437Z",
+      "updatedAt": "2026-04-05T17:36:32.794Z"
+    },
+    {
+      "name": {
+        "en": "hello",
+        "ar": "ز"
+      },
+      "description": {
+        "en": "f",
+        "ar": "f"
+      },
+      "howToUse": {
+        "en": "f",
+        "ar": "f"
+      },
+      "price": 33,
+      "brand": "Novexpert",
+      "category": "TRIO-ZINC LINE",
+      "images": [
+        "https://res.cloudinary.com/db2tuzuim/image/upload/v1775802501/skincare-products/rl9jedwbqc9ya4as2ocp.png"
+      ],
+      "id": "69d89889bc285c938c9659d1",
+      "createdAt": "2026-04-10T06:28:25.835Z",
+      "updatedAt": "2026-04-10T06:35:50.133Z",
+      "benefits": {
+        "en": "h",
+        "ar": "h"
+      },
+      "ingredients": {
+        "en": "h",
+        "ar": "h"
+      },
+      "texture": "",
+      "skinType": "all"
+    }
+  ],
+  "orders": [],
+  "messages": [],
+  "visitors": [
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:04:16.135Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T10:04:16.804Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T10:04:16.977Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T10:04:17.104Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:07:48.484Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T10:07:56.750Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-04T10:08:02.459Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T10:08:06.574Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-04T10:08:15.383Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-04T10:08:17.786Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:08:20.108Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T10:08:24.427Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:08:27.624Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:08:46.993Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:08:50.055Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:08:52.948Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T10:15:39.713Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:15:42.260Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:15:57.790Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T10:16:02.007Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T10:16:08.179Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:16:11.611Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:27:09.215Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:27:11.029Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:27:11.894Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T10:41:55.954Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T10:41:59.229Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-04T10:42:01.824Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-04T10:42:04.836Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-04T10:42:06.046Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T10:42:18.378Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T10:42:22.937Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:01:40.617Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:02:19.441Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:02:22.686Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T11:02:24.434Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T11:02:26.442Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:02:27.439Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T11:02:29.281Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:40:10.970Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T11:40:17.947Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T11:40:20.874Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:49:32.835Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T11:51:28.206Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:53:34.009Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T11:53:39.940Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T11:57:04.803Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T11:57:08.971Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T11:57:17.181Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T12:01:47.961Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T12:07:02.312Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T12:07:12.404Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T12:07:16.289Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T12:07:19.461Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T12:11:48.656Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T12:21:17.578Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775304474321",
+      "timestamp": "2026-04-04T12:21:29.055Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T12:21:47.370Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T12:22:01.225Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T12:22:11.555Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T12:34:20.792Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T12:34:25.876Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T12:34:29.409Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T12:40:37.341Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T12:40:37.365Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775304474321",
+      "timestamp": "2026-04-04T12:40:43.226Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-04T12:40:56.733Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-04T12:41:00.336Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T14:21:00.201Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T14:34:37.895Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T14:50:51.732Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T14:53:03.395Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T14:56:49.628Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T15:10:36.342Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T16:14:51.115Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T16:15:23.321Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T16:15:44.062Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/checkout",
+      "timestamp": "2026-04-04T16:18:44.724Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775304474321",
+      "timestamp": "2026-04-04T16:19:06.366Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T16:28:58.664Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775304474321",
+      "timestamp": "2026-04-04T16:29:02.595Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T16:36:28.555Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T16:47:55.730Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-04T16:48:10.624Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-04T16:48:52.728Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-04T16:49:01.669Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-04T16:49:05.616Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775304474321",
+      "timestamp": "2026-04-04T16:49:12.645Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/brand/novexpert",
+      "timestamp": "2026-04-04T16:49:25.177Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-04T16:49:28.495Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/about",
+      "timestamp": "2026-04-04T16:49:39.938Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T16:51:23.442Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T16:57:09.599Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T16:59:15.097Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T17:00:48.932Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T19:03:44.005Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775304474321",
+      "timestamp": "2026-04-04T19:04:23.486Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T19:06:00.261Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T19:06:14.342Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T19:09:04.817Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T19:48:18.606Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T19:48:32.818Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T19:48:47.095Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T20:06:35.761Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T20:42:18.101Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T20:42:50.813Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T20:43:25.339Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T20:48:41.125Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T20:49:31.356Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T20:49:37.825Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T21:10:37.155Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T21:10:37.408Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-04T21:11:42.962Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-04T21:11:50.247Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-04T21:19:40.972Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-04T21:34:39.689Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-04T21:35:03.446Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775339545741",
+      "timestamp": "2026-04-04T21:56:00.871Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-04T22:31:52.838Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-04T22:32:03.930Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-05T11:27:35.051Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-05T11:27:35.321Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-05T11:27:58.988Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-05T11:28:08.464Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-05T11:28:19.263Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-05T11:54:06.159Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775390032507",
+      "timestamp": "2026-04-05T11:54:15.199Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775390287816",
+      "timestamp": "2026-04-05T11:58:25.182Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775391057217",
+      "timestamp": "2026-04-05T12:11:36.244Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775390564561",
+      "timestamp": "2026-04-05T12:11:55.859Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775391240767",
+      "timestamp": "2026-04-05T12:14:15.881Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775392815294",
+      "timestamp": "2026-04-05T12:42:21.918Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/brand/topicrem",
+      "timestamp": "2026-04-05T12:47:14.044Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-05T12:47:41.220Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-05T13:52:06.339Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-05T13:53:15.928Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-05T15:09:08.496Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-05T15:09:15.321Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-05T15:31:07.794Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-05T15:31:13.123Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-05T15:31:45.732Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-05T15:33:40.542Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-05T15:34:38.156Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/product/1775394010087",
+      "timestamp": "2026-04-05T15:53:10.335Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/brand/novexpert",
+      "timestamp": "2026-04-05T16:02:07.607Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/admin",
+      "timestamp": "2026-04-05T16:07:45.605Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/admin/dashboard",
+      "timestamp": "2026-04-05T16:07:54.277Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-05T16:08:59.388Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775405324213",
+      "timestamp": "2026-04-05T16:09:25.070Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/product/1775405324213",
+      "timestamp": "2026-04-05T16:09:29.235Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-05T16:09:46.675Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-05T17:34:55.893Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-05T17:35:15.508Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-05T17:35:35.729Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-05T17:36:48.021Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-05T17:37:01.675Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-05T17:51:57.305Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-06T09:09:23.747Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-06T09:09:30.386Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/about",
+      "timestamp": "2026-04-06T09:09:45.283Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/contact",
+      "timestamp": "2026-04-06T09:09:54.027Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/brand/topicrem",
+      "timestamp": "2026-04-06T09:10:09.137Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/brand/novexpert",
+      "timestamp": "2026-04-06T09:10:39.393Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-06T09:24:40.689Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-06T09:24:47.729Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-06T09:25:05.417Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-06T09:25:59.164Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/product/1775394010087",
+      "timestamp": "2026-04-06T17:33:02.138Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-08T18:24:12.755Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-08T18:24:13.707Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-08T18:25:52.205Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-08T18:26:58.021Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-08T18:31:28.774Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-08T18:32:59.753Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-08T18:34:00.084Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/product/1775394572371",
+      "timestamp": "2026-04-08T18:34:48.460Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-08T19:32:17.679Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-08T19:32:18.678Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-08T19:32:38.351Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/about",
+      "timestamp": "2026-04-08T19:32:49.152Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-08T19:33:00.373Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-08T19:33:21.866Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-08T19:45:55.175Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/product/1775394010087",
+      "timestamp": "2026-04-08T19:52:02.426Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-08T19:59:43.883Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-08T19:59:50.495Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-08T20:00:06.644Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-08T20:00:30.984Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-08T20:16:39.831Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-08T20:41:33.257Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/contact",
+      "timestamp": "2026-04-08T20:44:09.174Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar",
+      "timestamp": "2026-04-08T23:05:57.334Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-08T23:06:08.642Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-09T07:59:51.499Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-09T07:59:57.363Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/cart",
+      "timestamp": "2026-04-09T08:00:13.071Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-09T08:24:05.890Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-09T08:24:11.968Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/cart",
+      "timestamp": "2026-04-09T08:24:20.420Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-09T08:24:40.424Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775339332740",
+      "timestamp": "2026-04-09T08:24:58.049Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775339729759",
+      "timestamp": "2026-04-09T08:32:17.237Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338640562",
+      "timestamp": "2026-04-09T08:43:41.041Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775339233952",
+      "timestamp": "2026-04-09T08:43:59.879Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-09T08:44:13.617Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775394893687",
+      "timestamp": "2026-04-09T08:44:16.931Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775394998784",
+      "timestamp": "2026-04-09T08:44:26.516Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-09T08:58:30.573Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-09T08:58:36.371Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-09T08:58:54.430Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-09T09:00:23.002Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775394572371",
+      "timestamp": "2026-04-09T09:00:25.874Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-09T09:15:28.576Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-09T09:27:28.566Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-09T09:27:33.523Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-09T09:27:38.178Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/coupons",
+      "timestamp": "2026-04-09T09:27:45.361Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-09T09:35:44.102Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/cart",
+      "timestamp": "2026-04-09T09:35:47.862Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338456424",
+      "timestamp": "2026-04-09T09:36:05.192Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-09T10:01:57.083Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-09T13:43:23.284Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/novexpert",
+      "timestamp": "2026-04-09T18:32:53.899Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/brand/novexpert",
+      "timestamp": "2026-04-09T18:33:06.650Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/ar/product/1775759530486",
+      "timestamp": "2026-04-09T18:33:30.478Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-10T06:18:08.750Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin",
+      "timestamp": "2026-04-10T06:18:55.094Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/admin/dashboard",
+      "timestamp": "2026-04-10T06:27:45.430Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-10T10:10:22.683Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en",
+      "timestamp": "2026-04-11T12:45:56.858Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/product/1775338781169",
+      "timestamp": "2026-04-11T12:46:35.571Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    {
+      "page": "/en/brand/topicrem",
+      "timestamp": "2026-04-11T12:46:54.640Z",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    }
+  ],
+  "customCategories": {
+    "Topicrem": [
+      "1"
+    ],
+    "Novexpert": []
+  }
+}
