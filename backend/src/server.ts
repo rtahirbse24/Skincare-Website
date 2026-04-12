@@ -25,9 +25,24 @@ const PORT = process.env.PORT || 5007;
 // =======================
 
 // ✅ FIXED CORS (IMPORTANT)
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://zippy-kangaroo-914e14.netlify.app',
+  process.env.FRONTEND_URL
+];
+
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: (origin, callback) => {
+      // allow requests with no origin (like Postman)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error('Not allowed by CORS'));
+      }
+    },
     credentials: true,
   })
 );

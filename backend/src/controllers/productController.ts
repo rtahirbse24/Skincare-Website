@@ -52,18 +52,55 @@ export const getProductById = async (req: Request, res: Response): Promise<void>
 
 export const createProduct = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { error } = productSchema.validate(req.body);
-    if (error) {
-      res.status(400).json({ message: error.details[0].message });
-      return;
+    const files = req.files as Express.Multer.File[];
+    let imageUrls: string[] = [];
+
+    // Handle image uploads if files are present
+    if (files && files.length > 0) {
+      const cloudinary = require('../config/cloudinary');
+      const uploadPromises = files.map(file =>
+        cloudinary.uploader.upload(file.path, {
+          folder: 'skincare-products',
+        })
+      );
+
+      const results = await Promise.all(uploadPromises);
+      imageUrls = results.map(result => result.secure_url);
+
+      // Clean up temp files
+      const fs = require('fs');
+      files.forEach(file => fs.unlinkSync(file.path));
     }
 
-    const product = new Product(req.body);
+    // Get form data
+    const {
+      nameEn, nameAr, brand, category, descriptionEn, descriptionAr,
+      howToUseEn, howToUseAr, benefitsEn, benefitsAr,
+      ingredientsEn, ingredientsAr, price, texture, skinType
+    } = req.body;
+
+    const productData = {
+      name: { en: nameEn, ar: nameAr },
+      brand,
+      category: category || null,
+      description: { en: descriptionEn, ar: descriptionAr },
+      howToUse: { en: howToUseEn, ar: howToUseAr },
+      benefits: { en: benefitsEn, ar: benefitsAr },
+      ingredients: { en: ingredientsEn, ar: ingredientsAr },
+      price: Number(price) || 0,
+      texture,
+      skinType,
+      images: imageUrls,
+    };
+
+    const product = new Product(productData);
     await product.save();
 
-    console.log('🔥 createProduct API HIT');
+    console.log('🔥 createProduct API HIT - Product created:', product._id);
 
     // ✅ ALSO SAVE TO store.json
+    const path = require('path');
+    const fs = require('fs');
     const filePath = path.join(__dirname, '../../../frontend/data/store.json');
 
     const raw = fs.readFileSync(filePath, 'utf-8');
@@ -74,7 +111,7 @@ export const createProduct = async (req: Request, res: Response): Promise<void> 
     }
 
     store.products.push({
-      ...req.body,
+      ...productData,
       id: product._id.toString(),
       createdAt: product.createdAt,
       updatedAt: product.updatedAt
@@ -84,25 +121,74 @@ export const createProduct = async (req: Request, res: Response): Promise<void> 
 
     res.status(201).json(product);
   } catch (error) {
+    console.error('Create product error:', error);
     res.status(500).json({ message: 'Server error' });
   }
 };
 
 export const updateProduct = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { error } = productSchema.validate(req.body);
-    if (error) {
-      res.status(400).json({ message: error.details[0].message });
-      return;
+    const files = req.files as Express.Multer.File[];
+    let imageUrls: string[] = [];
+
+    // Handle image uploads if files are present
+    if (files && files.length > 0) {
+      const cloudinary = require('../config/cloudinary');
+      const uploadPromises = files.map(file =>
+        cloudinary.uploader.upload(file.path, {
+          folder: 'skincare-products',
+        })
+      );
+
+      const results = await Promise.all(uploadPromises);
+      imageUrls = results.map(result => result.secure_url);
+
+      // Clean up temp files
+      const fs = require('fs');
+      files.forEach(file => fs.unlinkSync(file.path));
     }
 
-    const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    // Get form data
+    const {
+      nameEn, nameAr, brand, category, descriptionEn, descriptionAr,
+      howToUseEn, howToUseAr, benefitsEn, benefitsAr,
+      ingredientsEn, ingredientsAr, price, texture, skinType,
+      existingImages
+    } = req.body;
+
+    const productData: any = {
+      name: { en: nameEn, ar: nameAr },
+      brand,
+      category: category || null,
+      description: { en: descriptionEn, ar: descriptionAr },
+      howToUse: { en: howToUseEn, ar: howToUseAr },
+      benefits: { en: benefitsEn, ar: benefitsAr },
+      ingredients: { en: ingredientsEn, ar: ingredientsAr },
+      price: Number(price) || 0,
+      texture,
+      skinType,
+    };
+
+    // Handle images - use new uploads if present, otherwise keep existing
+    if (imageUrls.length > 0) {
+      productData.images = imageUrls;
+    } else if (existingImages) {
+      try {
+        productData.images = JSON.parse(existingImages);
+      } catch {
+        productData.images = [];
+      }
+    }
+
+    const product = await Product.findByIdAndUpdate(req.params.id, productData, { new: true });
     if (!product) {
       res.status(404).json({ message: 'Product not found' });
       return;
     }
+
     res.json(product);
   } catch (error) {
+    console.error('Update product error:', error);
     res.status(500).json({ message: 'Server error' });
   }
 };

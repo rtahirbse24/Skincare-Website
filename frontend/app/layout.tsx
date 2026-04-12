@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Cairo, Montserrat, Geist } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { CartProvider } from "@/components/cart-provider";
 import { cn } from "@/lib/utils";
@@ -39,7 +38,6 @@ export default function RootLayout({ children }: Props) {
         <CartProvider>
           {children}
         </CartProvider>
-        <Analytics />
       </body>
     </html>
   );

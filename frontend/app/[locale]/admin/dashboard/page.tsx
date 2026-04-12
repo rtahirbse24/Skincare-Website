@@ -323,28 +323,38 @@ const handleSaveEdit = async () => {
   }
 
   try {
-    console.log('category being saved:', editFormData.category, 'fallback:', editingProduct?.category)
-    const payload = {
-      name: { en: editFormData.nameEn, ar: editFormData.nameAr },
-      brand: editFormData.brand,
-      category: editFormData.category || editingProduct?.category || null,
-      description: { en: editFormData.descriptionEn, ar: editFormData.descriptionEn },
-      howToUse: { en: editFormData.howToUseEn, ar: editFormData.howToUseEn },
-      benefits: { en: editFormData.benefitsEn, ar: editFormData.benefitsEn },
-      ingredients: { en: editFormData.ingredientsEn, ar: editFormData.ingredientsEn },
-      price: Number(editFormData.price) || 0,
-      texture: editFormData.texture,
-      skinType: editFormData.skinType,
-      images: editImages,
-    };
+    // Create FormData for multipart upload
+    const formData = new FormData();
+
+    // Add text fields
+    formData.append('nameEn', editFormData.nameEn);
+    formData.append('nameAr', editFormData.nameAr);
+    formData.append('brand', editFormData.brand);
+    formData.append('category', editFormData.category || editingProduct?.category || '');
+    formData.append('descriptionEn', editFormData.descriptionEn);
+    formData.append('descriptionAr', editFormData.descriptionEn);
+    formData.append('howToUseEn', editFormData.howToUseEn);
+    formData.append('howToUseAr', editFormData.howToUseEn);
+    formData.append('benefitsEn', editFormData.benefitsEn);
+    formData.append('benefitsAr', editFormData.benefitsEn);
+    formData.append('ingredientsEn', editFormData.ingredientsEn);
+    formData.append('ingredientsAr', editFormData.ingredientsEn);
+    formData.append('price', editFormData.price);
+    formData.append('texture', editFormData.texture || '');
+    formData.append('skinType', editFormData.skinType || '');
+
+    // Add existing images as JSON string
+    formData.append('existingImages', JSON.stringify(editImages));
+
+    console.log('handleSaveEdit: Updating product with', editImages.length, 'images');
 
     const res = await fetch(`/api/products/${productId}`, {
       method: 'PUT',
       headers: {
-        'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`,
+        // DO NOT set Content-Type - browser sets it with boundary
       },
-      body: JSON.stringify(payload),
+      body: formData,
     });
 
     if (!res.ok) {
@@ -354,6 +364,8 @@ const handleSaveEdit = async () => {
       return;
     }
 
+    const data = await res.json();
+    console.log('handleSaveEdit success:', data);
     alert('Updated ✅');
     setIsEditModalOpen(false);
     setEditingProduct(null);
@@ -380,29 +392,44 @@ const handleSaveEdit = async () => {
   }
 
   try {
-    const payload = {
-  name: { en: addFormData.nameEn, ar: addFormData.nameAr },
-  brand: addFormData.brand,
-  category: addFormData.category || null,
-  description: { en: addFormData.descriptionEn, ar: addFormData.descriptionEn },
-  howToUse: { en: addFormData.howToUseEn, ar: addFormData.howToUseEn },
-  benefits: { en: addFormData.benefitsEn, ar: addFormData.benefitsEn },
-  ingredients: { en: addFormData.ingredientsEn, ar: addFormData.ingredientsEn },
-  price: Number(addFormData.price) || 0,
-  texture: addFormData.texture,
-  skinType: addFormData.skinType,
-  images: addImages,
-};
+    // Create FormData for multipart upload
+    const formData = new FormData();
 
-    console.log('handleAddProduct: Sending payload', payload);
+    // Add text fields
+    formData.append('nameEn', addFormData.nameEn);
+    formData.append('nameAr', addFormData.nameAr);
+    formData.append('brand', addFormData.brand);
+    formData.append('category', addFormData.category || '');
+    formData.append('descriptionEn', addFormData.descriptionEn);
+    formData.append('descriptionAr', addFormData.descriptionEn); // Using same for both for now
+    formData.append('howToUseEn', addFormData.howToUseEn);
+    formData.append('howToUseAr', addFormData.howToUseEn);
+    formData.append('benefitsEn', addFormData.benefitsEn);
+    formData.append('benefitsAr', addFormData.benefitsEn);
+    formData.append('ingredientsEn', addFormData.ingredientsEn);
+    formData.append('ingredientsAr', addFormData.ingredientsEn);
+    formData.append('price', addFormData.price);
+    formData.append('texture', addFormData.texture || '');
+    formData.append('skinType', addFormData.skinType || '');
+
+    // Add images if any
+    if (addImages.length > 0) {
+      addImages.forEach((imageUrl, index) => {
+        // For now, we'll send the URLs directly since images are already uploaded
+        // In a full implementation, you'd upload images first and get URLs
+        formData.append('images', imageUrl);
+      });
+    }
+
+    console.log('handleAddProduct: Sending FormData with', addImages.length, 'images');
 
     const res = await fetch('/api/products', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`,
+        // DO NOT set Content-Type - browser sets it with boundary
       },
-      body: JSON.stringify(payload),
+      body: formData,
     });
 
     console.log('handleAddProduct: Response status', res.status);
@@ -425,8 +452,7 @@ const handleSaveEdit = async () => {
       return;
     }
 
-    const bodyText = await res.text();
-    const data = bodyText ? JSON.parse(bodyText) : { success: true };
+    const data = await res.json();
     console.log('handleAddProduct: Success', data);
     alert('Product added ✅');
     setIsAddModalOpen(false);
