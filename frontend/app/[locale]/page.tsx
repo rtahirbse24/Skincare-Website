@@ -342,7 +342,7 @@ export default function HomePage() {
             ) : (
               allProducts.slice(0, 8).map((product) => (
                 <div
-                  key={product.id}
+                  key={product._id || product.id}
                   className="relative shrink-0 w-[260px] sm:w-[280px] snap-start"
                 >
                   <span className="absolute top-2 left-2 z-10 rounded-full bg-white/95 px-2 py-0.5 text-xs font-medium text-gray-700 shadow-sm">

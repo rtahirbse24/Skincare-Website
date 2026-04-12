@@ -1,4 +1,5 @@
 export interface Product {
+  _id?: string;  // ADD THIS
   id: string;
   brand: string;
   type?: string;
@@ -30,38 +31,49 @@ import { BASE_URL } from './api';
 export async function getProducts(): Promise<Product[]> {
   try {
     const res = await fetch(`${BASE_URL}/api/products`, {
-      cache: "no-store",
-    });
-    if (!res.ok) throw new Error("Failed to fetch products");
-    return await res.json();
+      cache: 'no-store',
+    })
+    if (!res.ok) return []
+    const data = await res.json()
+    if (!Array.isArray(data)) return []
+
+    // ✅ normalize _id to id
+    return data.map((p: any) => ({
+      ...p,
+      id: p._id || p.id || '',
+    }))
   } catch (error) {
-    console.error("Products fetch error:", error);
-    return [];
+    console.error('Products fetch error:', error)
+    return []
   }
 }
 
 // ✅ Fetch products by brand
 export async function fetchProducts(brand?: string): Promise<Product[]> {
   try {
-    const url = brand ? `${BASE_URL}/api/products?brand=${brand}` : `${BASE_URL}/api/products`
-    console.log('fetchProducts:', url)
+    const url = brand
+      ? `${BASE_URL}/api/products?brand=${brand}`
+      : `${BASE_URL}/api/products`
 
     const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
+    const timeoutId = setTimeout(() => controller.abort(), 30000)
 
     const res = await fetch(url, {
-      next: { revalidate: 60 },
+      cache: 'no-store',
       signal: controller.signal
     })
     clearTimeout(timeoutId)
 
-    if (!res.ok) {
-      console.error('fetchProducts error:', res.status, res.statusText)
-      return []
-    }
+    if (!res.ok) return []
+
     const data = await res.json()
-    console.log('fetchProducts success:', Array.isArray(data) ? data.length : 'not array')
-    return Array.isArray(data) ? data : []
+    if (!Array.isArray(data)) return []
+
+    // ✅ THIS IS THE KEY FIX — normalize _id to id
+    return data.map((p: any) => ({
+      ...p,
+      id: p._id || p.id || '',
+    }))
   } catch (e) {
     console.error('fetchProducts error:', e instanceof Error ? e.message : e)
     return []
