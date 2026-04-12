@@ -160,13 +160,10 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     const token = localStorage.getItem('adminToken');
-    console.log('Dashboard token check:', token)
     if (!token) {
-      console.log('No token, redirecting to login')
       router.push(`/${locale}/admin`);
       return;
     }
-    console.log('Token found, fetching data')
     fetchAllData();
   }, [router, locale]);
   const fetchAllData = async () => {
@@ -249,8 +246,6 @@ export default function AdminDashboard() {
       const formData = new FormData();
       files.forEach(file => formData.append('images', file));
 
-      console.log('Uploading files:', files.map(file => file.name), 'to /api/upload');
-
       const res = await fetch('/api/upload', {
         method: 'POST',
         headers: {
@@ -267,7 +262,6 @@ export default function AdminDashboard() {
       }
 
       const data = await res.json();
-      console.log('Upload response:', data);
 
       if (data.urls && Array.isArray(data.urls)) {
         setter(prev => [...prev, ...data.urls]);
@@ -305,7 +299,6 @@ export default function AdminDashboard() {
   };
 
 const handleSaveEdit = async () => {
-  console.log("PRODUCT OBJECT:", editingProduct);
 
   const productId = editingProduct?._id || editingProduct?.id;
 
@@ -346,8 +339,6 @@ const handleSaveEdit = async () => {
     // Add existing images as JSON string
     formData.append('existingImages', JSON.stringify(editImages));
 
-    console.log('handleSaveEdit: Updating product with', editImages.length, 'images');
-
     const res = await fetch(`/api/products/${productId}`, {
       method: 'PUT',
       headers: {
@@ -365,7 +356,6 @@ const handleSaveEdit = async () => {
     }
 
     const data = await res.json();
-    console.log('handleSaveEdit success:', data);
     alert('Updated ✅');
     setIsEditModalOpen(false);
     setEditingProduct(null);
@@ -421,8 +411,6 @@ const handleSaveEdit = async () => {
       });
     }
 
-    console.log('handleAddProduct: Sending FormData with', addImages.length, 'images');
-
     const res = await fetch('/api/products', {
       method: 'POST',
       headers: {
@@ -431,8 +419,6 @@ const handleSaveEdit = async () => {
       },
       body: formData,
     });
-
-    console.log('handleAddProduct: Response status', res.status);
 
     if (!res.ok) {
       let errorMsg = 'Unknown error';
@@ -453,7 +439,6 @@ const handleSaveEdit = async () => {
     }
 
     const data = await res.json();
-    console.log('handleAddProduct: Success', data);
     alert('Product added ✅');
     setIsAddModalOpen(false);
     setAddFormData({

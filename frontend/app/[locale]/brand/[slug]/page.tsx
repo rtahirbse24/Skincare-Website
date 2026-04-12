@@ -53,7 +53,6 @@ export default async function BrandPage({
   let products = [];
 try {
   const url = `${BASE_URL}/api/products?brand=${brand}`
-  console.log('Brand page fetching from:', url)
   
   const controller = new AbortController()
   const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
@@ -69,12 +68,10 @@ try {
   
   if (response.ok) {
     products = await response.json();
-    console.log(`Loaded ${Array.isArray(products) ? products.length : 0} products for ${brand}`)
   } else {
     console.error(`Brand page fetch failed: ${response.status} ${response.statusText}`)
   }
 } catch (err) {
-  console.error('Error fetching products for brand page:', err instanceof Error ? err.message : err);
   products = [];
 }
   const lines: string[] = [];
