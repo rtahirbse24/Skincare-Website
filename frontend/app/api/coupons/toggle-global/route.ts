@@ -1,29 +1,15 @@
 import { NextResponse } from 'next/server'
-import fs from 'fs'
-import path from 'path'
+import { BASE_URL } from '@/lib/api'
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'store.json')
-
-function readRawStore() {
+export async function PATCH(req: Request) {
   try {
-    const raw = fs.readFileSync(DATA_FILE, 'utf-8')
-    return JSON.parse(raw)
-  } catch {
-    return { couponSettings: { globalEnabled: false } }
-  }
-}
-
-function writeRawStore(data: any) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2))
-}
-
-export async function PATCH() {
-  try {
-    const store = readRawStore()
-    if (!store.couponSettings) store.couponSettings = { globalEnabled: false }
-    store.couponSettings.globalEnabled = !store.couponSettings.globalEnabled
-    writeRawStore(store)
-    return NextResponse.json({ globalEnabled: store.couponSettings.globalEnabled })
+    const token = req.headers.get('Authorization') || ''
+    const res = await fetch(`${BASE_URL}/api/coupons/toggle-global`, {
+      method: 'PATCH',
+      headers: { 'Authorization': token },
+    })
+    if (!res.ok) return NextResponse.json({ error: 'Failed to toggle' }, { status: 500 })
+    return NextResponse.json(await res.json())
   } catch (e) {
     return NextResponse.json({ error: 'Failed to toggle' }, { status: 500 })
   }

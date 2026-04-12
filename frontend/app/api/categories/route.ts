@@ -1,47 +1,36 @@
 import { NextResponse } from 'next/server'
-import { readStore, writeStore } from '@/lib/store'
+import { BASE_URL } from '@/lib/api'
 import { BRAND_CATEGORIES } from '@/lib/categories'
 
 export async function GET() {
   try {
-    const store = readStore()
-    const customCategories = store.customCategories || { Topicrem: [], Novexpert: [] }
-
-    const merged: Record<string, string[]> = {}
-    for (const brand of ['Topicrem', 'Novexpert']) {
-      const defaults = BRAND_CATEGORIES[brand] || []
-      const custom = customCategories[brand] || []
-      merged[brand] = [...defaults, ...custom]
+    const res = await fetch(`${BASE_URL}/api/categories`, { cache: 'no-store' })
+    if (!res.ok) {
+      return NextResponse.json({
+        Topicrem: BRAND_CATEGORIES['Topicrem'] || [],
+        Novexpert: BRAND_CATEGORIES['Novexpert'] || []
+      })
     }
-
-    return NextResponse.json(merged)
+    return NextResponse.json(await res.json())
   } catch (e) {
-    return NextResponse.json({ Topicrem: [], Novexpert: [] })
+    return NextResponse.json({
+      Topicrem: BRAND_CATEGORIES['Topicrem'] || [],
+      Novexpert: BRAND_CATEGORIES['Novexpert'] || []
+    })
   }
 }
 
 export async function POST(req: Request) {
   try {
-    const { brand, category } = await req.json()
-
-    if (!brand || !category) {
-      return NextResponse.json({ error: 'Brand and category are required' }, { status: 400 })
-    }
-
-    const store = readStore()
-    if (!store.customCategories) {
-      store.customCategories = { Topicrem: [], Novexpert: [] }
-    }
-    if (!store.customCategories[brand]) {
-      store.customCategories[brand] = []
-    }
-
-    if (!store.customCategories[brand].includes(category)) {
-      store.customCategories[brand].push(category)
-      writeStore(store)
-    }
-
-    return NextResponse.json({ success: true })
+    const token = req.headers.get('Authorization') || ''
+    const body = await req.json()
+    const res = await fetch(`${BASE_URL}/api/categories`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': token },
+      body: JSON.stringify(body),
+    })
+    if (!res.ok) return NextResponse.json({ error: 'Failed to add category' }, { status: 500 })
+    return NextResponse.json(await res.json())
   } catch (e) {
     return NextResponse.json({ error: 'Failed to add category' }, { status: 500 })
   }
@@ -49,17 +38,15 @@ export async function POST(req: Request) {
 
 export async function DELETE(req: Request) {
   try {
-    const { brand, category } = await req.json()
-    const store = readStore()
-
-    if (store.customCategories?.[brand]) {
-      store.customCategories[brand] = store.customCategories[brand].filter(
-        (c: string) => c !== category
-      )
-      writeStore(store)
-    }
-
-    return NextResponse.json({ success: true })
+    const token = req.headers.get('Authorization') || ''
+    const body = await req.json()
+    const res = await fetch(`${BASE_URL}/api/categories`, {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json', 'Authorization': token },
+      body: JSON.stringify(body),
+    })
+    if (!res.ok) return NextResponse.json({ error: 'Failed to delete category' }, { status: 500 })
+    return NextResponse.json(await res.json())
   } catch (e) {
     return NextResponse.json({ error: 'Failed to delete category' }, { status: 500 })
   }

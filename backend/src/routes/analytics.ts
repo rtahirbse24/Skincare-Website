@@ -1,13 +1,10 @@
-import express from 'express';
-import { getAnalytics, trackVisit } from '../controllers/analyticsController';
-import auth from '../middleware/auth'; // ✅ correct import
+import express from 'express'
+import { getAnalytics, trackVisit } from '../controllers/analyticsController'
+import auth from '../middleware/auth'
 
-const router = express.Router();
+const router = express.Router()
 
-// 🔐 Protected route
-router.get('/', auth, getAnalytics);
+router.get('/', auth, getAnalytics)
+router.post('/track-visit', trackVisit)
 
-// 🌍 Public route (NO auth)
-router.post('/track-visit', trackVisit);
-
-export default router;
+export default router

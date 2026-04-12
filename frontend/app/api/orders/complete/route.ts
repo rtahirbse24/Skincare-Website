@@ -1,14 +1,15 @@
 import { NextResponse } from 'next/server'
-import { readStore, writeStore } from '@/lib/store'
+import { BASE_URL } from '@/lib/api'
 
 export async function POST(req: Request) {
   try {
     const { id } = await req.json()
-    const store = readStore()
-    const index = store.orders.findIndex(o => o.id === id)
-    if (index === -1) return NextResponse.json({ error: 'Not found' }, { status: 404 })
-    store.orders.splice(index, 1)
-    writeStore(store)
+    const token = req.headers.get('Authorization') || ''
+    const res = await fetch(`${BASE_URL}/api/orders/${id}/complete`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': token },
+    })
+    if (!res.ok) return NextResponse.json({ error: 'Failed to complete order' }, { status: 500 })
     return NextResponse.json({ success: true })
   } catch (e) {
     return NextResponse.json({ error: 'Failed to complete order' }, { status: 500 })

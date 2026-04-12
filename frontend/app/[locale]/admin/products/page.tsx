@@ -133,7 +133,7 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {filtered.map(product => (
               <div
-                key={product.id}
+                key={product._id || product.id}
                 className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all group"
               >
                 <div className="relative h-56 overflow-hidden bg-gray-50">

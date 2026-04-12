@@ -12,7 +12,7 @@ import { verifyAdmin } from '../middleware/auth'
 const router = express.Router()
 
 router.get('/', verifyAdmin, getCoupons)
-router.post('/create', verifyAdmin, createCoupon)
+router.post('/', verifyAdmin, createCoupon)
 router.delete('/:id', verifyAdmin, deleteCoupon)
 router.patch('/toggle-global', verifyAdmin, toggleGlobal)
 router.patch('/:id/toggle', verifyAdmin, toggleCoupon)

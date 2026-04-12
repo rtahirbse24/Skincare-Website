@@ -68,3 +68,88 @@ export const updateOrderStatus = async (req: Request, res: Response) => {
     });
   }
 };
+
+export const updateOrder = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const updateData = req.body;
+
+    const order = await Order.findByIdAndUpdate(id, updateData, { new: true });
+
+    if (!order) {
+      return res.status(404).json({
+        success: false,
+        message: 'Order not found',
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Order updated successfully',
+      data: order,
+    });
+  } catch (error) {
+    console.error('Error updating order:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to update order',
+    });
+  }
+};
+
+export const deleteOrder = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+
+    const order = await Order.findByIdAndDelete(id);
+
+    if (!order) {
+      return res.status(404).json({
+        success: false,
+        message: 'Order not found',
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Order deleted successfully',
+    });
+  } catch (error) {
+    console.error('Error deleting order:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to delete order',
+    });
+  }
+};
+
+export const completeOrder = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+
+    const order = await Order.findByIdAndUpdate(
+      id,
+      { status: 'Delivered' },
+      { new: true }
+    );
+
+    if (!order) {
+      return res.status(404).json({
+        success: false,
+        message: 'Order not found',
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Order completed successfully',
+      data: order,
+    });
+  } catch (error) {
+    console.error('Error completing order:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to complete order',
+    });
+  }
+};

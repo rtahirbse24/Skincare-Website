@@ -1,41 +1,31 @@
 import { NextResponse } from 'next/server'
-import fs from 'fs'
-import path from 'path'
+import { BASE_URL } from '@/lib/api'
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'store.json')
-
-function readRawStore() {
+export async function DELETE(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
-    const raw = fs.readFileSync(DATA_FILE, 'utf-8')
-    return JSON.parse(raw)
-  } catch {
-    return { coupons: [] }
-  }
-}
-
-function writeRawStore(data: any) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2))
-}
-
-export async function DELETE(req: Request, { params }: { params: { id: string } }) {
-  try {
-    const store = readRawStore()
-    store.coupons = (store.coupons || []).filter((c: any) => c._id !== params.id)
-    writeRawStore(store)
+    const { id } = await params
+    const token = req.headers.get('Authorization') || ''
+    const res = await fetch(`${BASE_URL}/api/coupons/${id}`, {
+      method: 'DELETE',
+      headers: { 'Authorization': token },
+    })
+    if (!res.ok) return NextResponse.json({ error: 'Failed to delete coupon' }, { status: 500 })
     return NextResponse.json({ success: true })
   } catch (e) {
     return NextResponse.json({ error: 'Failed to delete coupon' }, { status: 500 })
   }
 }
 
-export async function PATCH(req: Request, { params }: { params: { id: string } }) {
+export async function PATCH(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
-    const store = readRawStore()
-    const coupon = (store.coupons || []).find((c: any) => c._id === params.id)
-    if (!coupon) return NextResponse.json({ error: 'Coupon not found' }, { status: 404 })
-    coupon.isActive = !coupon.isActive
-    writeRawStore(store)
-    return NextResponse.json({ success: true, isActive: coupon.isActive })
+    const { id } = await params
+    const token = req.headers.get('Authorization') || ''
+    const res = await fetch(`${BASE_URL}/api/coupons/${id}/toggle`, {
+      method: 'PATCH',
+      headers: { 'Authorization': token },
+    })
+    if (!res.ok) return NextResponse.json({ error: 'Failed to toggle coupon' }, { status: 500 })
+    return NextResponse.json(await res.json())
   } catch (e) {
     return NextResponse.json({ error: 'Failed to toggle coupon' }, { status: 500 })
   }
