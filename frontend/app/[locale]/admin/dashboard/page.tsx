@@ -172,7 +172,7 @@ export default function AdminDashboard() {
       fetch('/api/analytics'),
       fetch('/api/orders'),
       fetch('/api/messages'),
-      fetch('/api/products'),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`),
       fetch('/api/categories'),
     ]);
 
@@ -411,7 +411,7 @@ const handleSaveEdit = async () => {
       });
     }
 
-    const res = await fetch('/api/products', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,

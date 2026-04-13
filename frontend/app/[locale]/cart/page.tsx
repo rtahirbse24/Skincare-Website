@@ -14,10 +14,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Label } from "@/components/ui/label";
 
 export default function CartPage() {
-  const DISCOUNT_PERCENTAGE = 20;
   const t = useTranslations("Cart");
   const { items, updateQuantity, removeFromCart, clearCart, total, itemCount } = useCart();
   const [couponCode, setCouponCode] = useState("");
+  const [discountPercentage, setDiscountPercentage] = useState(0);
   const [couponApplied, setCouponApplied] = useState(false);
   const [couponError, setCouponError] = useState("");
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
@@ -47,6 +47,7 @@ export default function CartPage() {
         return;
       }
       setCouponApplied(true);
+      setDiscountPercentage(data.discountPercentage ?? data.discount ?? data.value ?? 0);
       setCouponError("");
     } catch (e) {
       setCouponError(t("invalidCoupon"));
@@ -58,9 +59,10 @@ export default function CartPage() {
     setCouponApplied(false);
     setCouponCode("");
     setCouponError("");
+    setDiscountPercentage(0);
   };
 
-  const discount = couponApplied ? (total * DISCOUNT_PERCENTAGE) / 100 : 0;
+  const discount = couponApplied ? (total * discountPercentage) / 100 : 0;
   const finalTotal = total - discount;
 
   const handleWhatsAppOrder = async () => {
@@ -76,7 +78,7 @@ export default function CartPage() {
       `City: ${customerDetails.city}\n` +
       `Address: ${customerDetails.address}\n\n` +
       `Order Items:\n\n${itemsList}\n\n` +
-      `${couponApplied ? `Coupon: SKIN20 (-20%)\n` : ''}` +
+      `${couponApplied ? `Coupon: ${couponCode} (-${discountPercentage}%)\n` : ''}` +
       `Total: ${finalTotal.toFixed(2)} JOD`;
 
     // Save order to admin dashboard
@@ -406,7 +408,7 @@ export default function CartPage() {
                           className="flex justify-between text-sm"
                         >
                           <span className="text-green-600 dark:text-green-400">
-                            {`${t("discount")} (${DISCOUNT_PERCENTAGE}%)`}
+                            {`${t("discount")} (${discountPercentage}%)`}
                           </span>
                           <span className="font-medium text-green-600 dark:text-green-400">
                             {`-${discount.toFixed(2)} ${t("jod")}`}
