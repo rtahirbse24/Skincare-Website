@@ -110,8 +110,18 @@ export default function AdminDashboard() {
   // Delete confirm state
   const [deletingProductId, setDeletingProductId] = useState<string | null>(null);
 
-  const addCategories = allCategories[addFormData.brand] || getCategoriesForBrand(addFormData.brand || '')
-  const editCategories = allCategories[editFormData.brand] || getCategoriesForBrand(editFormData.brand || '')
+  const addCategories = [
+    ...new Set([
+      ...getCategoriesForBrand(addFormData.brand || ''),
+      ...(allCategories[addFormData.brand] || [])
+    ])
+  ]
+  const editCategories = [
+    ...new Set([
+      ...getCategoriesForBrand(editFormData.brand || ''),
+      ...(allCategories[editFormData.brand] || [])
+    ])
+  ]
 
   const router = useRouter();
   const locale = useLocale();
@@ -581,19 +591,29 @@ const handleDeleteMessage = async (id: string) => {
   const handleAddCategory = async () => {
     if (!newCategoryBrand || !newCategoryInput.trim()) return
     try {
-      await fetch('/api/categories', {
+      const token = localStorage.getItem('adminToken') || ''
+      const res = await fetch('/api/categories', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
         body: JSON.stringify({
           brand: newCategoryBrand,
           category: newCategoryInput.trim().toUpperCase()
         })
       })
+      if (!res.ok) {
+        const err = await res.json()
+        alert('Failed to add category: ' + (err.error || 'Unknown error'))
+        return
+      }
       setNewCategoryInput('')
-      const res = await fetch('/api/categories')
-      if (res.ok) setAllCategories(await res.json())
+      const categoriesRes = await fetch('/api/categories')
+      if (categoriesRes.ok) setAllCategories(await categoriesRes.json())
     } catch (e) {
       console.error('Add category error:', e)
+      alert('Failed to add category')
     }
   }
 
@@ -860,10 +880,14 @@ const handleDeleteMessage = async (id: string) => {
                             {cat}
                             <button
                               onClick={async () => {
+                                const token = localStorage.getItem('adminToken') || ''
                                 await fetch('/api/categories', {
                                   method: 'DELETE',
-                                  headers: { 'Content-Type': 'application/json' },
-                                  body: JSON.stringify({ brand, category: cat })
+                                  headers: {
+                                    'Content-Type': 'application/json',
+                                    'Authorization': `Bearer ${token}`,
+                                  },
+                                  body: JSON.stringify({ brand, name: cat })
                                 })
                                 const res = await fetch('/api/categories')
                                 if (res.ok) setAllCategories(await res.json())

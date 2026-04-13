@@ -11,7 +11,8 @@ export async function GET() {
         Novexpert: BRAND_CATEGORIES['Novexpert'] || []
       })
     }
-    return NextResponse.json(await res.json())
+    const data = await res.json()
+    return NextResponse.json(data.data || data)
   } catch (e) {
     return NextResponse.json({
       Topicrem: BRAND_CATEGORIES['Topicrem'] || [],
@@ -27,7 +28,7 @@ export async function POST(req: Request) {
     const res = await fetch(`${BASE_URL}/api/categories`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': token },
-      body: JSON.stringify(body),
+      body: JSON.stringify({ brand: body.brand, name: body.category || body.name }),
     })
     if (!res.ok) return NextResponse.json({ error: 'Failed to add category' }, { status: 500 })
     return NextResponse.json(await res.json())
