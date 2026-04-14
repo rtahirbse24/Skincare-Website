@@ -129,7 +129,7 @@ export default function AdminDashboard() {
 
   const trackVisitor = async () => {
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/`, {
+      await fetch('https://skincare-website-production-be30.up.railway.app/api/', {
         method: 'POST',
       })
     } catch (err) {

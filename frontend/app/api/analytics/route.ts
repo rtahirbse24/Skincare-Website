@@ -1,6 +1,6 @@
 ﻿export async function GET() {
   try {
-    const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5007'
+    const BASE_URL = 'https://skincare-website-production-be30.up.railway.app'
 
     const res = await fetch(`${BASE_URL}/api/analytics`, {
       cache: 'no-store',
