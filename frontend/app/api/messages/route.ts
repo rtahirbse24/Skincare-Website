@@ -3,17 +3,17 @@ import { BASE_URL } from '@/lib/api'
 
 const BACKEND = BASE_URL
 
-export async function GET(req: Request) {
+export async function GET() {
   try {
-    const token = req.headers.get('Authorization') || ''
     const res = await fetch(`${BACKEND}/api/messages`, {
-      headers: { 'Authorization': token },
       cache: 'no-store',
     })
-    if (!res.ok) return NextResponse.json([], { status: 200 })
-    return NextResponse.json(await res.json())
+    if (!res.ok) return NextResponse.json([])
+    const data = await res.json()
+    const messages = Array.isArray(data) ? data : (data?.data || [])
+    return NextResponse.json(messages)
   } catch (e) {
-    return NextResponse.json([], { status: 200 })
+    return NextResponse.json([])
   }
 }
 

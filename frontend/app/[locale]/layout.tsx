@@ -5,7 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/src/i18n/routing";
 import { notFound } from "next/navigation";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import VisitTracker from "@/components/VisitTracker";
+import { VisitTracker } from '@/components/visit-tracker'
 
 const playfair = Playfair_Display({
   subsets: ["latin"],

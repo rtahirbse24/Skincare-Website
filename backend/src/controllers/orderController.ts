@@ -5,35 +5,20 @@ export const createOrder = async (req: Request, res: Response) => {
   try {
     const order = new Order(req.body);
     await order.save();
-
-    res.status(201).json({
-      success: true,
-      message: 'Order created successfully',
-      data: order,
-    });
+    res.status(201).json({ success: true, data: order });
   } catch (error) {
     console.error('Error creating order:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Failed to create order',
-    });
+    res.status(500).json({ success: false, message: 'Failed to create order' });
   }
 };
 
 export const getOrders = async (req: Request, res: Response) => {
   try {
     const orders = await Order.find().sort({ timestamp: -1 });
-
-    res.status(200).json({
-      success: true,
-      data: orders,
-    });
+    res.status(200).json(orders);
   } catch (error) {
     console.error('Error fetching orders:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Failed to fetch orders',
-    });
+    res.status(500).json({ success: false, message: 'Failed to fetch orders' });
   }
 };
 

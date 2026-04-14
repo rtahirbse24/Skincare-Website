@@ -3,18 +3,14 @@ import Visit from '../models/Visit';
 import Order from '../models/Order';
 import Product from '../models/Product';
 import Message from '../models/Message';
+import PageVisit from '../models/PageVisit';
+import Visitor from '../models/Visitor';
 
 export const trackVisit = async (req: Request, res: Response): Promise<void> => {
   try {
     console.log('🔥 TRACK VISIT CALLED');
 
-    const dateString = new Date().toISOString().split('T')[0];
-
-    await Visit.findOneAndUpdate(
-      { date: dateString },
-      { $inc: { count: 1 } },
-      { new: true, upsert: true, setDefaultsOnInsert: true }
-    );
+    await Visitor.create({});
 
     res.status(200).json({ message: 'Visit tracked' });
   } catch (error) {
@@ -26,17 +22,38 @@ export const trackVisit = async (req: Request, res: Response): Promise<void> => 
 export const getAnalytics = async (req: Request, res: Response): Promise<void> => {
   try {
     const [totalVisitors, totalOrders, totalProducts, totalMessages, pendingOrders, recentOrders] = await Promise.all([
-      Visit.aggregate([{ $group: { _id: null, total: { $sum: '$count' } } }]).then(result => result[0]?.total || 0),
+      Visitor.countDocuments(),
       Order.countDocuments(),
-      Product.countDocuments(),
+      Product.countDocuments({ isDeleted: { $ne: true } }),
       Message.countDocuments(),
-      Order.countDocuments({ status: 'Pending' }),
-      Order.find().sort({ timestamp: -1 }).limit(5).select('customerName productName status timestamp')
+      Order.countDocuments({ status: 'pending' }),
+      Order.find().sort({ timestamp: -1 }).limit(5),
     ]);
 
-    const visitorTrends = await Visit.find().sort({ date: 1 }).select('date count').then(visits =>
-      visits.map(v => ({ date: v.date, visitors: v.count }))
-    );
+    const visitorTrends = await Visitor.aggregate([
+      {
+        $group: {
+          _id: {
+            $dateToString: { format: '%Y-%m-%d', date: '$createdAt' }
+          },
+          visitors: { $sum: 1 }
+        }
+      },
+      {
+        $sort: { '_id': 1 }
+      },
+      {
+        $project: {
+          date: '$_id',
+          visitors: 1,
+          _id: 0
+        }
+      }
+    ]);
+
+    const pageVisitDocs = await PageVisit.find().sort({ count: -1 }).limit(10);
+    const pageVisits: Record<string, number> = {};
+    pageVisitDocs.forEach(p => { pageVisits[p.page] = p.count; });
 
     res.status(200).json({
       totalVisitors,
@@ -45,14 +62,27 @@ export const getAnalytics = async (req: Request, res: Response): Promise<void> =
       totalMessages,
       pendingOrders,
       visitorTrends,
-      pageVisits: {},
-      recentOrders
+      pageVisits,
+      recentOrders,
     });
   } catch (error) {
     console.error('❌ ANALYTICS ERROR:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Server error',
-    });
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+};
+
+export const trackPageVisit = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { page } = req.body;
+    if (!page) { res.status(400).json({ message: 'Page required' }); return; }
+    await PageVisit.findOneAndUpdate(
+      { page },
+      { $inc: { count: 1 } },
+      { new: true, upsert: true }
+    );
+    await Visitor.create({});
+    res.status(200).json({ message: 'Tracked' });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
   }
 };

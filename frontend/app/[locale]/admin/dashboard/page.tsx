@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Users, ShoppingCart, MessageSquare, Package, TrendingUp, LogOut, LayoutDashboard, Plus, Pencil, Trash2, X, Eye, Tag } from 'lucide-react';
 import { getCategoriesForBrand } from '@/lib/categories';
 import { BRAND_CATEGORIES } from '@/lib/categories'
@@ -127,6 +127,16 @@ export default function AdminDashboard() {
   const locale = useLocale();
   const isRTL = lang === 'ar';
 
+  const trackVisitor = async () => {
+    try {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/`, {
+        method: 'POST',
+      })
+    } catch (err) {
+      console.error('Visitor tracking failed')
+    }
+  }
+
   const t = {
     analytics: lang === 'ar' ? 'التحليلات' : 'Analytics',
     orders: lang === 'ar' ? 'الطلبات' : 'Orders',
@@ -174,6 +184,8 @@ export default function AdminDashboard() {
       router.push(`/${locale}/admin`);
       return;
     }
+
+    trackVisitor()
     fetchAllData();
   }, [router, locale]);
   const fetchAllData = async () => {
@@ -198,17 +210,19 @@ export default function AdminDashboard() {
     const ordersArray = Array.isArray(ordersData) ? ordersData : (ordersData?.data || ordersData?.orders || []);
     setOrders(ordersArray);
     setFilteredOrders(ordersArray);
-    setMessages(Array.isArray(messagesData) ? messagesData : []);
+    setMessages(Array.isArray(messagesData) ? messagesData : (messagesData?.data || []));
     setProducts(Array.isArray(productsData) ? productsData : []);
     setAllCategories(categoriesData);
   } catch (err) {
     console.error('Fetch error:', err);
   }
 };
-  const chartData = analytics?.visitorTrends?.map(v => ({
-    date: v.date,
-    visits: v.visitors,
-  })) || [];
+  const chartData = Array.isArray(analytics?.visitorTrends)
+    ? analytics.visitorTrends.map((v) => ({
+        date: new Date(v.date).toLocaleDateString(),
+        visits: Number(v.visitors) || 0,
+      }))
+    : [];
 
   useEffect(() => {
     const filtered = orders.filter(o =>
@@ -715,14 +729,31 @@ const handleDeleteMessage = async (id: string) => {
 
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <h2 className="text-sm font-semibold text-gray-600 mb-4">{t.visitorTrends}</h2>
-      {chartData.length > 0 ? (
-        <ResponsiveContainer width="100%" height={280}>
-          <LineChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis dataKey="date" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
+      {!analytics ? (
+        <div className="h-60 flex items-center justify-center text-gray-300 text-sm">
+          Loading...
+        </div>
+      ) : chartData.length > 0 ? (
+        <ResponsiveContainer width="100%" height={300}>
+          <LineChart key={JSON.stringify(chartData)} data={chartData}>
+            <defs>
+              <linearGradient id="visitGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#c9a96e" stopOpacity={0.15} />
+                <stop offset="95%" stopColor="#c9a96e" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+
+            <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <XAxis dataKey="date" />
+            <YAxis allowDecimals={false} />
             <Tooltip />
-            <Line type="monotone" dataKey="visits" stroke="#c9a96e" strokeWidth={2} dot={false} />
+
+            <Area
+              type="monotone"
+              dataKey="visits"
+              stroke="#c9a96e"
+              fill="url(#visitGradient)"
+            />
           </LineChart>
         </ResponsiveContainer>
       ) : (

@@ -11,6 +11,7 @@ import uploadRoutes from './routes/upload';
 import messageRoutes from './routes/messages';
 import orderRoutes from './routes/orders';
 import categoriesRoutes from './routes/categories';
+import visitorRoutes from './routes/visitor';
 
 import fs from 'fs';
 import path from 'path';
@@ -68,6 +69,7 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/categories', categoriesRoutes);
+app.use('/api', visitorRoutes);
 
 // =======================
 // DEBUG ROUTE (ADDED)

@@ -1,10 +1,7 @@
-import express from 'express'
-import { getAnalytics, trackVisit } from '../controllers/analyticsController'
-import auth from '../middleware/auth'
-
+﻿import express from 'express'
+import { getAnalytics, trackVisit, trackPageVisit } from '../controllers/analyticsController'
 const router = express.Router()
-
-router.get('/', auth, getAnalytics)
+router.get('/', getAnalytics)
 router.post('/track-visit', trackVisit)
-
+router.post('/track-page', trackPageVisit)
 export default router

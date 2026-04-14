@@ -86,7 +86,30 @@ export default function CheckoutPage() {
     );
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    try {
+      await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          customerName: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          address: `${formData.address}, ${formData.city}`,
+          notes: formData.notes || '',
+          items: items.map(item => ({
+            productName: item.name,
+            brand: item.brand || '',
+            quantity: item.quantity,
+            price: item.price,
+          })),
+          total: discountedTotal,
+          status: 'Pending',
+        }),
+      })
+    } catch (e) {
+      console.error('Failed to save order:', e)
+    }
     e.preventDefault();
 
     // Create order message for WhatsApp
@@ -101,12 +124,10 @@ export default function CheckoutPage() {
     items.forEach((item, index) => {
       message += `${index + 1}. ${item.name}\n`;
       message += `   ${t("qty")}: ${item.quantity}\n`;
-      message += `   ${(item.price * item.quantity).toFixed(2)} ${tCart(
-        "jod"
-      )}\n\n`;
+      message += `   ${(item.price * item.quantity).toFixed(2)} ${tCart("jod")}\n\n`;
     });
 
-    message += `*${t("total")}: ${total.toFixed(2)} ${tCart("jod")}*\n`;
+    message += `*${t("total")}: ${discountedTotal.toFixed(2)} ${tCart("jod")}*\n`;
 
     if (formData.notes) {
       message += `\n${t("notes")}: ${formData.notes}`;
@@ -135,6 +156,7 @@ export default function CheckoutPage() {
       [e.target.name]: e.target.value,
     }));
   };
+
   const handleApplyCoupon = async () => {
     setCouponError('')
     setCouponSuccess('')
