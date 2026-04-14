@@ -15,8 +15,8 @@ export interface IOrder extends Document {
   items: IOrderItem[];
   total: number;
   notes: string;
-  status: 'pending' | 'confirmed' | 'delivered';
-  timestamp: Date;
+  status: 'pending' | 'completed';
+  createdAt: Date;
 }
 
 const OrderItemSchema = new Schema({
@@ -34,8 +34,8 @@ const OrderSchema: Schema = new Schema({
   items: { type: [OrderItemSchema], default: [] },
   total: { type: Number, required: true },
   notes: { type: String, default: '' },
-  status: { type: String, enum: ['pending', 'processing', 'completed', 'cancelled'], default: 'pending' },
-  timestamp: { type: Date, default: Date.now },
+  status: { type: String, enum: ['pending', 'completed'], default: 'pending' },
+  createdAt: { type: Date, default: Date.now },
 });
 
 export default mongoose.model<IOrder>('Order', OrderSchema);

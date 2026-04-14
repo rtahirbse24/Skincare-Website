@@ -3,21 +3,30 @@ import Order from '../models/Order';
 
 export const createOrder = async (req: Request, res: Response) => {
   try {
-    const order = new Order(req.body);
-    await order.save();
-    res.status(201).json({ success: true, data: order });
+    const orderData = {
+      ...req.body,
+      status: 'pending', // ✅ force valid value
+    }
+
+    const order = new Order(orderData)
+    await order.save()
+
+    res.status(201).json(order)
+
   } catch (error) {
-    console.error('Error creating order:', error);
-    res.status(500).json({ success: false, message: 'Failed to create order' });
+    console.error('Error creating order:', error)
+    res.status(500).json({ error: 'Failed to create order' })
   }
-};
+}
 
 export const getOrders = async (req: Request, res: Response) => {
   try {
-    const orders = await Order.find().sort({ timestamp: -1 });
+    console.log("🔵 GET /api/orders called")
+    const orders = await Order.find().sort({ createdAt: -1 });
+    console.log("🟢 Orders retrieved:", orders.length, "orders")
     res.status(200).json(orders);
   } catch (error) {
-    console.error('Error fetching orders:', error);
+    console.error('❌ Error fetching orders:', error);
     res.status(500).json({ success: false, message: 'Failed to fetch orders' });
   }
 };
@@ -59,20 +68,20 @@ export const updateOrder = async (req: Request, res: Response) => {
     const { id } = req.params;
     const updateData = req.body;
 
+    console.log('🔵 PUT /api/orders/:id called with id:', id, 'data:', updateData)
+
     const order = await Order.findByIdAndUpdate(id, updateData, { new: true });
 
     if (!order) {
+      console.log('❌ Order not found:', id)
       return res.status(404).json({
         success: false,
         message: 'Order not found',
       });
     }
 
-    res.status(200).json({
-      success: true,
-      message: 'Order updated successfully',
-      data: order,
-    });
+    console.log('🟢 Order updated successfully:', order)
+    res.status(200).json(order);
   } catch (error) {
     console.error('Error updating order:', error);
     res.status(500).json({

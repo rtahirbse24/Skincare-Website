@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
@@ -27,7 +27,8 @@ interface Analytics {
 }
 
 interface Order {
-  id: string;
+  _id?: string;
+  id?: string;
   customerName: string;
   phone: string;
   email: string;
@@ -36,11 +37,13 @@ interface Order {
   items: { productName: string; brand: string; quantity: number; price: number }[];
   total: number;
   status: 'pending' | 'confirmed' | 'delivered';
-  createdAt: string;
+  createdAt?: string;
+  timestamp?: string; // Fallback timestamp field
 }
 
 interface Message {
-  id: string;
+  _id?: string;
+  id?: string;
   name: string;
   email: string;
   message: string;
@@ -71,6 +74,10 @@ function getField(val: string | { en: string; ar: string } | undefined, lang = '
 }
 
 export default function AdminDashboard() {
+  const API_BASE =
+    process.env.NEXT_PUBLIC_API_URL ||
+    'https://skincare-website-production-be30.up.railway.app';
+
   const [analytics, setAnalytics] = useState<Analytics | null>(null);
   const [orders, setOrders] = useState<Order[]>([]);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -110,18 +117,19 @@ export default function AdminDashboard() {
   // Delete confirm state
   const [deletingProductId, setDeletingProductId] = useState<string | null>(null);
 
-  const addCategories = [
+  const addCategories = useMemo(() => [
     ...new Set([
-      ...getCategoriesForBrand(addFormData.brand || ''),
+      ...(addFormData.brand ? getCategoriesForBrand(addFormData.brand) : []),
       ...(allCategories[addFormData.brand] || [])
     ])
-  ]
-  const editCategories = [
+  ], [addFormData.brand, allCategories])
+
+  const editCategories = useMemo(() => [
     ...new Set([
-      ...getCategoriesForBrand(editFormData.brand || ''),
+      ...(editFormData.brand ? getCategoriesForBrand(editFormData.brand) : []),
       ...(allCategories[editFormData.brand] || [])
     ])
-  ]
+  ], [editFormData.brand, allCategories])
 
   const router = useRouter();
   const locale = useLocale();
@@ -129,9 +137,9 @@ export default function AdminDashboard() {
 
   const trackVisitor = async () => {
     try {
-      await fetch('https://skincare-website-production-be30.up.railway.app/api/', {
+      await fetch(`${API_BASE}/api/`, {
         method: 'POST',
-      })
+      });
     } catch (err) {
       console.error('Visitor tracking failed')
     }
@@ -189,34 +197,84 @@ export default function AdminDashboard() {
     fetchAllData();
   }, [router, locale]);
   const fetchAllData = async () => {
-  try {
-    const [analyticsRes, ordersRes, messagesRes, productsRes, categoriesRes] = await Promise.all([
-      fetch('/api/analytics'),
-      fetch('/api/orders'),
-      fetch('/api/messages'),
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`),
-      fetch('/api/categories'),
-    ]);
+    try {
+      console.log("=== ANALYTICS FETCH ===")
+      console.log("API_BASE:", API_BASE)
 
-    const [analyticsData, ordersData, messagesData, productsData, categoriesData] = await Promise.all([
-      analyticsRes.ok ? analyticsRes.json() : null,
-      ordersRes.ok ? ordersRes.json() : [],
-      messagesRes.ok ? messagesRes.json() : [],
-      productsRes.ok ? productsRes.json() : [],
-      categoriesRes.ok ? categoriesRes.json() : { Topicrem: [], Novexpert: [] },
-    ]);
+      const analyticsUrl = `${API_BASE}/api/analytics`
+      console.log("Fetching from:", analyticsUrl)
 
-    setAnalytics(analyticsData);
-    const ordersArray = Array.isArray(ordersData) ? ordersData : (ordersData?.data || ordersData?.orders || []);
-    setOrders(ordersArray);
-    setFilteredOrders(ordersArray);
-    setMessages(Array.isArray(messagesData) ? messagesData : (messagesData?.data || []));
-    setProducts(Array.isArray(productsData) ? productsData : []);
-    setAllCategories(categoriesData);
-  } catch (err) {
-    console.error('Fetch error:', err);
-  }
-};
+      // ✅ FIXED: Use fetchAPI helper with proper error handling
+      let analyticsData: Analytics | null = null
+      try {
+        const analyticsRes = await fetch(analyticsUrl, { cache: 'no-store' })
+        console.log("Analytics response status:", analyticsRes.status)
+
+        if (!analyticsRes.ok) {
+          console.error("Analytics fetch failed with status:", analyticsRes.status)
+          throw new Error(`HTTP ${analyticsRes.status}: ${analyticsRes.statusText}`)
+        }
+
+        analyticsData = await analyticsRes.json()
+        console.log("✅ Successfully parsed analytics JSON:", analyticsData)
+      } catch (parseError) {
+        console.error("❌ Failed to parse analytics JSON:", parseError)
+        throw new Error("Invalid JSON response from analytics API")
+      }
+
+      // ✅ ADDED: Validate analytics data structure
+      if (!analyticsData || typeof analyticsData !== 'object') {
+        console.error("❌ Analytics data is not a valid object:", analyticsData)
+        throw new Error("Invalid analytics data structure")
+      }
+
+      const [messagesRes, productsRes, categoriesRes] = await Promise.all([
+        fetch(`${API_BASE}/api/messages`),
+        fetch(`${API_BASE}/api/products`),
+        fetch(`${API_BASE}/api/categories`),
+      ]);
+
+      const [messagesData, productsData, categoriesData] = await Promise.all([
+        messagesRes.ok ? messagesRes.json() : [],
+        productsRes.ok ? productsRes.json() : [],
+        categoriesRes.ok ? categoriesRes.json() : { Topicrem: [], Novexpert: [] },
+      ]);
+
+      // ✅ FIXED: Ensure analytics state is set even if other fetches fail
+      setAnalytics(analyticsData);
+
+      // USE recentOrders FROM ANALYTICS
+      let ordersArray: Order[] = [];
+      if (analyticsData?.recentOrders && Array.isArray(analyticsData.recentOrders)) {
+        console.log("✅ Using recentOrders from analytics")
+        ordersArray = analyticsData.recentOrders;
+      } else {
+        console.warn("⚠️ No recentOrders in analytics data")
+        ordersArray = [];
+      }
+
+      console.log("Final ordersArray:", ordersArray, "Length:", ordersArray.length)
+
+      setOrders(ordersArray);
+      setFilteredOrders(ordersArray);
+      setMessages(Array.isArray(messagesData) ? messagesData : (messagesData?.data || []));
+      setProducts(Array.isArray(productsData) ? productsData : []);
+      setAllCategories(categoriesData);
+    } catch (err) {
+      console.error('❌ Fetch error:', err);
+      // ✅ ADDED: Set error state to prevent infinite loading
+      setAnalytics({
+        totalVisitors: 0,
+        totalOrders: 0,
+        totalProducts: 0,
+        totalMessages: 0,
+        pendingOrders: 0,
+        visitorTrends: [],
+        pageVisits: {},
+        recentOrders: []
+      });
+    }
+  };
   const chartData = Array.isArray(analytics?.visitorTrends)
     ? analytics.visitorTrends.map((v) => ({
         date: new Date(v.date).toLocaleDateString(),
@@ -270,7 +328,7 @@ export default function AdminDashboard() {
       const formData = new FormData();
       files.forEach(file => formData.append('images', file));
 
-      const res = await fetch('/api/upload', {
+      const res = await fetch(`${API_BASE}/api/upload`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -363,7 +421,7 @@ const handleSaveEdit = async () => {
     // Add existing images as JSON string
     formData.append('existingImages', JSON.stringify(editImages));
 
-    const res = await fetch(`/api/products/${productId}`, {
+    const res = await fetch(`${API_BASE}/api/products/${productId}`, {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -406,7 +464,6 @@ const handleSaveEdit = async () => {
   }
 
   try {
-    // Create FormData for multipart upload
     const formData = new FormData();
 
     // Add text fields
@@ -435,7 +492,7 @@ const handleSaveEdit = async () => {
       });
     }
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`, {
+    const res = await fetch(`${API_BASE}/api/products`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -492,7 +549,7 @@ const handleSaveEdit = async () => {
   }
 
   try {
-    const res = await fetch(`/api/products/${id}`, {
+    const res = await fetch(`${API_BASE}/api/products/${id}`, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -513,37 +570,55 @@ const handleSaveEdit = async () => {
     alert('Delete failed');
   }
 };
- 
-const handleCompleteOrder = async (id: string) => {
-  if (!confirm('Mark this order as completed and remove it?')) return
-  const token = localStorage.getItem('adminToken')
-  try {
-    const res = await fetch('/api/orders/complete', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-      body: JSON.stringify({ id }),
-    })
-    if (!res.ok) { alert('Failed to complete order'); return }
-    setViewingOrder(null)
-    fetchAllData()
-  } catch (err) {
-    alert('Something went wrong')
-  }
-}
 
 const handleDeleteMessage = async (id: string) => {
   if (!confirm('Delete this message?')) return
-  const token = localStorage.getItem('adminToken')
   try {
-    const res = await fetch('/api/messages/delete', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-      body: JSON.stringify({ id }),
-    })
-    if (!res.ok) { alert('Failed to delete message'); return }
+    const res = await fetch(
+      `${API_BASE}/api/messages/${id}`,
+      {
+        method: 'DELETE',
+      }
+    );
+
+    const data = await res.json()
+
+    if (!res.ok) {
+      throw new Error(data.error || 'Delete failed')
+    }
+
     fetchAllData()
-  } catch (err) {
-    alert('Something went wrong')
+
+  } catch (error) {
+    console.error('Delete failed:', error)
+    alert('Failed to delete message')
+  }
+}
+
+const handleCompleteOrder = async (id: string) => {
+  try {
+    const res = await fetch(`${API_BASE}/api/orders/${id}/status`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ status: 'completed' }),
+    });
+
+    if (!res.ok) {
+      const text = await res.text()
+      console.error('Server error:', text)
+      throw new Error('Failed to update order')
+    }
+
+    console.log('Order updated successfully')
+
+    // refresh orders list
+    fetchAllData()
+
+  } catch (error) {
+    console.error(error)
+    alert('Failed to complete order')
   }
 }
 
@@ -606,7 +681,7 @@ const handleDeleteMessage = async (id: string) => {
     if (!newCategoryBrand || !newCategoryInput.trim()) return
     try {
       const token = localStorage.getItem('adminToken') || ''
-      const res = await fetch('/api/categories', {
+      const res = await fetch(`${API_BASE}/api/categories`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -827,10 +902,10 @@ const handleDeleteMessage = async (id: string) => {
                   </thead>
                   <tbody>
                     {filteredOrders.map((order, i) => (
-                      <tr key={order.id} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <tr key={order._id || order.id || i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                         <td className="px-5 py-3 font-medium">{order.customerName}</td>
                         <td className="px-5 py-3 text-gray-400">{order.email}</td>
-                        <td className="px-5 py-3 text-gray-400">{new Date(order.createdAt).toLocaleDateString()}</td>
+                        <td className="px-5 py-3 text-gray-400">{(order.createdAt || order.timestamp) ? new Date(order.createdAt || order.timestamp!).toLocaleDateString() : 'N/A'}</td>
                         <td className="px-5 py-3 font-medium" style={{ color: '#c9a96e' }}>{order.total} JOD</td>
                         <td className="px-5 py-3">
                           <button
@@ -912,7 +987,7 @@ const handleDeleteMessage = async (id: string) => {
                             <button
                               onClick={async () => {
                                 const token = localStorage.getItem('adminToken') || ''
-                                await fetch('/api/categories', {
+                                await fetch(`${API_BASE}/api/categories`, {
                                   method: 'DELETE',
                                   headers: {
                                     'Content-Type': 'application/json',
@@ -920,7 +995,7 @@ const handleDeleteMessage = async (id: string) => {
                                   },
                                   body: JSON.stringify({ brand, name: cat })
                                 })
-                                const res = await fetch('/api/categories')
+                                const res = await fetch(`${API_BASE}/api/categories`)
                                 if (res.ok) setAllCategories(await res.json())
                               }}
                               className="text-red-400 hover:text-red-600 ml-1 font-bold"
@@ -1000,7 +1075,7 @@ const handleDeleteMessage = async (id: string) => {
                       <p className="text-sm text-gray-600">{msg.message}</p>
                       <div className="mt-3 flex justify-end">
                       <button
-                        onClick={() => handleDeleteMessage(msg.id)}
+                        onClick={() => handleDeleteMessage(msg._id || msg.id)}
                        className="text-xs px-3 py-1.5 rounded-lg text-red-400 border border-red-100 hover:bg-red-50"
   >
                         Delete
@@ -1043,7 +1118,7 @@ const handleDeleteMessage = async (id: string) => {
             </div>
             <div className="mt-5">
               <button
-                onClick={() => handleCompleteOrder(viewingOrder.id)}
+                onClick={() => handleCompleteOrder(viewingOrder._id || viewingOrder.id)}
                 className="w-full py-2.5 rounded-xl text-white text-sm font-medium"
                 style={{ background: '#c9a96e' }}
               >

@@ -28,7 +28,8 @@ const PORT = process.env.PORT || 5007;
 
 // ✅ FIXED CORS (IMPORTANT)
 const allowedOrigins = [
-  'http://localhost:3000',
+  'http://localhost:3000',  // Updated for standard port
+  'http://localhost:3002',  // Keep for backward compatibility
   'https://zippy-kangaroo-914e14.netlify.app',
   process.env.FRONTEND_URL
 ];
@@ -105,7 +106,7 @@ app.get('/api/seed-products', async (req, res) => {
 // =======================
 app.use(
   (err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
-    console.error('GLOBAL ERROR:', err);
+    console.error('GLOBAL ERROR:', err.stack || err);
 
     res.status(500).json({
       success: false,
