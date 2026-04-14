@@ -123,7 +123,7 @@ export const completeOrder = async (req: Request, res: Response) => {
 
     const order = await Order.findByIdAndUpdate(
       id,
-      { status: 'Delivered' },
+      { status: 'completed' },
       { new: true }
     );
 

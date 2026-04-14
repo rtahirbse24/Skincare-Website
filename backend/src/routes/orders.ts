@@ -15,6 +15,40 @@ router.get('/', async (req, res) => {
   }
 })
 
+// POST ORDER - save new order to MongoDB
+router.post('/', async (req, res) => {
+  try {
+    const order = new Order(req.body)
+    await order.save()
+    console.log('Order saved:', order._id)
+    return res.status(201).json({ success: true, data: order })
+  } catch (error: any) {
+    console.error('POST /orders ERROR:', error.message)
+    return res.status(500).json({ success: false, message: 'Failed to create order' })
+  }
+})
+
+// COMPLETE ORDER - update status
+router.put('/:id/complete', async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const order = await Order.findByIdAndUpdate(
+      id,
+      { status: 'completed' }, // ✅ MATCHES SCHEMA
+      { new: true }
+    );
+
+    if (!order) {
+      return res.status(404).json({ error: 'Order not found' });
+    }
+
+    return res.json({ success: true, data: order });
+  } catch (error) {
+    return res.status(500).json({ error: 'Failed to complete order' });
+  }
+});
+
 const updateOrderStatusHandler = async (req: express.Request, res: express.Response) => {
   try {
     const idRaw = req.params.id

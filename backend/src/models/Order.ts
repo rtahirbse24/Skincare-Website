@@ -17,25 +17,39 @@ export interface IOrder extends Document {
   notes: string;
   status: 'pending' | 'completed';
   createdAt: Date;
+  updatedAt: Date;
 }
 
 const OrderItemSchema = new Schema({
   productName: { type: String, required: true },
   brand: { type: String, default: '' },
-  quantity: { type: Number, required: true, default: 1 },
+  quantity: { type: Number, required: true },
   price: { type: Number, required: true },
 });
 
-const OrderSchema: Schema = new Schema({
-  customerName: { type: String, required: true },
-  phone: { type: String, default: '' },
-  email: { type: String, default: '' },
-  address: { type: String, default: '' },
-  items: { type: [OrderItemSchema], default: [] },
-  total: { type: Number, required: true },
-  notes: { type: String, default: '' },
-  status: { type: String, enum: ['pending', 'completed'], default: 'pending' },
-  createdAt: { type: Date, default: Date.now },
-});
+const OrderSchema: Schema = new Schema(
+  {
+    customerName: { type: String, required: true },
+    phone: { type: String, required: true }, // ✅ make required
+    email: { type: String, default: '' },
+    address: { type: String, required: true }, // ✅ make required
 
-export default mongoose.model<IOrder>('Order', OrderSchema);
+    items: {
+      type: [OrderItemSchema],
+      required: true, // ✅ IMPORTANT FIX
+    },
+
+    total: { type: Number, required: true },
+    notes: { type: String, default: '' },
+
+    status: {
+      type: String,
+      enum: ['pending', 'completed'],
+      default: 'pending',
+    },
+  },
+  { timestamps: true } // ✅ IMPORTANT
+);
+
+// ✅ FIX for hot reload (VERY IMPORTANT)
+export default mongoose.models.Order || mongoose.model<IOrder>('Order', OrderSchema);

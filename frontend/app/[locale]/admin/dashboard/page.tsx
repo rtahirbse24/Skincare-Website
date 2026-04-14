@@ -36,7 +36,7 @@ interface Order {
   notes?: string;
   items: { productName: string; brand: string; quantity: number; price: number }[];
   total: number;
-  status: 'pending' | 'confirmed' | 'delivered';
+  status: 'pending' | 'completed';
   createdAt?: string;
   timestamp?: string; // Fallback timestamp field
 }
@@ -86,6 +86,7 @@ export default function AdminDashboard() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeTab, setActiveTab] = useState('analytics');
   const [lang, setLang] = useState<'en' | 'ar'>('en');
+  const [orderTab, setOrderTab] = useState<'pending' | 'completed'>('pending');
 
   // Edit product state
   const [allCategories, setAllCategories] = useState<Record<string, string[]>>({
@@ -228,35 +229,39 @@ export default function AdminDashboard() {
         throw new Error("Invalid analytics data structure")
       }
 
-      const [messagesRes, productsRes, categoriesRes] = await Promise.all([
+      const [messagesRes, productsRes, categoriesRes, ordersRes] = await Promise.all([
         fetch(`${API_BASE}/api/messages`),
         fetch(`${API_BASE}/api/products`),
         fetch(`${API_BASE}/api/categories`),
+        fetch(`${API_BASE}/api/orders`),
       ]);
 
-      const [messagesData, productsData, categoriesData] = await Promise.all([
+      const [messagesData, productsData, categoriesData, ordersData] = await Promise.all([
         messagesRes.ok ? messagesRes.json() : [],
         productsRes.ok ? productsRes.json() : [],
         categoriesRes.ok ? categoriesRes.json() : { Topicrem: [], Novexpert: [] },
+        ordersRes.ok ? ordersRes.json() : [],
       ]);
 
       // ✅ FIXED: Ensure analytics state is set even if other fetches fail
       setAnalytics(analyticsData);
 
-      // USE recentOrders FROM ANALYTICS
+      // ✅ FIXED: Use orders from /api/orders instead of analytics.recentOrders
       let ordersArray: Order[] = [];
-      if (analyticsData?.recentOrders && Array.isArray(analyticsData.recentOrders)) {
-        console.log("✅ Using recentOrders from analytics")
-        ordersArray = analyticsData.recentOrders;
+      if (Array.isArray(ordersData)) {
+        console.log("✅ Using orders from /api/orders")
+        ordersArray = ordersData;
       } else {
-        console.warn("⚠️ No recentOrders in analytics data")
-        ordersArray = [];
+        console.warn("⚠️ No orders data from /api/orders, falling back to analytics")
+        ordersArray = analyticsData?.recentOrders || [];
       }
 
       console.log("Final ordersArray:", ordersArray, "Length:", ordersArray.length)
 
-      setOrders(ordersArray);
-      setFilteredOrders(ordersArray);
+      const pendingOrders = ordersArray.filter(o => o.status === 'pending');
+
+      setOrders(pendingOrders);
+      setFilteredOrders(pendingOrders);
       setMessages(Array.isArray(messagesData) ? messagesData : (messagesData?.data || []));
       setProducts(Array.isArray(productsData) ? productsData : []);
       setAllCategories(categoriesData);
@@ -289,6 +294,11 @@ export default function AdminDashboard() {
     );
     setFilteredOrders(filtered);
   }, [searchTerm, orders]);
+
+
+  const displayedOrders = filteredOrders.filter(
+  o => o.status === orderTab
+);
 
   const handleEditDrop = (e: React.DragEvent) => {
     e.preventDefault();
@@ -597,31 +607,26 @@ const handleDeleteMessage = async (id: string) => {
 
 const handleCompleteOrder = async (id: string) => {
   try {
-    const res = await fetch(`${API_BASE}/api/orders/${id}/status`, {
+    const res = await fetch(`${API_BASE}/api/orders/${id}/complete`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ status: 'completed' }),
     });
 
     if (!res.ok) {
-      const text = await res.text()
-      console.error('Server error:', text)
-      throw new Error('Failed to update order')
+      throw new Error('Failed to update order');
     }
 
-    console.log('Order updated successfully')
+    // ✅ FIX: handle both _id and id
+    setOrders(prev => prev.filter(o => (o._id || o.id) !== id));
+    setFilteredOrders(prev => prev.filter(o => (o._id || o.id) !== id));
 
-    // refresh orders list
-    fetchAllData()
+    // ✅ OPTIONAL: close modal
+    setViewingOrder(null);
 
   } catch (error) {
-    console.error(error)
-    alert('Failed to complete order')
+    console.error(error);
+    alert('Failed to complete order');
   }
-}
-
+};
   
 
   const navItems = [
@@ -901,7 +906,7 @@ const handleCompleteOrder = async (id: string) => {
                     </tr>
                   </thead>
                   <tbody>
-                    {filteredOrders.map((order, i) => (
+                    {displayedOrders.map((order, i) => (
                       <tr key={order._id || order.id || i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                         <td className="px-5 py-3 font-medium">{order.customerName}</td>
                         <td className="px-5 py-3 text-gray-400">{order.email}</td>

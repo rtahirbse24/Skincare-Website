@@ -87,6 +87,7 @@ export default function CheckoutPage() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
+     e.preventDefault();
     try {
       await fetch('/api/orders', {
         method: 'POST',
@@ -110,7 +111,7 @@ export default function CheckoutPage() {
     } catch (e) {
       console.error('Failed to save order:', e)
     }
-    e.preventDefault();
+   
 
     // Create order message for WhatsApp
     let message = `*${t("title")} - Topicrem & Novexpert*\n\n`;
