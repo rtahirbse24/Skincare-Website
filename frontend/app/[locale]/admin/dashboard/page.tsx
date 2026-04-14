@@ -793,7 +793,7 @@ const handleCompleteOrder = async (id: string) => {
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
       {[
         { label: t.totalVisitors, value: analytics?.totalVisitors || 0, icon: <Users size={20} /> },
-        { label: t.totalOrders, value: analytics?.totalOrders || 0, icon: <ShoppingCart size={20} /> },
+        { label: t.totalOrders, value: filteredOrders.length, icon: <ShoppingCart size={20} /> },
         { label: t.totalProducts, value: analytics?.totalProducts || 0, icon: <Package size={20} /> },
         { label: t.totalMessages, value: analytics?.totalMessages || 0, icon: <MessageSquare size={20} /> },
       ].map((kpi, i) => (
