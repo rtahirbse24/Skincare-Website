@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { LineChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from 'recharts';
 import { Users, ShoppingCart, MessageSquare, Package, TrendingUp, LogOut, LayoutDashboard, Plus, Pencil, Trash2, X, Eye, Tag } from 'lucide-react';
 import { getCategoriesForBrand } from '@/lib/categories';
 import { BRAND_CATEGORIES } from '@/lib/categories'
@@ -788,96 +788,161 @@ const handleCompleteOrder = async (id: string) => {
         <div className="flex-1 p-8">
 
          {/* ANALYTICS TAB */}
-{activeTab === 'analytics' && (
-  <div className="space-y-6">
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      {[
-        { label: t.totalVisitors, value: analytics?.totalVisitors || 0, icon: <Users size={20} /> },
-        { label: t.totalOrders, value: filteredOrders.length, icon: <ShoppingCart size={20} /> },
-        { label: t.totalProducts, value: analytics?.totalProducts || 0, icon: <Package size={20} /> },
-        { label: t.totalMessages, value: analytics?.totalMessages || 0, icon: <MessageSquare size={20} /> },
-      ].map((kpi, i) => (
-        <div key={i} className="bg-white rounded-xl p-5 border border-gray-200" style={{ borderTop: '3px solid #c9a96e' }}>
-          <div className="flex justify-between items-start">
-            <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">{kpi.label}</p>
-            <span className="text-gray-300">{kpi.icon}</span>
+{activeTab === 'analytics' && (() => {
+  const todayStr = new Date().toLocaleDateString();
+  const totalVisitorsToday = (analytics?.visitorTrends || [])
+    .filter(v => new Date(v.date).toLocaleDateString() === todayStr)
+    .reduce((sum, v) => sum + (Number(v.visitors) || 0), 0);
+
+  return (
+    <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        {[
+          { label: t.totalVisitors, value: totalVisitorsToday, icon: <Users size={20} /> },
+          { label: t.totalOrders, value: filteredOrders.length, icon: <ShoppingCart size={20} /> },
+          { label: t.totalProducts, value: analytics?.totalProducts || 0, icon: <Package size={20} /> },
+          { label: t.totalMessages, value: analytics?.totalMessages || 0, icon: <MessageSquare size={20} /> },
+        ].map((kpi, i) => (
+          <div key={i} className="bg-white rounded-xl p-5 border border-gray-200" style={{ borderTop: '3px solid #c9a96e' }}>
+            <div className="flex justify-between items-start">
+              <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">{kpi.label}</p>
+              <span className="text-gray-300">{kpi.icon}</span>
+            </div>
+            <p className="text-3xl font-bold mt-2" style={{ color: '#09090b' }}>{kpi.value}</p>
           </div>
-          <p className="text-3xl font-bold mt-2" style={{ color: '#09090b' }}>{kpi.value}</p>
-        </div>
-      ))}
-    </div>
-
-    <div className="bg-white rounded-xl border border-gray-200 p-6">
-      <h2 className="text-sm font-semibold text-gray-600 mb-4">{t.visitorTrends}</h2>
-      {!analytics ? (
-        <div className="h-60 flex items-center justify-center text-gray-300 text-sm">
-          Loading...
-        </div>
-      ) : chartData.length > 0 ? (
-        <ResponsiveContainer width="100%" height={300}>
-          <LineChart key={JSON.stringify(chartData)} data={chartData}>
-            <defs>
-              <linearGradient id="visitGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#c9a96e" stopOpacity={0.15} />
-                <stop offset="95%" stopColor="#c9a96e" stopOpacity={0} />
-              </linearGradient>
-            </defs>
-
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="date" />
-            <YAxis allowDecimals={false} />
-            <Tooltip />
-
-            <Area
-              type="monotone"
-              dataKey="visits"
-              stroke="#c9a96e"
-              fill="url(#visitGradient)"
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      ) : (
-        <div className="h-60 flex items-center justify-center text-gray-300 text-sm">{t.noData}</div>
-      )}
-    </div>
-
-    {/* Page Visits Breakdown */}
-    {analytics?.pageVisits && Object.keys(analytics.pageVisits).length > 0 && (
-      <div className="bg-white rounded-xl border border-gray-200 p-6">
-        <h2 className="text-sm font-semibold text-gray-600 mb-4">
-          {lang === 'ar' ? 'الصفحات الأكثر زيارة' : 'Most Visited Pages'}
-        </h2>
-        <div className="space-y-3">
-          {Object.entries(analytics.pageVisits)
-            .sort(([, a], [, b]) => b - a)
-            .map(([page, count]) => {
-              const total = Object.values(analytics.pageVisits).reduce((a, b) => a + b, 0);
-              const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
-              return (
-                <div key={page}>
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="text-xs text-gray-600 font-medium truncate max-w-xs">{page}</span>
-                    <span className="text-xs font-bold text-gray-800 ml-2">
-                      {count} <span className="text-gray-400 font-normal">
-                        {lang === 'ar' ? 'زيارة' : 'visits'}
-                      </span>
-                    </span>
-                  </div>
-                  <div className="w-full bg-gray-100 rounded-full h-1.5">
-                    <div
-                      className="h-1.5 rounded-full transition-all"
-                      style={{ width: `${percentage}%`, background: '#c9a96e' }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-        </div>
+        ))}
       </div>
-    )}
 
-  </div>
-)}
+      <div className="bg-white rounded-xl border border-gray-200 p-6">
+        <h2 className="text-sm font-semibold text-gray-600 mb-4">{t.visitorTrends}</h2>
+        {!analytics ? (
+          <div className="h-60 flex items-center justify-center text-gray-300 text-sm">
+            Loading...
+          </div>
+        ) : chartData.length > 0 ? (
+          <>
+            {(() => {
+              const formatDate = (date: string | Date) => {
+                return new Date(date).toISOString().split('T')[0];
+              };
+
+              const generate7Days = () => {
+                const days = [];
+                const today = new Date();
+
+                for (let i = -3; i <= 3; i++) {
+                  const d = new Date();
+                  d.setDate(today.getDate() + i);
+
+                  days.push({
+                    date: formatDate(d),
+                    label: d.toLocaleDateString()
+                  });
+                }
+
+                return days;
+              };
+
+              const daysRange = generate7Days();
+
+              const combinedData = daysRange.map(d => {
+                const visitorsCount = (analytics?.visitorTrends || [])
+                  .filter(v => formatDate(v.date) === d.date)
+                  .reduce((sum, v) => sum + (Number(v.visitors) || 0), 0);
+
+                return {
+                  date: d.date,
+                  label: d.label,
+                  visitors: visitorsCount
+                };
+              });
+
+              const weeklyVisitors = daysRange.reduce((sum, d) => {
+                const visitorsForDay = (analytics?.visitorTrends || [])
+                  .filter(v => new Date(v.date).toLocaleDateString() === d.date)
+                  .reduce((s, v) => s + (Number(v.visitors) || 0), 0);
+
+                return sum + visitorsForDay;
+              }, 0);
+
+              const last = combinedData[combinedData.length - 1]?.visitors || 0;
+              const prev = combinedData[combinedData.length - 2]?.visitors || 0;
+              const growth = prev ? ((last - prev) / prev) * 100 : 0;
+              const growthDisplay = growth.toFixed(1);
+
+              return (
+                <>
+                  <div className="grid grid-cols-1 gap-4 mb-4">
+                    <div className="bg-white border rounded-xl p-4">
+                      <p className="text-xs text-gray-400">Weekly Visitors</p>
+                      <p className="text-2xl font-bold text-gray-800">{weeklyVisitors}</p>
+                    </div>
+                  </div>
+
+                  <p className="text-sm text-gray-500 mb-2">
+                    {growth >= 0 ? '📈' : '📉'} {growthDisplay}% vs previous day
+                  </p>
+
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={combinedData}>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                      
+                      <XAxis dataKey="label" />
+                      <YAxis allowDecimals={false} />
+                      <Tooltip />
+                      <Legend />
+
+                      <Bar dataKey="visitors" fill="#ef4444" radius={[4, 4, 0, 0]} />
+                      
+                    </BarChart>
+                  </ResponsiveContainer>
+                </>
+              );
+            })()}
+          </>
+        ) : (
+          <div className="h-60 flex items-center justify-center text-gray-300 text-sm">{t.noData}</div>
+        )}
+      </div>
+
+      {/* Page Visits Breakdown */}
+      {analytics?.pageVisits && Object.keys(analytics.pageVisits).length > 0 && (
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-sm font-semibold text-gray-600 mb-4">
+            {lang === 'ar' ? 'الصفحات الأكثر زيارة' : 'Most Visited Pages'}
+          </h2>
+          <div className="space-y-3">
+            {Object.entries(analytics.pageVisits)
+              .sort(([, a], [, b]) => b - a)
+              .map(([page, count]) => {
+                const total = Object.values(analytics.pageVisits).reduce((a, b) => a + b, 0);
+                const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
+                return (
+                  <div key={page}>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs text-gray-600 font-medium truncate max-w-xs">{page}</span>
+                      <span className="text-xs font-bold text-gray-800 ml-2">
+                        {count} <span className="text-gray-400 font-normal">
+                          {lang === 'ar' ? 'زيارة' : 'visits'}
+                        </span>
+                      </span>
+                    </div>
+                    <div className="w-full bg-gray-100 rounded-full h-1.5">
+                      <div
+                        className="h-1.5 rounded-full transition-all"
+                        style={{ width: `${percentage}%`, background: '#c9a96e' }}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      )}
+
+    </div>
+  );
+})()}
 
           {/* ORDERS TAB */}
           {activeTab === 'orders' && (
@@ -910,7 +975,10 @@ const handleCompleteOrder = async (id: string) => {
                       <tr key={order._id || order.id || i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                         <td className="px-5 py-3 font-medium">{order.customerName}</td>
                         <td className="px-5 py-3 text-gray-400">{order.email}</td>
-                        <td className="px-5 py-3 text-gray-400">{(order.createdAt || order.timestamp) ? new Date(order.createdAt || order.timestamp!).toLocaleDateString() : 'N/A'}</td>
+                        <td className="px-5 py-3 text-gray-400">{(() => {
+                          const dateStr = order.createdAt || order.timestamp;
+                          return dateStr ? new Date(dateStr as string).toLocaleDateString() : 'N/A';
+                        })()}</td>
                         <td className="px-5 py-3 font-medium" style={{ color: '#c9a96e' }}>{order.total} JOD</td>
                         <td className="px-5 py-3">
                           <button
@@ -1080,7 +1148,7 @@ const handleCompleteOrder = async (id: string) => {
                       <p className="text-sm text-gray-600">{msg.message}</p>
                       <div className="mt-3 flex justify-end">
                       <button
-                        onClick={() => handleDeleteMessage(msg._id || msg.id)}
+                        onClick={() => handleDeleteMessage((msg._id || msg.id)!)}
                        className="text-xs px-3 py-1.5 rounded-lg text-red-400 border border-red-100 hover:bg-red-50"
   >
                         Delete
@@ -1103,13 +1171,13 @@ const handleCompleteOrder = async (id: string) => {
             <h2 className="font-bold text-lg mb-4">Order Details</h2>
             <div className="space-y-1 text-sm text-gray-700">
               <p className="font-semibold">Customer Information:</p>
-              <p>{t.name}: {viewingOrder.customerName}</p>
-              <p>{t.phone}: {viewingOrder.phone}</p>
-              <p>{t.email}: {viewingOrder.email}</p>
-              <p>{t.address}: {viewingOrder.address}</p>
+              <p>{t.name}: {viewingOrder!.customerName}</p>
+              <p>{t.phone}: {viewingOrder!.phone}</p>
+              <p>{t.email}: {viewingOrder!.email}</p>
+              <p>{t.address}: {viewingOrder!.address}</p>
               <br />
               <p className="font-semibold">Order Details:</p>
-              {viewingOrder.items?.map((item, i) => (
+              {viewingOrder!.items?.map((item, i) => (
                 <div key={i} className="ml-2">
                   <p>{i + 1}. {item.productName}</p>
                   <p className="ml-3">Brand: {item.brand}</p>
@@ -1118,12 +1186,12 @@ const handleCompleteOrder = async (id: string) => {
                 </div>
               ))}
               <br />
-              <p className="font-bold">Total: {viewingOrder.total} JOD</p>
-              <p>Notes: {viewingOrder.notes || '—'}</p>
+              <p className="font-bold">Total: {viewingOrder!.total} JOD</p>
+              <p>Notes: {viewingOrder!.notes || '—'}</p>
             </div>
             <div className="mt-5">
               <button
-                onClick={() => handleCompleteOrder(viewingOrder._id || viewingOrder.id)}
+                onClick={() => handleCompleteOrder((viewingOrder!._id || viewingOrder!.id)!)}
                 className="w-full py-2.5 rounded-xl text-white text-sm font-medium"
                 style={{ background: '#c9a96e' }}
               >
