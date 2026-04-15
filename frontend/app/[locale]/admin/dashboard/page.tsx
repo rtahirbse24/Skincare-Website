@@ -859,7 +859,7 @@ const handleCompleteOrder = async (id: string) => {
 
               const weeklyVisitors = daysRange.reduce((sum, d) => {
                 const visitorsForDay = (analytics?.visitorTrends || [])
-                  .filter(v => new Date(v.date).toLocaleDateString() === d.date)
+                  .filter(v => formatDate(v.date) === d.date)
                   .reduce((s, v) => s + (Number(v.visitors) || 0), 0);
 
                 return sum + visitorsForDay;
