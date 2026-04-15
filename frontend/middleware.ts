@@ -2,7 +2,12 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  try {
+  try {    const { pathname } = request.nextUrl;
+
+    // ✅ Redirect root to default locale
+    if (pathname === "/") {
+      return NextResponse.redirect(new URL("/en", request.url));
+    }
     return NextResponse.next();
   } catch (error) {
     console.error("Middleware Error:", error);
