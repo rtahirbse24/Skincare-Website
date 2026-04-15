@@ -25,19 +25,25 @@ function writeRawStore(data: any) {
 export async function PATCH(req: Request) {
   try {
     const token = req.headers.get('Authorization') || ''
+    const body = await req.json()
+    const { enabled } = body
     
-    // Toggle in store.json
+    // Toggle in store.json with explicit value
     const store = readRawStore()
     if (!store.couponSettings) store.couponSettings = { globalEnabled: false }
-    store.couponSettings.globalEnabled = !store.couponSettings.globalEnabled
+    store.couponSettings.globalEnabled = enabled
     writeRawStore(store)
     
-    // Also toggle in backend (silent fail)
+    // Also update backend state (silent fail)
     try {
       const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
       await fetch(`${backendUrl}/api/coupons/toggle-global`, {
         method: 'PATCH',
-        headers: { Authorization: token },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: token,
+        },
+        body: JSON.stringify({ enabled }),
       })
     } catch (e) {
       console.warn('[toggleGlobal] backend sync failed')

@@ -70,8 +70,10 @@ export const deleteCoupon = async (req: Request, res: Response) => {
 
 export const toggleGlobal = async (req: Request, res: Response) => {
   try {
+    const { enabled } = req.body
+
     const settings = await getSettings()
-    settings.globalEnabled = !settings.globalEnabled
+    settings.globalEnabled = enabled
     await settings.save()
     console.log('[toggleGlobal] globalEnabled now:', settings.globalEnabled)
     res.json({ globalEnabled: settings.globalEnabled })

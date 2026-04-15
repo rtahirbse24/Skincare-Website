@@ -31,6 +31,7 @@ export default function CouponsPage() {
   const locale = useLocale()
 
   const [globalEnabled, setGlobalEnabled] = useState(false)
+  const [toggling, setToggling] = useState(false)
   const [coupons, setCoupons] = useState<Coupon[]>([])
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
@@ -75,15 +76,28 @@ export default function CouponsPage() {
   }
 
   const handleToggleGlobal = async () => {
+    if (toggling) return
+
     try {
+      setToggling(true)
+
       const res = await fetch('/api/coupons/toggle-global', {
         method: 'PATCH',
-        headers: authHeader,
+        headers: {
+          'Content-Type': 'application/json',
+          ...authHeader,
+        },
+        body: JSON.stringify({ enabled: !globalEnabled }),
       })
+
       const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Toggle failed')
+
       setGlobalEnabled(data.globalEnabled)
     } catch (e) {
       console.error('[toggleGlobal] error:', e)
+    } finally {
+      setToggling(false)
     }
   }
 
@@ -200,7 +214,7 @@ export default function CouponsPage() {
                 : 'All coupons are disabled globally'}
             </p>
           </div>
-          <button onClick={handleToggleGlobal}>
+          <button onClick={handleToggleGlobal} disabled={toggling}>
             {globalEnabled
               ? <ToggleRight size={40} style={{ color: '#c9a96e' }} />
               : <ToggleLeft size={40} className="text-gray-300" />}
